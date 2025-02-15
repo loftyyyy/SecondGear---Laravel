@@ -70,7 +70,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 
 To be added:
-
+``
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
     <header class="p-1 bg-red-500">
         <nav class="flex">
@@ -93,3 +93,4 @@ To be added:
         </nav>
     </header>
 </body>
+``
