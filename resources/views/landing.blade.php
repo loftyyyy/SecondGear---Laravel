@@ -20,7 +20,7 @@
             </li>
         </nav>
     </header> -->
-    <header class="p-1 fixed z-50 left-0 right-0 top-0 bg-opacity-90 backdrop-blur-sm shadow-sm">
+    <header class="p-1 bg-black fixed z-50 left-0 right-0 top-0 bg-opacity-90 backdrop-blur-sm shadow-sm">
         <div class="flex items-center justify-between container mx-auto">
             <div class="flex px-2 py-3">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="text-white w-8 h-8 mr-2 mt-1.75">
@@ -75,7 +75,7 @@
         <div id="testimonial" class="bg-blue-500 mx-auto text-center ">
             <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">Why Choose Second Gear?</h1>
 
-            <div class="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pb-20">
 
                 <div class="mx-auto flex flex-col items-center justify-center">
                     <svg class="h-9  w-9 mb-3 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" /></svg>
@@ -83,13 +83,23 @@
                     <p class="text-white">Browse thousands of cars from sellers across the country</p> 
                 </div>
 
-                <div class="mx-auto text-center">
-
+                <div class="mx-auto flex flex-col items-center justify-center">
+                    <svg class="h-9 w-9 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/> </svg>
+                    <h2 class="text-black font-bold text-2xl mb-2">Secure Transactions</h2>
+                    <p class="text-white">Our platform ensures safe and secure transactions for both buyers and sellers.</p> 
                 </div>
 
-                <div class="mx-auto text-center"></div>
+                <div class="mx-auto flex flex-col items-center justify-center">
+                    <svg class="h-9 w-9 mb-3 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
+                    <h2 class="text-black font-bold text-2xl mb-2">Fast & Easy</h2>
+                    <p class="text-white">Find and purchase your dream car in just a few clicks.</p> 
+                </div>
 
-                <div class="mx-auto text-center"></div>
+                <div class="mx-auto flex flex-col items-center justify-center">
+                    <svg class="h-9 w-9 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />  <path d="M12 6v2m0 8v2" /></svg>
+                    <h2 class="text-black font-bold text-2xl mb-2">Completely Free</h2>
+                    <p class="text-white">No hidden fees or charges. Our platform is 100% free for all users.</p> 
+                </div>
 
             </div>
 
