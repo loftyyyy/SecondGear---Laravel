@@ -106,23 +106,23 @@
 
         </div>
 
-        <div id="testimony" class="bg-pink-500 mx-auto text-center ">
+        <div id="testimony" class="bg-pink-500 mx-auto">
             <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">What Our Users Say</h1>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mr-8 ml-8 mt-12 pb-3">
                 <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
                     <p class="text-gray-600 mb-4">"Second Gear made finding my dream car a breeze, and it didn't cost me a dime!"</p>
-                    <p class="font-bold text-black">- Sarah Johnson</p>
+                    <p class="font-bold text-black text-left">- Sarah Johnson</p>
                 </div>
 
                 <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
                     <p class="text-gray-600 mb-4">"As a seller, I was impressed by how quickly I could connect with potential buyers."</p>
-                    <p class="font-bold text-black">- Mike Thompson</p>
+                    <p class="font-bold text-black text-left">- Mike Thompson</p>
                 </div>
 
                 <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
                     <p class="text-gray-600 mb-4">"The best free car marketplace I've ever used. Simple, fast, and reliable."</p>
-                    <p class="font-bold text-black">- Emily Chen</p>
+                    <p class="font-bold text-black text-left">- Emily Chen</p>
                 </div>
             </div>
 
