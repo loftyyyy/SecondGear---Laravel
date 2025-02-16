@@ -33,7 +33,7 @@
 
             <div class="hidden md:flex">
                 <li class="flex space-x-6">
-                    <ul><a href="">Features</a></ul>
+                    <ul><a href="#features">Features</a></ul>
                     <ul><a href="">Testimonials</a></ul>
                     <ul><a href="">How it works</a></ul>
 
@@ -57,7 +57,7 @@
 
     <main class="pt-2">
 
-        <div id="intro" class="min-h-screen container mt-[64px] pt-20 mx-auto bg-green-500 text-center z-10">
+        <div id="intro" class="w-full mt-[64px] pt-20 pb-3 mx-auto bg-green-500 text-center z-10">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-5">Shift Your Car Search into Second Gear</h1>
             <p class="text-xl text-white mb-5">Connecting car buyers and sellers for a smoother ride</p>
             <p class="text-lg text-white mb-5">100% for everyone</p>
@@ -68,11 +68,10 @@
                 <img src="https://fakeimg.pl/400x300" alt="" class="mx-auto rounded-lg shadow-lg">
                 <img src="https://fakeimg.pl/400x300" alt="" class="mx-auto rounded-lg shadow-lg">
                 <img src="https://fakeimg.pl/400x300" alt="" class="mx-auto rounded-lg shadow-lg">
-
             </div>
         </div>
 
-        <div id="testimonial" class="bg-blue-500 mx-auto text-center ">
+        <div id="features" class="bg-blue-500 mx-auto text-center ">
             <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">Why Choose Second Gear?</h1>
 
             <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pb-20">
@@ -101,6 +100,30 @@
                     <p class="text-white">No hidden fees or charges. Our platform is 100% free for all users.</p> 
                 </div>
 
+            </div>
+
+
+
+        </div>
+
+        <div id="testimony" class="bg-pink-500 mx-auto text-center ">
+            <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">What Our Users Say</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mr-8 ml-8 mt-12 pb-3">
+                <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
+                    <p class="text-gray-600 mb-4">"Second Gear made finding my dream car a breeze, and it didn't cost me a dime!"</p>
+                    <p class="font-bold text-black">- Sarah Johnson</p>
+                </div>
+
+                <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
+                    <p class="text-gray-600 mb-4">"As a seller, I was impressed by how quickly I could connect with potential buyers."</p>
+                    <p class="font-bold text-black">- Mike Thompson</p>
+                </div>
+
+                <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
+                    <p class="text-gray-600 mb-4">"The best free car marketplace I've ever used. Simple, fast, and reliable."</p>
+                    <p class="font-bold text-black">- Emily Chen</p>
+                </div>
             </div>
 
 
