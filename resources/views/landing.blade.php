@@ -106,7 +106,7 @@
 
         </div>
 
-        <div id="testimony" class="bg-pink-500 mx-auto">
+        <div id="testimony" class="bg-pink-500 mx-auto text-center">
             <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">What Our Users Say</h1>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mr-8 ml-8 mt-12 pb-3">
