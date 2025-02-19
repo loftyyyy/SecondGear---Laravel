@@ -34,7 +34,7 @@
             <div class="hidden md:flex">
                 <li class="flex space-x-6">
                     <ul><a href="#features">Features</a></ul>
-                    <ul><a href="">Testimonials</a></ul>
+                    <ul><a href="#testimony">Testimonials</a></ul>
                     <ul><a href="">How it works</a></ul>
 
                 </li>
