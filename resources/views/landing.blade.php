@@ -48,9 +48,9 @@
 
             <nav class="flex">
             <li class="flex px-4 py-4 space-x-6">
-            <a href="/login" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <button data-model-target="authentication-modal" data-model-toggle="authentication-modal" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
                 Log In
-            </a>
+        </button>
 
             <a href="/register" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
                 Sign Up
@@ -154,6 +154,8 @@
     </style>
 
     @include('partials.footer')
+    @include('modals.login')
+
     
 </body>
 </html>
