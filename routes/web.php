@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('footer', function () {
+    return view('footer');
+});
+
 Route::get('test', function () {
     return view('test');
 
@@ -14,6 +18,11 @@ Route::get('test', function () {
 
 Route::get('landing', function(){
     return view('landing');
+
+});
+
+Route::get('browse', function(){
+    return view('browse');
 
 });
 
