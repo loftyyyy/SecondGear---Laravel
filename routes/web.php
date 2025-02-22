@@ -16,6 +16,10 @@ Route::get('test', function () {
 
 });
 
+Route::get('practice', function(){
+    return view('practice');
+});
+
 Route::get('landing', function(){
     return view('landing');
 
