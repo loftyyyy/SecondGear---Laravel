@@ -26,11 +26,12 @@
             <li><a href="">Help Desk</a></li> 
             <li><a href="">Be our partner</a></li> 
             <li><a href="">Car listing tips</a></li> 
+
         </ul>
     </div>
 
-    <div id="content" class="flex-grow text-left"></div>
     
+    <!-- TODO: To be fixed, overlapping when changing different screen size -->
     <div id="socials" class="flex space-x-6 gap-6 mx-10">
         <ul><a href="https://www.simplilearn.com/tutorials/css-tutorial/how-to-align-center-work-css"></a><i class="fab fa-facebook"></i></ul>
         <ul><a href=""></a><i class="fab fa-instagram"></i></ul>

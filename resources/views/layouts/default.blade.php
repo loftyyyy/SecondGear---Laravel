@@ -59,10 +59,9 @@
         @yield('main-content')
     </main>
 
+
     <footer>
-        <h1 class="bg-gray-500">
-            I am a footer
-        </h1>
+    
     </footer>
     
 </body>

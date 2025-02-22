@@ -4,13 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-<<<<<<< HEAD
-    <title>@yield('title', 'Second')</title>
-=======
     <title>@yield('title', 'home')</title>
     <link href="https://fonts.cdnfonts.com/css/future-forces" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/exo-3" rel="stylesheet">
->>>>>>> 2acee83a2886cc0061dd969f4327c148e7e1cd85
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -34,44 +30,23 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
 
-<<<<<<< HEAD
-                <h2 class="font-bold font-encode text-2xl rounded-md text-white">Second Gear</h2>
-=======
-                <h2 class=" text-[#F2F2F2] font-encode text-3xl rounded-md text-blue-600 font-future">Second Gear</h2>
->>>>>>> 2acee83a2886cc0061dd969f4327c148e7e1cd85
+                <h2 class=" text-[#F2F2F2] font-encode text-3xl rounded-md font-future">Second Gear</h2>
             </div>
 
             
 
             <div class="hidden md:flex">
                 <li class="flex space-x-6">
-<<<<<<< HEAD
-                    <!-- <ul><a href="#features">Features</a></ul>
-                    <ul><a href="">Testimonials</a></ul>
-                    <ul><a href="">How it works</a></ul> -->
-=======
                     <ul><a href="">How it works</a></ul>
                     <ul><a href="#features">Features</a></ul>
                     <ul><a href="#testimony">Testimonials</a></ul>
                     
->>>>>>> 2acee83a2886cc0061dd969f4327c148e7e1cd85
 
                 </li>
 
             </div>
 
             <nav class="flex">
-<<<<<<< HEAD
-                <li class="flex px-4 py-4 space-x-6">
-                    <ul class="p-1 items-center justify-center rounded-md bg-[#000080] text-white ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white w-32 text-center font-bold">
-                        <a href="/login">Log In</a>
-                    </ul>
-                    <ul class="p-1 items-center justify-center rounded-md bg-[#000080] text-white ring-1 ring-transparent transition hover:text-black/70 focus:outline-none focus-visible:ring-[#FF2D20] dark:text-white dark:hover:text-white/80 dark:focus-visible:ring-white w-32 text-center font-bold h-8">
-                        <a href="/register">Sign Up</a>
-                    </ul>
-                </li>
-            </nav>
-=======
             <li class="flex px-4 py-4 space-x-6">
             <a href="/login" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
                 Log In
@@ -81,31 +56,13 @@
                 Sign Up
 </a>
 </li>
->>>>>>> 2acee83a2886cc0061dd969f4327c148e7e1cd85
         </div>
         
     </header>
 
 
-<<<<<<< HEAD
-
-    <main class="pt-2"> 
-
-        <div id="intro" class="w-full mt-[64px] pt-20 mx-auto bg-black text-center z-10 h-28">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-5">Porsche 911 </h1>
-            <img src="photos/redporsche" alt="" >
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                
-            </div>
-        </div>
-
-        <div id="intro" class="w-full mt-[64px] pt-20 pb-3 mx-auto bg-black text-center z-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-5">Porsche 911 </h1>
-=======
         <!-- <div id="intro" class="w-full mt-[64px] pt-20 pb-3 mx-auto bg-green-500 text-center z-10">
             <h1 class="text-4xl md:text-5xl font-bold text-white mb-5">Shift Your Car Search into Second Gear</h1>
->>>>>>> 2acee83a2886cc0061dd969f4327c148e7e1cd85
             <p class="text-xl text-white mb-5">Connecting car buyers and sellers for a smoother ride</p>
             <p class="text-lg text-white mb-5">100% for everyone</p>
             <button class="bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
@@ -119,9 +76,9 @@
         </div> -->
 
         <div id="intro" class="w-full relative pb-3 mx-auto bg-white-500 text-center z-10">
-        <img id="background" class="absolute inset-0 w-full h-auto z-0" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background">
+            <img id="background" class="absolute inset-0 w-full h-auto z-0" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background">
 
-        <img id="porsche" src="picbank/landing page pic.png" alt="Red Porsche 911" class="relative mx-auto rounded-lg shadow-lg z-10">
+            <img id="porsche" src="picbank/landing page pic.png" alt="Red Porsche 911" class="relative mx-auto animate-[slideIn_0.5s_ease-out] z-10">
         </div>
 
         <div id="features" class="bg-blue-500 mx-auto text-center ">
@@ -183,8 +140,20 @@
         </div>
 
     </main>
+    <style>
+        @keyframes slideIn {
+            from {
+            transform: translateX(-100%);
+            opacity: 0;
+            }
+            to {
+            transform: translateX(0);
+            opacity: 1;
+            }
+        }
+    </style>
 
-    @include('footer');
+    @include('partials.footer')
     
 </body>
 </html>
