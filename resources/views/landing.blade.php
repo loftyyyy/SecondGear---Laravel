@@ -88,12 +88,12 @@
             <h1 class="text-white text-[50px] text-left w-[50%] leading-[0.65] relative z-10 text-shadow-md">GET YOUR DREAM CAR HASSLE-FREE FROM TRUSTED SELLERS AT THE BEST DEALS!</h1>
         </div>
 
-        <div class="flex ">
+        <div class="flex text-white relative z-10">
             <div>
-                <h1>AT SECOND GEAR, YOU CAN GUARANTEE</h1>
-                <p class="mt-5 w-[30%]">We ensure trust and quality with verified sellers, inspected vehicles, and secure transactions. Our cars offer top performance, smooth handling, and durability—giving you the best value and a hassle-free buying experience!</p>
+                <h1 class="text-[50px] w-[30%] font-future leading-[0.65]">AT SECOND GEAR, YOU CAN GUARANTEE</h1>
+                <p class="mt-5 w-[30%] font-exo text-[30px]">We ensure trust and quality with verified sellers, inspected vehicles, and secure transactions. Our cars offer top performance, smooth handling, and durability—giving you the best value and a hassle-free buying experience!</p>
             </div>
-            <div>
+            <div class="text-[30px] font-future">
                 <div>
                     <h1>RELIABILITY</h1>
                 </div>
