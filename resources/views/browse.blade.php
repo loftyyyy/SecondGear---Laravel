@@ -41,54 +41,39 @@
     </div>
 </nav>
 
-<div class="flex justify-start mx-10 py-10 flex-wrap"> 
-    <div class="w-1/6 h-3/6 p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800"> <!-- Set width to 50% on medium screens and larger -->
-        <div class="w-full bg-white mx-2 my-2">
-            <h2 class="text-lg font-bold">Car Search</h2> 
-            <div class="w-full"> 
-                <ul class="drop" >
-                    <li>stock/ Modifies</li>
-                    <li>Brand</li>
-                    <li>Model</li>
-                    <li>From Price</li>
-                    <li>From Year</li>
-                    <li>Region</li>
-                    <li>City</li>
-                    <li>Transmission</li>
-                    <li>Color</li>
-                    <li>Body type</li>
-                    <li>
-                        <button class="bg-green-400 text-black p-2 rounded hover:bg-green-700 w-40">Search</button> 
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="content-list">
-
-    <div class="heading-page">
-        
-    </div>
-
-    <div class="menu">
-
-    </div>
-
-    <div class="box-models">
-        <ul>
-            <li>Ford</li>
-            <li>Honda</li>
-            <li>Toyota</li>
-            <li>Nissan</li>
-            <li>Kia</li>
-            <li>Subaru</li>
-            <li>Hyundai</li>
-            <li></li>
+<div class="flex justify-between mx-10 py-10 flex-wrap"> 
+    <!-- Search Box - Left Side -->
+    <div class="w-1/4 p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800"> 
+        <h2 class="text-lg font-bold">Car Search</h2> 
+        <ul class="mt-4">
+            <li>Stock/Modifies</li>
+            <li>Brand</li>
+            <li>Model</li>
+            <li>From Price</li>
+            <li>From Year</li>
+            <li>Region</li>
+            <li>City</li>
+            <li>Transmission</li>
+            <li>Color</li>
+            <li>Body Type</li>
+            <li>
+                <button class="bg-green-400 text-black p-2 rounded hover:bg-green-700 w-full mt-4">Search</button> 
+            </li>
         </ul>
     </div>
 
+    <!-- Brand Box - Right Side -->
+    <div class="w-3/4 flex justify-center items-start p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800"> 
+        <ul class="flex flex-wrap space-x-4">
+            <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Ford</li>
+            <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Honda</li>
+            <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Toyota</li>
+            <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Nissan</li>
+            <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Kia</li>
+            <!-- <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 text-center">Subaru</li>
+            <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60  text-center">Hyundai</li> -->
+        </ul>
+    </div>
 </div>
 
 <div class="used-car-listing">
