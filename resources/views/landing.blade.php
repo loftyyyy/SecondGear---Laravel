@@ -84,8 +84,10 @@
         </div>
 
         
-        <div class="font-future flex flex-direction-col justify-center items-center bg-white-500 text-center z-30">
-            <h1 class="text-white text-[50px] text-left w-[50%] leading-[0.65] relative z-10 text-shadow-md">GET YOUR DREAM CAR HASSLE-FREE FROM TRUSTED SELLERS AT THE BEST DEALS!</h1>
+        <div id="" class="font-future flex flex-col justify-center items-center relative bg-white-500 text-center z-30">
+            <h1 class="text-white text-[50px] text-left w-[50%] leading-[0.65] absolute z-30 top-[160px] text-shadow-md">GET YOUR DREAM CAR HASSLE-FREE FROM TRUSTED SELLERS AT THE BEST DEALS!</h1>
+            <img class="relative z-10 h-[50%]" src="picbank/Black Porsche Back.png" alt="">
+            <h1 class="text-[130px]  ml-9 absolute z-30 bottom-[250px]">SECOND GEAR</h1>
         </div>
 
         <div class="flex text-white relative z-10">
