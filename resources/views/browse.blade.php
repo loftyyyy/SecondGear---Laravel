@@ -43,10 +43,10 @@
 
 <div class="flex justify-between mx-10 py-10 flex-wrap"> 
     <!-- Search Box - Left Side -->
-    <div class="w-1/4 p-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800"> 
-        <h2 class="text-lg font-bold">Car Search</h2> 
-        <ul class="mt-4">
-            <li>Stock/Modifies</li>
+    <div class="w-1/4 p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 "> 
+        <h2 class="text-2xl font-bold">Car Search</h2> 
+        <ul class="mt-4 text-lg">
+            <li >Stock/Modifies</li>
             <li>Brand</li>
             <li>Model</li>
             <li>From Price</li>
@@ -63,7 +63,8 @@
     </div>
 
     <!-- Brand Box - Right Side -->
-    <div class="w-3/4 flex justify-center items-start p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800"> 
+
+    <div class="w-3/4 flex justify-center items-start p-0 "> 
         <ul class="flex flex-wrap space-x-4">
             <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Ford</li>
             <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center">Honda</li>
@@ -76,15 +77,118 @@
     </div>
 </div>
 
-<div class="used-car-listing">
-    <div class="card-container">
-        <div class="card-content">
-            <div class="card-image">
+
+<!-- Car Listed -->
+
+<div class="container mx-auto">
+   
+    <div class="flex flex-wrap justify-center gap-4">
+        <!-- Car Listing 1 -->
+        <div class="used-car-listing w-3/12 max-w-sm">
+            <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
+                <div class="card-content p-4">
+                    <div class="card-image mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80&w=400&h=300" 
+                            alt="Car" 
+                            class="w-full h-48 object-cover rounded-lg"
+                        >
+                    </div>
+                    <div class="card-details space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">$25,999</span>
+                            <span class="text-gray-600 font-semibold">2023</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Toyota Camry SE</h3>
+                        <div class="flex items-center gap-4 text-gray-600">
+                            <span>45,000 mi</span>
+                            <span>•</span>
+                            <span>Automatic</span>
+                            <span>•</span>
+                            <span>Petrol</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>  
-</div>
 
+        <!-- Car Listing 2 -->
+        <div class="used-car-listing w-full max-w-sm">
+            <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
+                <div class="card-content p-4">
+                    <div class="card-image mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80&w=400&h=300" 
+                            alt="Car" 
+                            class="w-full h-48 object-cover rounded-lg"
+                        >
+                    </div>
+                    <div class="card-details space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">$27,999</span>
+                            <span class="text-gray-600 font-semibold">2022</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Honda Accord LX</h3>
+                        <div class="flex items-center gap-4 text-gray-600">
+                            <span>30,000 mi</span>
+                            <span>•</span>
+                            <span>Automatic</span>
+                            <span>•</span>
+                            <span>Petrol</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car Listing 3 -->
+        <div class="used-car-listing w-full max-w-sm">
+            <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
+                <div class="card-content p-4">
+                    <div class="card-image mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80&w=400&h=300" 
+                            alt="Car" 
+                            class="w-full h-48 object-cover rounded-lg"
+                        >
+                    </div>
+                    <div class="card-details space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">$22,999</span>
+                            <span class="text-gray-600 font-semibold">2021</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Nissan Altima</h3>
+                        <div class="flex items-center gap-4 text-gray-600">
+                            <span>25,000 mi</span>
+                            <span>•</span>
+                            <span>Automatic</span>
+                            <span>•</span>
+                            <span>Petrol</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Car Listing 4 -->
+        <div class="used-car-listing w-full max-w-sm">
+            <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
+                <div class="card-content p-4">
+                    <div class="card-image mb-4">
+                        <img 
+                            src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80&w=400&h=300" 
+                            alt="Car" 
+                            class="w-full h-48 object-cover rounded-lg"
+                        >
+                    </div>
+                    <div class="card-details space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span class="text-2xl font-bold text-blue-600">$19,999</span>
+                            <span class="text-gray-600 font-semibold">2020</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800">Kia Optima</h3>
+                        <div class="flex items-center gap-4 text-gray-600">
+                            <span>40,000 mi</span>
 
     
 
