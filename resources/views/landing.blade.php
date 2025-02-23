@@ -76,6 +76,7 @@
             </div>
         </div> -->
 
+        
         <div id="intro" class="w-full relative pb-3 mx-auto bg-white-500 text-center z-10">
             <img id="background" class="absolute inset-0 w-full h-auto z-0" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background">
 
