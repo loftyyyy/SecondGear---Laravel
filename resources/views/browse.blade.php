@@ -77,13 +77,27 @@
     </div>
 
     <div class="box-models">
-       
+        <ul>
+            <li>Ford</li>
+            <li>Honda</li>
+            <li>Toyota</li>
+            <li>Nissan</li>
+            <li>Kia</li>
+            <li>Subaru</li>
+            <li>Hyundai</li>
+            <li></li>
+        </ul>
     </div>
 
 </div>
 
 <div class="used-car-listing">
-    
+    <div class="card-container">
+        <div class="card-content">
+            <div class="card-image">
+            </div>
+        </div>
+    </div>  
 </div>
 
 

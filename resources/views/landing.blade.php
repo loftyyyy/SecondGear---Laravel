@@ -24,7 +24,7 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
     }
-</style>
+</style>    
 
 <body class="font-sans dark:bg-black dark:text-white/50 ">    
     <!-- <header class="p-1">
