@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="font-sans dark:bg-black dark:text-white/50">    
+<body class="font-sans dark:bg-black dark:text-white/50 ">    
     <!-- <header class="p-1">
         <nav class="flex" >
             <h2 class="ml-36 font-encode text-2xl rounded-md px-3 py-2 text-white ">Second Gear</h2>
@@ -61,21 +61,7 @@
         
     </header>
 
-
-        <!-- <div id="intro" class="w-full mt-[64px] pt-20 pb-3 mx-auto bg-green-500 text-center z-10">
-            <h1 class="text-4xl md:text-5xl font-bold text-white mb-5">Shift Your Car Search into Second Gear</h1>
-            <p class="text-xl text-white mb-5">Connecting car buyers and sellers for a smoother ride</p>
-            <p class="text-lg text-white mb-5">100% for everyone</p>
-            <button class="bg-blue-500 mb-5 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                Start Your Search
-            </button>
-            <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
-                <img src="https://fakeimg.pl/400x300" alt="" class="mx-auto rounded-lg shadow-lg">
-                <img src="https://fakeimg.pl/400x300" alt="" class="mx-auto rounded-lg shadow-lg">
-                <img src="https://fakeimg.pl/400x300" alt="" class="mx-auto rounded-lg shadow-lg">
-            </div>
-        </div> -->
-
+    <main class="scrollbar-hidden">
         
         <div id="intro" class="w-full relative pb-3 mx-auto bg-white-500 text-center z-10">
             <img id="background" class="absolute inset-0 w-full h-auto z-0" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background">
