@@ -9,6 +9,7 @@
     <link href="https://fonts.cdnfonts.com/css/exo-3" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="font-sans dark:bg-black dark:text-white/50">    
@@ -48,7 +49,7 @@
 
             <nav class="flex">
             <li class="flex px-4 py-4 space-x-6">
-            <button data-model-target="authentication-modal" data-model-toggle="authentication-modal" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+            <button data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
                 Log In
         </button>
 
@@ -81,60 +82,30 @@
             <img id="porsche" src="picbank/landing page pic.png" alt="Red Porsche 911" class="relative mx-auto animate-[slideIn_0.5s_ease-out] z-10">
         </div>
 
-        <div id="features" class="bg-blue-500 mx-auto text-center ">
-            <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">Get your dream car hassle-free from trusted seller at the best deals</h1>
-
-            <div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4 pb-20">
-
-                <div class="mx-auto flex flex-col items-center justify-center">
-                    <svg class="h-9  w-9 mb-3 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="7" cy="17" r="2" />  <circle cx="17" cy="17" r="2" />  <path d="M5 17h-2v-6l2-5h9l4 5h1a2 2 0 0 1 2 2v4h-2m-4 0h-6m-6 -6h15m-6 0v-5" /></svg>
-                    <h2 class="text-black font-bold text-2xl mb-2">Wide Selection</h2>
-                    <p class="text-white">Browse thousands of cars from sellers across the country</p> 
-                </div>
-
-                <div class="mx-auto flex flex-col items-center justify-center">
-                    <svg class="h-9 w-9 text-black"  fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/> </svg>
-                    <h2 class="text-black font-bold text-2xl mb-2">Secure Transactions</h2>
-                    <p class="text-white">Our platform ensures safe and secure transactions for both buyers and sellers.</p> 
-                </div>
-
-                <div class="mx-auto flex flex-col items-center justify-center">
-                    <svg class="h-9 w-9 mb-3 text-black"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" /></svg>
-                    <h2 class="text-black font-bold text-2xl mb-2">Fast & Easy</h2>
-                    <p class="text-white">Find and purchase your dream car in just a few clicks.</p> 
-                </div>
-
-                <div class="mx-auto flex flex-col items-center justify-center">
-                    <svg class="h-9 w-9 text-black"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <circle cx="12" cy="12" r="9" />  <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />  <path d="M12 6v2m0 8v2" /></svg>
-                    <h2 class="text-black font-bold text-2xl mb-2">Completely Free</h2>
-                    <p class="text-white">No hidden fees or charges. Our platform is 100% free for all users.</p> 
-                </div>
-
-            </div>
-
-
-
+        
+        <div class="font-future flex flex-direction-col justify-center items-center bg-white-500 text-center z-30">
+            <h1 class="text-white text-[50px] text-left w-[50%] leading-[0.65] relative z-10 text-shadow-md">GET YOUR DREAM CAR HASSLE-FREE FROM TRUSTED SELLERS AT THE BEST DEALS!</h1>
         </div>
 
-        <div id="testimony" class="bg-pink-500 mx-auto text-center">
-            <h1 class="text-white font-sans pb-6 text-3xl font-bold pt-20">What Our Users Say</h1>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mr-8 ml-8 mt-12 pb-3">
-                <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
-                    <p class="text-gray-600 mb-4">"Second Gear made finding my dream car a breeze, and it didn't cost me a dime!"</p>
-                    <p class="font-bold text-black text-left">- Sarah Johnson</p>
-                </div>
-
-                <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
-                    <p class="text-gray-600 mb-4">"As a seller, I was impressed by how quickly I could connect with potential buyers."</p>
-                    <p class="font-bold text-black text-left">- Mike Thompson</p>
-                </div>
-
-                <div class="mx-auto bg-white rounded-lg shadow-lg p-6">
-                    <p class="text-gray-600 mb-4">"The best free car marketplace I've ever used. Simple, fast, and reliable."</p>
-                    <p class="font-bold text-black text-left">- Emily Chen</p>
-                </div>
+        <div class="flex ">
+            <div>
+                <h1>AT SECOND GEAR, YOU CAN GUARANTEE</h1>
+                <p class="mt-5 w-[30%]">We ensure trust and quality with verified sellers, inspected vehicles, and secure transactions. Our cars offer top performance, smooth handling, and durability—giving you the best value and a hassle-free buying experience!</p>
             </div>
+            <div>
+                <div>
+                    <h1>RELIABILITY</h1>
+                </div>
+                <div>
+                    <h1>PERFORMANCE</h1>
+                </div>
+                <div>
+                    <h1>QUALITY</h1>
+                </div>
+
+            </div>
+
+            
 
 
         </div>
@@ -157,5 +128,7 @@
     @include('modals.login')
 
     
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
 </body>
 </html>
