@@ -7,6 +7,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('cartest', function () {
+    return view('cartest');
+});
+
 Route::get('footer', function () {
     return view('footer');
 });
