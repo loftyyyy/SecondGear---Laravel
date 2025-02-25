@@ -33,7 +33,7 @@
             <a href="#" class="text-sm text-blue-700 hover:underline dark:text-blue-500">Lost Password?</a>
           </div>
           <button type="submit" class="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Login to your account</button>
-          <div class="text-sm font-medium text-gray-500 dark:text-gray-300">Not registered? <a href="#" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a></div>
+          <div class="text-sm font-medium text-gray-500 dark:text-gray-300">Not registered? <a data-modal-hide="authentication-modal" data-modal-target="signup-modal" data-modal-toggle="signup-modal" class="text-blue-700 hover:underline dark:text-blue-500">Create account</a></div>
         </form>
       </div>
     </div>
