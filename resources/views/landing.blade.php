@@ -32,9 +32,9 @@
                         Log In
                     </button>
 
-                    <a href="/register" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+                    <Button data-modal-target="signup-modal" data-modal-toggle="signup-modal" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
                         Sign Up
-                    </a>
+                    </Button>
                 </li>
             </nav>
         </div>
@@ -116,6 +116,7 @@
 
     @include('partials.footer')
     @include('modals.login')
+    @include('modals.signup')
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
