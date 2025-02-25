@@ -25,13 +25,6 @@
                 <h2 class="text-[#F2F2F2] font-encode text-3xl rounded-md font-future">Second Gear</h2>
             </div>
 
-            <div class="hidden md:flex">
-                <li class="flex space-x-6">
-                    <ul><a href="">How it works</a></ul>
-                    <ul><a href="#features">Features</a></ul>
-                    <ul><a href="#testimony">Testimonials</a></ul>
-                </li>
-            </div>
 
             <nav class="flex">
                 <li class="flex px-4 py-4 space-x-6">
