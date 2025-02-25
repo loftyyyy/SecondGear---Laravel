@@ -34,7 +34,7 @@
                     </div>
                     <button type="submit" class="w-full rounded-lg bg-blue-700 px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 focus:outline-none dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Create an account</button>
                     <p class="text-sm font-light text-gray-500 dark:text-gray-400">
-                        Already have an account? <a data-modal-hide="signup-modal" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
+                        Already have an account? <a href="javascript:void(0)" data-modal-hide="signup-modal" data-modal-target="authentication-modal" data-modal-toggle="authentication-modal" class="font-medium text-primary-600 hover:underline dark:text-primary-500">Login here</a>
                     </p>
                 </form>
             </div>
