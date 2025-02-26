@@ -88,6 +88,7 @@
             </div>
             <div>
                 <img class="w-[100%] h-[100%] mr-6" src="picbank/Red Porsche Headlight.png" alt="">
+            
             </div>
         </div>
     </main>
