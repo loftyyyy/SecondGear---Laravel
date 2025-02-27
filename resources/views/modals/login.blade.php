@@ -18,7 +18,7 @@
           </div>
           <div>
             <label for="email" class="mb-2 block text-sm font-exo text-gray-900 dark:text-white">Your email</label>
-            <input type="email" name="email" id="email" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="name@company.com" required />
+            <input :value="" type="email" name="email" id="email" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="name@company.com" required />
           </div>
           <div>
             <label for="password" class="mb-2 block text-sm font-exo text-gray-900 dark:text-white">Your password</label>
