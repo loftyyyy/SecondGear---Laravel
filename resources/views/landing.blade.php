@@ -22,16 +22,9 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
 
-                <h2 class="text-[#F2F2F2] font-encode text-3xl rounded-md font-future">Second Gear</h2>
+                <h2 class="text-[#F2F2F2]  text-3xl rounded-md font-future">Second Gear</h2>
             </div>
 
-            <div class="hidden md:flex">
-                <li class="flex space-x-6">
-                    <ul><a href="">How it works</a></ul>
-                    <ul><a href="#features">Features</a></ul>
-                    <ul><a href="#testimony">Testimonials</a></ul>
-                </li>
-            </div>
 
             <nav class="flex">
                 <li class="flex px-4 py-4 space-x-6">
@@ -39,9 +32,9 @@
                         Log In
                     </button>
 
-                    <a href="/register" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300">
+                    <Button data-modal-target="signup-modal" data-modal-toggle="signup-modal" class="bg-[#000080] text-white rounded-md px-4 py-2 transition hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
                         Sign Up
-                    </a>
+                    </Button>
                 </li>
             </nav>
         </div>
@@ -49,7 +42,7 @@
 
     <main class="">
         <div id="intro" class="w-full relative pb-3 mx-auto bg-white-500 text-center z-10">
-            <img id="background" class="absolute inset-0 w-full h-auto z-0" src="https://laravel.com/assets/img/welcome/background.svg" alt="Laravel background">
+            <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 w-full h-auto z-0" fill="none" viewBox="0 0 877 968"><g clip-path="url(#a)"><circle cx="391" cy="391" r="390.5" stroke="#FF2D20" transform="matrix(-1 0 0 1 416 -56)"/><circle cx="468" cy="468" r="467.5" stroke="#FF2D20" opacity=".3" transform="matrix(-1 0 0 1 493 -133)"/><circle cx="558" cy="558" r="557.5" stroke="#FF2D20" opacity=".1" transform="matrix(-1 0 0 1 583 -223)"/><g filter="url(#b)"> <ellipse cx="583" cy="229.5" fill="#FF2D20" rx="583" ry="229.5" transform="matrix(-1 0 0 1 621 -9)"/></g><g filter="url(#c)"><ellipse cx="262" cy="184.5" fill="#fff" rx="262" ry="184.5" transform="matrix(-1 0 0 1 99 42)"/></g></g><defs><filter id="b" width="1614" height="907" x="-769" y="-233" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_3089_39042" stdDeviation="112"/></filter><filter id="c" width="972" height="817" x="-649" y="-182" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur result="effect1_foregroundBlur_3089_39042" stdDeviation="112"/></filter><clipPath id="a"><path fill="#fff" d="M877 0H0v968h877z"/></clipPath></defs></svg>
             <img id="porsche" src="picbank/landing page pic.png" alt="Red Porsche 911" class="relative mx-auto animate-[slideIn_0.5s_ease-out] z-10">
         </div>
 
@@ -95,6 +88,7 @@
             </div>
             <div>
                 <img class="w-[100%] h-[100%] mr-6" src="picbank/Red Porsche Headlight.png" alt="">
+            
             </div>
         </div>
     </main>
@@ -104,10 +98,9 @@
             display: none;
         }
 
-        /* Hide scrollbar for IE, Edge and Firefox */
         body {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;  
+            scrollbar-width: none;  
         }
         @keyframes slideIn {
             from {
@@ -123,6 +116,7 @@
 
     @include('partials.footer')
     @include('modals.login')
+    @include('modals.signup')
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
