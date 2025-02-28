@@ -3,13 +3,14 @@
     <!-- Modal content -->
     <div class="relative rounded-lg bg-white shadow-sm dark:bg-gray-700">
       <!-- Modal header -->
-      <div class="flex items-center justify-between rounded-t p-4 md:p-5">
-        <h3 class="text-xl font-semibold text-gray-900 dark:text-white font-future font-normal text-[55px] mx-auto">SG</h3>
+      <div class="flex items-center justify-between rounded-t">
+        <h3 class="text-gray-900 dark:text-white font-future font-normal text-[55px] mx-auto">SG</h3>
       </div>
       <hr class="w-[70%] h-[0.5px] mx-auto bg-gray-100 border-0 rounded"/>
       <!-- Modal body -->
       <div class="p-4 md:p-5">
-        <form class="space-y-4" action="#" method="POST">
+        <form class="space-y-4" action="{{ route('users.login') }}" method="POST">
+
           @csrf
 
           <div class="mb-6">
@@ -17,10 +18,16 @@
             <span class="text-white font-exo font-regular text-[15px]">Please enter your details</span>
           </div>
           <div>
+            @if($errors->has('email'))
+              <div class="text-red-500 text-sm font-exo">{{ $errors->first('email') }}</div>
+            @endif
             <label for="email" class="mb-2 block text-sm font-exo text-gray-900 dark:text-white">Your email</label>
-            <input :value="" type="email" name="email" id="email" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="name@company.com" required />
+            <input :value="" type="email" name="email" id="email" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="name@company.com" required autofocus />
           </div>
           <div>
+            @if($errors->has('password'))
+              <div class="text-red-500 text-sm font-exo">{{ $errors->first('email') }}</div>
+            @endif
             <label for="password" class="mb-2 block text-sm font-exo text-gray-900 dark:text-white">Your password</label>
             <input type="password" name="password" id="password" placeholder="••••••••" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" required />
           </div>

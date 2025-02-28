@@ -118,6 +118,50 @@
     @include('modals.login')
     @include('modals.signup')
 
+    {{-- Add this at the end of your blade file that contains your modals --}}
+{{-- Or add it to your main layout file before the closing body tag --}}
+
+@if(session('showSignupModal') || $errors->any())
+    <script>
+        // Run this code when the document is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('DOM loaded, checking for errors');
+            
+            // Debug - log if we have errors or session flag
+            console.log('Errors present:', {{ $errors->count() > 0 ? 'true' : 'false' }});
+            console.log('Show modal flag:', {{ session('showSignupModal') ? 'true' : 'false' }});
+            
+            // More direct way to show the modal
+            const signupModal = document.getElementById('signup-modal');
+            if (signupModal) {
+                console.log('Found signup modal, attempting to show it');
+                
+                // Remove hidden class and add flex class
+                signupModal.classList.remove('hidden');
+                signupModal.classList.add('flex');
+                
+                // Set aria-hidden attribute to false
+                signupModal.setAttribute('aria-hidden', 'false');
+                
+                // Try initializing Flowbite modal if available
+                if (typeof window.Flowbite !== 'undefined') {
+                    try {
+                        const modal = new window.Flowbite.Modal(signupModal);
+                        modal.show();
+                        console.log('Showed modal using Flowbite API');
+                    } catch (e) {
+                        console.error('Flowbite modal error:', e);
+                    }
+                } else {
+                    console.log('Flowbite not available, using manual display');
+                }
+            } else {
+                console.log('Signup modal element not found');
+            }
+        });
+    </script>
+@endif
+
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 </html>
