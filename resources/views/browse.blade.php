@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body class="py-16">
- @include ('header')
+ @include ('partials.header')
 
 <div class="flex justify-between mx-10 py-10 flex-wrap"> 
     <!-- Search Box - Left Side -->

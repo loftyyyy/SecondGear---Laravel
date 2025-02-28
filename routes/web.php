@@ -24,6 +24,10 @@ Route::get('header', function(){
     return view('header');
 });
 
+Route::get('carselect', function(){
+    return view('carselect');
+});
+
 Route::get('practice', function(){
     return view('practice');
 });
