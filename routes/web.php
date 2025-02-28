@@ -20,6 +20,10 @@ Route::get('test', function () {
 
 });
 
+Route::get('header', function(){
+    return view('header');
+});
+
 Route::get('practice', function(){
     return view('practice');
 });

@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<div class="container mx-auto">
+<div class="container my-0">
     <div class="flex flex-wrap gap-2 space-around"> <!-- Apply gap here -->
         <div class="used-car-listing w-full max-w-sm mb-4">
             <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
