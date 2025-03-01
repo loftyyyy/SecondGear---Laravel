@@ -1,4 +1,3 @@
-{{-- Replace your signup modal with this one --}}
 <div id="signup-modal" tabindex="-1" aria-hidden="true" class="fixed top-0 right-0 left-0 z-50 hidden h-[calc(100%-1rem)] max-h-full w-full items-center justify-center overflow-x-hidden overflow-y-auto md:inset-0">
     <div class="relative max-h-full w-full max-w-md p-4">
         <div class="relative rounded-lg bg-white shadow-sm dark:bg-gray-700">
@@ -7,8 +6,10 @@
             </div>
             <hr class="w-[70%] h-[0.5px] mx-auto bg-gray-100 border-0 rounded"/>
             <div class="p-4 md:p-5">
-                {{-- Alert for errors --}}
+
                 <div id="signup-error-message" class="hidden p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
+                </div>
+                <div id="signup-success-message" class="hidden p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400" role="alert">
                 </div>
                 
                 <form id="signup-form" class="space-y-4">
@@ -62,6 +63,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('signup-form');
     const errorAlert = document.getElementById('signup-error-message');
+    const successAlert = document.getElementById('signup-success-message');
     const submitButton = document.getElementById('signup-button');
     
     if (form) {
@@ -109,6 +111,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.success) {
                     // Registration successful - redirect
                     window.location.href = data.redirect;
+                    // successAlert.textContent = 'Registration successful.';
+                    // successAlert.classList.remove('hidden');
+
+                    // document.querySelectorAll('input, textarea, select').forEach(field => {
+                    //     if (field.type === 'checkbox' || field.type === 'radio') {
+                    //         field.checked = false; 
+                    //     } else if (field.tagName === 'SELECT') {
+                    //         field.selectedIndex = 0; 
+                    //     } else {
+                    //         field.value = ''; 
+                    //     }
+                    // });
+
+                    // submitButton.innerHTML = originalButtonText;
+                    // submitButton.disabled = false;
                 } else {
                     // Show errors
                     if (data.message) {

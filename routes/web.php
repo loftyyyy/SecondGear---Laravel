@@ -38,13 +38,19 @@ Route::get('landing', function(){
 
 });
 
-Route::get('browse', function(){
-    return view('browse');
-
-});
 
 Route::post('/userLogin', [AuthController::class, 'login'])->name('users.login');
 Route::post('/userRegister', [AuthController::class, 'register'])->name('users.register');
+
+
+//Fix middleware redirection
+Route::middleware('auth')->group(function () {
+    Route::get('browse', function(){
+        return view('browse');
+
+});
+
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
