@@ -19,23 +19,23 @@
                         <span class="text-white font-exo font-regular text-[15px]">Please enter your details</span>
                     </div>
                     <div>
-                        <div class="fullname-error text-red-500 text-sm font-exo hidden"></div>
                         <label for="fullname" class="block mb-2 text-sm font-exo text-gray-900 dark:text-white">Your Full Name</label>
+                        <div class="fullname-error text-red-500 text-sm font-exo hidden"></div>
                         <input type="text" name="fullname" id="fullname" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="John Doe" required>
                     </div>
                     <div>
-                        <div class="email-error text-red-500 text-sm font-exo hidden"></div>
                         <label for="email" class="block mb-2 text-sm font-exo text-gray-900 dark:text-white">Your email</label>
+                        <div class="email-error text-red-500 text-sm font-exo hidden"></div>
                         <input type="email" name="email" id="email" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" placeholder="name@company.com" required>
                     </div>
                     <div>
-                        <div class="password-error text-red-500 text-sm font-exo hidden"></div>
                         <label for="password" class="block mb-2 text-sm font-exo text-gray-900 dark:text-white">Password</label>
+                        <div class="password-error text-red-500 text-sm font-exo hidden"></div>
                         <input type="password" name="password" id="password" placeholder="••••••••" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" required>
                     </div>
                     <div>
-                        <div class="password_confirmation-error text-red-500 text-sm font-exo hidden"></div>
                         <label for="password_confirmation" class="block mb-2 text-sm font-exo text-gray-900 dark:text-white">Confirm password</label>
+                        <div class="password_confirmation-error text-red-500 text-sm font-exo hidden"></div>
                         <input type="password" name="password_confirmation" id="password_confirmation" placeholder="••••••••" class="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-500 dark:bg-gray-600 dark:text-white dark:placeholder-gray-400" required>
                     </div>
                     <div class="flex items-start">
@@ -132,25 +132,46 @@ document.addEventListener('DOMContentLoaded', function() {
                     submitButton.disabled = false;
                 }
             })
-            .catch(error => {
-                console.error('Error:', error);
-                // Show specific error messages based on error type
-                if (error.message === 'Email already exists') {
-                    const emailError = document.querySelector('.email-error');
-                    if (emailError) {
-                        emailError.textContent = 'This email is already registered. Please try logging in.';
-                        emailError.classList.remove('hidden');
+            .catch(async error => {
+    console.error('Error:', error);
+    
+    if (error.message === 'Email already exists') {
+        // Handle duplicate email case
+        const emailError = document.querySelector('.email-error');
+        if (emailError) {
+            emailError.textContent = 'This email is already registered. Please try logging in.';
+            emailError.classList.remove('hidden');
+        }
+        errorAlert.textContent = 'Account already exists. Please log in instead.';
+        errorAlert.classList.remove('hidden');
+    } else if (error.status === 422) {
+        // If it's a validation error, extract JSON response
+        try {
+            const errorData = await error.json();
+            if (errorData.errors) {
+                Object.keys(errorData.errors).forEach(field => {
+                    const errorElement = document.querySelector(`.${field}-error`);
+                    if (errorElement) {
+                        errorElement.textContent = errorData.errors[field][0];
+                        errorElement.classList.remove('hidden');
                     }
-                    errorAlert.textContent = 'Account already exists. Please log in instead.';
-                } else {
-                    errorAlert.textContent = 'An error occurred. Please try again.';
-                }
-                errorAlert.classList.remove('hidden');
-                
-                // Reset button
-                submitButton.innerHTML = originalButtonText;
-                submitButton.disabled = false;
-            });
+                });
+            }
+        } catch (jsonError) {
+            errorAlert.textContent = 'Validation failed. Please check your information.';
+            errorAlert.classList.remove('hidden');
+        }
+    } else {
+        // Generic error message for other types of errors
+        errorAlert.textContent = 'An unexpected error occurred. Please try again.';
+        errorAlert.classList.remove('hidden');
+    }
+
+    // Reset button state
+    submitButton.innerHTML = originalButtonText;
+    submitButton.disabled = false;
+});
+
         });
     }
 });
