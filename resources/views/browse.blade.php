@@ -21,9 +21,9 @@
     </div>
 
     <!-- Search Box - Left Side -->
-    <div class="row-span-4 row-start-2 relative bg-blue-300 p-4 mb-4">
-        <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div>
-        <div class="absolute bottom-0 right-0 bg-black text-white px-2 py-1 text-xs rounded-tl-lg">J</div>
+    <div class="row-span-4 row-start-2 relativep-4 mb-4">
+        <!-- <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div> -->
+        <!-- <div class="absolute bottom-0 right-0 bg-black text-white px-2 py-1 text-xs rounded-tl-lg">J</div> -->
         <div class="flex justify-between mx-10 py-10 flex-wrap"> 
             <div class="w-full p-5 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800"> 
                 <h2 class="text-2xl font-bold">Car Search</h2> 
@@ -48,7 +48,7 @@
 
     <!-- Brand Box - Right Side -->
     <div class="col-span-4 row-start-2 relative bg-blue-300 p-4 mb-4">
-        <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div>
+        <!-- <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div> -->
         <div class="w-full flex justify-center items-start p-0"> 
             <ul class="flex flex-wrap space-x-4">
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford"></li>
@@ -62,10 +62,10 @@
 
     <!-- Car Listed -->
     <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative bg-blue-300 p-4">
-        <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div>
-        <div class="ml-0">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                @include('cartest')
+        <div class="absolute top-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
+            <!-- <div class="ml-0"> -->
+                    @include('cartest')
+                </div>
             </div>
         </div>
     </div>

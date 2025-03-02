@@ -7,10 +7,9 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<div class="container my-0">
-    <div class="flex flex-wrap gap-2 space-around"> <!-- Apply gap here -->
-        <div class="used-car-listing w-full max-w-sm mb-4">
-            <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="used-car-listing w-full max-w-sm mb-4">
+                    <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
                         <img 
