@@ -9,9 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
-<body class="py-16">
+<body class="pt-16">
 
-<div class="grid grid-cols-5 grid-rows-5 gap-1">
+<div class="grid grid-cols-5 grid-rows-none gap-0">
 
     <div class="col-span-5 relative p-0 mb-0">
         <div class=" top-0 right-0  py-0">
@@ -47,9 +47,9 @@
     </div>
 
     <!-- Brand Box - Right Side -->
-    <div class="col-span-4 row-start-2 relative bg-blue-300 p-4 mb-4">
+    <div class="col-span-4 row-start-2 relative bg-blue-300 mt-10 mb-2">
         <!-- <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div> -->
-        <div class="w-full flex justify-center items-start p-0"> 
+        <div class="w-full flex justify-center items-start p-0 left-0 right-0"> 
             <ul class="flex flex-wrap space-x-4">
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford"></li>
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm dark:bg-gray-900 dark:border-gray-800 w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/28/de/bc/28debc1fb8adadc2346392696b59cf06.jpg" alt="Honda"> </li>
@@ -61,8 +61,8 @@
     </div>
 
     <!-- Car Listed -->
-    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative bg-blue-300 p-4">
-        <div class="absolute top-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
+    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative bg-blue-300 p-4 mt-10">
+        <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
             <!-- <div class="ml-0"> -->
                     @include('cartest')
                 </div>
