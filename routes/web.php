@@ -53,6 +53,11 @@ Route::post('/userRegister', [AuthController::class, 'register'])->name('users.r
 
 // });
 
+Route::get('browse', function(){
+    return view('browse');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
