@@ -90,6 +90,10 @@ class AuthController extends Controller
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
+
+
+        // This thing logs the user in after registration
+        Auth::login($user);
     
         // Return JSON response if it's an AJAX request
         if ($request->expectsJson()) {
