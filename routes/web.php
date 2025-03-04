@@ -5,8 +5,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-})->name('welcome');
+    return view('landing');
+})->name('landing');
 
 Route::get('cartest', function () {
     return view('cartest');
@@ -48,9 +48,7 @@ Route::post('/userRegister', [AuthController::class, 'register'])->name('users.r
 Route::middleware('auth')->group(function () {
     Route::get('browse', function(){
         return view('browse');
-
-
-        
+ 
 });
 
 });
