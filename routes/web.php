@@ -49,7 +49,7 @@ Route::middleware('auth')->group(function () {
     Route::get('browse', function(){
         return view('browse');
  
-});
+})->name("browse");
 
 });
 

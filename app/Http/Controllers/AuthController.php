@@ -95,12 +95,12 @@ class AuthController extends Controller
         if ($request->expectsJson()) {
             return response()->json([
                 'success' => true,
-                'redirect' => route('welcome'),
+                'redirect' => route('browse'),
             ]);
         }
     
         // Otherwise, redirect
-        return redirect()->route('welcome');
+        return redirect()->route('browse');
     }
     
 }
