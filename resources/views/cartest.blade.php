@@ -7,7 +7,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-4">
                 <div class="used-car-listing w-full max-w-sm mb-4">
                     <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
@@ -22,9 +22,11 @@
                         <h3 class="text-3xl font-semibold text-gray-800">Honda Accord LX</h3>
                         <div class="flex items-center gap-4 text-white-600">
                             <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-2 py-1">Modified</span>
-                            <span class="border-2 border-white-800 rounded-md px-2 py-1">2009</span>
+                            <span class="text-black">
+                            <span class="border-2 border-white-800 rounded-md px-2 py-1 ">2009</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">Manual</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">150 km</span>
+                            </span>
                         </div>
                         <h4>Davao Del Sur</h4>
                         <div class="flex justify-between items-center">
@@ -58,9 +60,11 @@
                         <h3 class="text-3xl font-semibold text-gray-800">Honda Accord LX</h3>
                         <div class="flex items-center gap-4 text-white-600">
                             <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-2 py-1">Modified</span>
-                            <span class="border-2 border-white-800 rounded-md px-2 py-1">2009</span>
+                            <span class="text-black">
+                            <span class="border-2 border-white-800 rounded-md px-2 py-1 ">2009</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">Manual</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">150 km</span>
+                            </span>
                         </div>
                         <h4>Davao Del Sur</h4>
                         <div class="flex justify-between items-center">
@@ -93,9 +97,11 @@
                         <h3 class="text-3xl font-semibold text-gray-800">Honda Accord LX</h3>
                         <div class="flex items-center gap-4 text-white-600">
                             <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-2 py-1">Modified</span>
-                            <span class="border-2 border-white-800 rounded-md px-2 py-1">2009</span>
+                            <span class="text-black">
+                            <span class="border-2 border-white-800 rounded-md px-2 py-1 ">2009</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">Manual</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">150 km</span>
+                            </span>
                         </div>
                         <h4>Davao Del Sur</h4>
                         <div class="flex justify-between items-center">
@@ -128,9 +134,11 @@
                         <h3 class="text-3xl font-semibold text-gray-800">Honda Accord LX</h3>
                         <div class="flex items-center gap-4 text-white-600">
                             <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-2 py-1">Modified</span>
-                            <span class="border-2 border-white-800 rounded-md px-2 py-1">2009</span>
+                            <span class="text-black">
+                            <span class="border-2 border-white-800 rounded-md px-2 py-1 ">2009</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">Manual</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">150 km</span>
+                            </span>
                         </div>
                         <h4>Davao Del Sur</h4>
                         <div class="flex justify-between items-center">
@@ -163,9 +171,11 @@
                         <h3 class="text-3xl font-semibold text-gray-800">Honda Accord LX</h3>
                         <div class="flex items-center gap-4 text-white-600">
                             <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-2 py-1">Modified</span>
-                            <span class="border-2 border-white-800 rounded-md px-2 py-1">2009</span>
+                            <span class="text-black">
+                            <span class="border-2 border-white-800 rounded-md px-2 py-1 ">2009</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">Manual</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">150 km</span>
+                            </span>
                         </div>
                         <h4>Davao Del Sur</h4>
                         <div class="flex justify-between items-center">
@@ -198,9 +208,11 @@
                         <h3 class="text-3xl font-semibold text-gray-800">Honda Accord LX</h3>
                         <div class="flex items-center gap-4 text-white-600">
                             <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-2 py-1">Modified</span>
-                            <span class="border-2 border-white-800 rounded-md px-2 py-1">2009</span>
+                            <span class="text-black">
+                            <span class="border-2 border-white-800 rounded-md px-2 py-1 ">2009</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">Manual</span>
                             <span class="border-2 border-white-800 rounded-md px-2 py-1">150 km</span>
+                            </span>
                         </div>
                         <h4>Davao Del Sur</h4>
                         <div class="flex justify-between items-center">
