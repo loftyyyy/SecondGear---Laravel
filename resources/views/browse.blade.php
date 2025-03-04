@@ -22,11 +22,12 @@
 
     <!-- Search Box - Left Side -->
     <div class="row-span-4 row-start-2 relativep-4 mb-4">
+    <h2 class="flex text-4xl font-bold text-white justify-start mt-8 ml-10">Car Search</h2> 
         <!-- <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div> -->
         <!-- <div class="absolute bottom-0 right-0 bg-black text-white px-2 py-1 text-xs rounded-tl-lg">J</div> -->
-        <div class="flex justify-between mx-10 py-10 flex-wrap"> 
+        <div class="flex justify-between mx-10 py-6 flex-wrap"> 
             <div class="w-full p-5 bg-white border border-gray-200 rounded-lg shadow-sm  "> 
-                <h2 class="text-2xl font-bold text-black">Car Search</h2> 
+                
                 <ul class="mt-4 text-lg text-black">
                     <li>Stock/Modifies</li>
                     <li>Brand</li>
@@ -47,9 +48,10 @@
     </div>
 
     <!-- Brand Box - Right Side -->
-    <div class="col-span-4 row-start-2 relative mt-10 mb-2">
+    <div class="col-span-4 row-start-2 relative mt-10">
+    <h2 class="flex text-4xl font-bold text-white justify-start ml-10 mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
         <!-- <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div> -->
-        <div class="w-full flex justify-center items-start p-0 left-0 right-0"> 
+        <div class="w-full flex justify-start items-start p-0 left-0 right-0 ml-6"> 
             <ul class="flex flex-wrap space-x-14">
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white -900 w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford"></li>
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white -900 w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/28/de/bc/28debc1fb8adadc2346392696b59cf06.jpg" alt="Honda"> </li>
@@ -61,7 +63,7 @@
     </div>
 
     <!-- Car Listed -->
-    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative bg-blue-300 p-4 mt-10">
+    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative p-4 mt-10">
         <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
             <!-- <div class="ml-0"> -->
                     @include('cartest')
