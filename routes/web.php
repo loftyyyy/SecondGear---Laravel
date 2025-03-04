@@ -16,6 +16,7 @@ Route::get('footer', function () {
     return view('footer');
 });
 
+
 Route::get('test', function () {
     return view('test');
 
@@ -48,6 +49,8 @@ Route::middleware('auth')->group(function () {
     Route::get('browse', function(){
         return view('browse');
 
+
+        
 });
 
 });
