@@ -45,13 +45,13 @@ Route::post('/userRegister', [AuthController::class, 'register'])->name('users.r
 
 
 //Fix middleware redirection
-Route::middleware('auth')->group(function () {
-    Route::get('browse', function(){
-        return view('browse');
+// Route::middleware('auth')->group(function () {
+//     Route::get('browse', function(){
+//         return view('browse');
  
-})->name("browse");
+// })->name("browse");
 
-});
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
