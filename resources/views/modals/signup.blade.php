@@ -111,6 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (data.success) {
                     // Registration successful - redirect
                     window.location.href = data.redirect;
+
                     // successAlert.textContent = 'Registration successful.';
                     // successAlert.classList.remove('hidden');
 

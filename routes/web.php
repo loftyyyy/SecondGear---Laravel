@@ -20,7 +20,7 @@ Route::get('footer', function () {
 Route::get('test', function () {
     return view('test');
 
-});
+})->name('test');
 
 Route::get('header', function(){
     return view('header');
@@ -35,6 +35,9 @@ Route::get('practice', function(){
 });
 
 Route::get('landing', function(){
+    if(Auth::check()){
+        return redirect()->route('browse');
+    }
     return view('landing');
 
 });
@@ -44,18 +47,22 @@ Route::post('/userLogin', [AuthController::class, 'login'])->name('users.login')
 Route::post('/userRegister', [AuthController::class, 'register'])->name('users.register');
 
 
-//Fix middleware redirection
-// Route::middleware('auth')->group(function () {
-//     Route::get('browse', function(){
-//         return view('browse');
+// Fix middleware redirection
+Route::middleware('auth')->group(function () {
+    Route::get('browse', function(){
+        return view('browse');
  
-// })->name("browse");
+})->name("browse");
+});
 
+// Route::get('browse', function(){
+//     return view('browse');
 // });
 
-Route::get('browse', function(){
-    return view('browse');
-});
+Route::get('test', function(){
+    return view('index');
+
+})->name('index');
 
 
 Route::get('/dashboard', function () {

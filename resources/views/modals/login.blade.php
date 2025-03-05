@@ -37,7 +37,7 @@
           <div class="flex justify-between">
             <div class="flex items-start">
               <div class="flex h-5 items-center">
-                <input id="remember" type="checkbox" value="" class="h-4 w-4 rounded-sm border border-gray-300 bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:border-gray-500 dark:bg-gray-600 dark:ring-offset-gray-800 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800" required />
+                <input id="remember" type="checkbox" value="" class="h-4 w-4 rounded-sm border border-gray-300 bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:border-gray-500 dark:bg-gray-600 dark:ring-offset-gray-800 dark:focus:ring-blue-600 dark:focus:ring-offset-gray-800" />
               </div>
               <label for="remember" class="ms-2 text-sm font-exo text-gray-900 dark:text-gray-300">Remember me</label>
             </div>
@@ -95,7 +95,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const data = await response.json();
             if (data.success) {
-                window.location.href = data.redirect; // Redirect to dashboard
+                window.location.href = data.redirect; 
+                
             }
         } catch (error) {
             console.error("Login error:", error);
