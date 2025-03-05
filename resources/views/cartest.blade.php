@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-4">
-                <div class="used-car-listing w-full max-w-sm mb-4">
+                <div class="used-car-listing w-11/12 max-w-sm mb-4">
                     <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
@@ -46,7 +46,7 @@
         </div>
 
         <!-- Repeat the above block for additional car listings -->
-        <div class="used-car-listing w-full max-w-sm mb-4">
+        <div class="used-car-listing w-11/12 max-w-sm mb-4">
             <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
@@ -83,7 +83,7 @@
             </div>
         </div>
 
-        <div class="used-car-listing w-full max-w-sm mb-4">
+        <div class="used-car-listing w-11/12 max-w-sm mb-4">
             <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
@@ -120,7 +120,7 @@
             </div>
         </div>
 
-        <div class="used-car-listing w-full max-w-sm mb-4">
+        <div class="used-car-listing w-11/12 max-w-sm mb-4">
             <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
@@ -157,7 +157,7 @@
             </div>
         </div>
 
-        <div class="used-car-listing w-full max-w-sm mb-4">
+        <div class="used-car-listing w-11/12 max-w-sm mb-4">
             <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
@@ -194,7 +194,7 @@
             </div>
         </div>
 
-        <div class="used-car-listing w-full max-w-sm mb-4">
+        <div class="used-car-listing w-11/12 max-w-sm mb-4">
             <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all">
                 <div class="card-content p-6">
                     <div class="card-image mb-4">
