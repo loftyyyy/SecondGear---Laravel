@@ -4,6 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Gear</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="fontawesome/js/brands.js"></script>
+    <script defer src="fontawesome/js/solid.js"></script>
+    <script defer src="fontawesome/js/fontawesome.js"></script>
+    <script defer src="fontawesome/js/sharp-thin.js"></script>
+    <script defer src="fontawesome/js/duotone-thin.js"></script>
+    <script defer src="fontawesome/js/sharp-duotone-thin.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -24,7 +31,7 @@
     <div class="row-span-4 row-start-2 relative p-2 mb-4 ">
     <h2 class="flex text-4xl font-bold text-white justify-start mt-8">Car Search</h2> 
         <div class="flex justify-between mx-4 py-6 flex-wrap"> 
-            <div class="w-full p-5 bg-white border border-gray-200 rounded-lb shadow-sm"> 
+            <div class="w-full p-3 bg-white border border-gray-200 rounded-lb shadow-sm"> 
                 
                 <ul class="mt-4 text-lg text-black">
                     <li>Stock/Modifies</li>
@@ -43,7 +50,31 @@
                 </ul>
             </div>
         </div>
+
+        <h2 class="text-4xl font-bold text-white justify-start mt-8">Car For Sale</h2> 
+        <div class="flex justify-between mx-4 py-6 flex-wrap"> 
+            <div class="w-full p-3 bg-white border border-gray-200 rounded-lb shadow-sm"> 
+                
+                <ul class="mt-4 text-lg text-black">
+                    <li> <a href="">Toyota</a></li>
+                    <li> <a href="">Ford</a></li>
+                    <li> <a href="">Mitsubishi</a></li>
+                    <li> <a href="">Hyundai</a></li>
+                    <li> <a href="">Nissan</a></li>
+                    <li> <a href="">Subaru</a></li>
+                    <li> <a href="">Suzuki</a></li>
+                    <li> <a href="">Mazda</a></li>
+                    <li> <a href=""></a></li>
+                    <hr>
+                    <li>
+                        <button class="flex text-[#2070D2] p-2 rounded  w-full mt-0 justify-end">Show More <i class="fa-solid fa-circle-arrow-right ml-2 mt-1"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
+
+    
 
     <!-- Brand Box - Right Side -->
     <div class="col-span-4 row-start-2 relative mt-10 ml-6">
@@ -61,15 +92,20 @@
     </div>
 
     <!-- Car Listed -->
-    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative p-4 mt-10">
-        <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
-                    @include('cartest')
-                </div>
+     
+    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative p-2">
+        <h2 class="flex text-4xl font-bold text-white justify-start ml-4 mb-6 -mt-28">Best Match</h2>
+            <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg -mt-10">
+                @include('cartest')
             </div>
         </div>
     </div>
+    
+    
 
 </div>
+
+
 
 
 <style>
