@@ -11,6 +11,10 @@ Route::get('cartest', function () {
     return view('cartest');
 });
 
+Route::get('aboutus', function(){
+    return view('aboutus');
+});
+
 Route::get('footer', function () {
     return view('footer');
 });
@@ -34,7 +38,6 @@ Route::get('practice', function(){
 
 Route::get('landing', function(){
     return view('landing');
-
 });
 
 Route::get('browse', function(){

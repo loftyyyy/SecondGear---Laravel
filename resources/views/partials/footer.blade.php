@@ -18,7 +18,7 @@
 <div class="w-full bg-[#001C80] text-white flex justify-between items-center p-4 ">
     <div id="menu-left" class="hidden md:flex bg-[#001C80] text-white mx-10">
         <ul class="flex space-x-6 p-4 gap-5">
-            <li><a href="#features">About Us</a></li>
+            <li><a href="aboutus">About Us</a></li>
             <li><a href="">Terms and Services</a></li>
             <li><a href="">Privacy Policy</a></li> 
             <li><a href="">Site map</a></li> 
@@ -49,9 +49,9 @@
     
     <div class="text-left ml-0 p-0 mt-20"> <!-- Added negative margin-top -->
         <h3 class="text-4xl font-bold mb-4">SECOND GEAR INC.</h3> <!-- Reduced margin-bottom -->
-        <p class="text-base mb-4"><i class="fa-solid fa-location-dot"></i>  12/F AIC Burgundy Tower, ADB Avenue, Ortigas Center, <br>
-        Pasig City, Metro Manila, Philippines</p>
-        <p class="text-base mb-4"><i class="fa-solid fa-phone"></i>  09481334353 (SMART) - 09260673939 (GLOBE)</p>
+        <p class="text-base mb-4"><i class="fa-solid fa-location-dot"></i>  Purok 5, Manuel Guianga, Tugbok <br>
+        Davao City, Philippines</p>
+        <p class="text-base mb-4"><i class="fa-solid fa-phone"></i>  09380369397 (SMART) - 09283765341 (GLOBE)</p>
         <p class="text-base mb-4"><i class="fa-solid fa-envelope"></i>  SecondGear@gmail.com</p> <!-- Set margin-bottom to 0 -->
     </div>
 </main>

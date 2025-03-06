@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
 </head>
 
-<body class="font-sans dark:bg-black dark:text-white/50">    
+<body class="font-sans dark:bg-black dark:text-white/50">
 
     <header class="p-1 bg-black fixed z-50 left-0 right-0 top-0 bg-opacity-90 backdrop-blur-sm shadow-sm">
         <div class="flex items-center justify-between container mx-auto">
@@ -56,7 +56,7 @@
             <div class="ml-[30px]">
                 <h1 class="text-[50px] font-future leading-[0.65]">AT SECOND GEAR, YOU <br>
                  CAN GUARANTEE</h1>
-                <p class="font-exo text-[30px] leading-[1] mt-10 font-light">
+                <p class="font-exo text-[35px] leading-[1] mt-10 font-light">
                     we ensure trust and quality with <br> verified sellers, inspected vehicles, <br>
                     and secure transactions. Our cars <br> offer top performance, smooth <br>
                     handling, and durability—giving you <br> the best value and a hassle-free <br>
