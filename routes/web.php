@@ -8,31 +8,6 @@ Route::get('/', function () {
     return view('landing');
 })->name('landing');
 
-Route::get('cartest', function () {
-    return view('cartest');
-});
-
-Route::get('footer', function () {
-    return view('footer');
-});
-
-
-Route::get('test', function () {
-    return view('test');
-
-})->name('test');
-
-Route::get('header', function(){
-    return view('header');
-});
-
-Route::get('carselect', function(){
-    return view('carselect');
-});
-
-Route::get('practice', function(){
-    return view('practice');
-});
 
 Route::get('landing', function(){
     if(Auth::check()){
@@ -48,15 +23,11 @@ Route::post('/userRegister', [AuthController::class, 'register'])->name('users.r
 
 
 // Fix middleware redirection
-Route::middleware('auth')->group(function () {
-    Route::get('browse', function(){
-        return view('browse');
+// Route::middleware('auth')->group(function () {
+//     Route::get('browse', function(){
+//         return view('browse');
  
-})->name("browse");
-});
-
-// Route::get('browse', function(){
-//     return view('browse');
+//     })->name("browse");
 // });
 
 Route::get('test', function(){

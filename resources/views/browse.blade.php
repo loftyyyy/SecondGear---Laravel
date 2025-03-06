@@ -19,7 +19,6 @@
         </div>
     </div>
 
-    <!-- Search Box - Left Side -->
     <div class="row-span-4 row-start-2 relative p-4 mb-4">
         <h2 class="flex text-4xl font-bold text-white justify-start mt-8 ml-10">Car Search</h2> 
         <div class="flex justify-between mx-10 py-6 flex-wrap"> 
