@@ -1,12 +1,14 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('landing');
+})->name('landing');
 
+<<<<<<< HEAD
 Route::get('cartest', function () {
     return view('cartest');
 });
@@ -35,15 +37,35 @@ Route::get('carselect', function(){
 Route::get('practice', function(){
     return view('practice');
 });
+=======
+>>>>>>> b211cde343aa28f36ab279d99a49ab02dc09a8ab
 
 Route::get('landing', function(){
+    if(Auth::check()){
+        return redirect()->route('browse');
+    }
     return view('landing');
 });
+
+
+Route::post('/userLogin', [AuthController::class, 'login'])->name('users.login');
+Route::post('/userRegister', [AuthController::class, 'register'])->name('users.register');
 
 Route::get('browse', function(){
     return view('browse');
 
-});
+})->name("browse");
+
+// Fix middleware redirection
+// Route::middleware('auth')->group(function () {
+//     Route::get('browse', function(){
+//         return view('browse');
+ 
+//     })->name("browse");
+// });
+
+Route::post('/', [AuthController::class, 'logout'])->name('users.logout');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
