@@ -21,6 +21,10 @@ Route::get('landing', function(){
 Route::post('/userLogin', [AuthController::class, 'login'])->name('users.login');
 Route::post('/userRegister', [AuthController::class, 'register'])->name('users.register');
 
+Route::get('browse', function(){
+    return view('browse');
+
+})->name("browse");
 
 // Fix middleware redirection
 // Route::middleware('auth')->group(function () {
