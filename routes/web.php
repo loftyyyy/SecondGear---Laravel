@@ -34,10 +34,7 @@ Route::get('browse', function(){
 //     })->name("browse");
 // });
 
-Route::get('test', function(){
-    return view('index');
-
-})->name('index');
+Route::post('/', [AuthController::class, 'logout'])->name('users.logout');
 
 
 Route::get('/dashboard', function () {
