@@ -20,29 +20,18 @@
 
 <div class="grid grid-cols-5 grid-rows-none gap-0 max-w-full">
 
-<<<<<<< HEAD
-    <div class="col-span-5 relative p-0 mb-0">
-=======
     <div class="col-span-5 relative z-50 p-0 mb-0">
->>>>>>> bb3eb5f6a64f2bf83a49edbdc93e95ac11d514a1
         <div class="top-0 right-0 py-0">
             @include('partials.header')
         </div>
     </div>
 
     <!-- Search Box - Left Side -->
-<<<<<<< HEAD
-    <div class="row-span-4 row-start-2 relative p-2 mb-4 ">
-    <h2 class="flex text-4xl font-bold text-white justify-start mt-8">Car Search</h2> 
-        <div class="flex justify-between mx-4 py-6 flex-wrap"> 
-            <div class="w-full p-3 bg-white border border-gray-200 rounded-lb shadow-sm"> 
-                
-=======
     <div class="row-span-4 row-start-2 relative p-4 mb-4">
         <h2 class="flex text-4xl font-bold text-white justify-start mt-8 ml-10">Car Search</h2> 
         <div class="flex justify-between mx-10 py-6 flex-wrap"> 
             <div class="w-full p-5 bg-white border border-gray-200 rounded-lg shadow-sm"> 
->>>>>>> bb3eb5f6a64f2bf83a49edbdc93e95ac11d514a1
+
                 <ul class="mt-4 text-lg text-black">
                     <li>Stock/Modifies</li>
                     <li>Brand</li>
@@ -87,18 +76,6 @@
     
 
     <!-- Brand Box - Right Side -->
-<<<<<<< HEAD
-    <div class="col-span-4 row-start-2 relative mt-10 ml-6">
-    <h2 class="flex text-4xl font-bold text-white justify-start mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
-        <!-- <div class="absolute top-0 right-0 bg-pink-500 text-white px-2 py-1 text-xs rounded-bl-lg">X</div> -->
-        <div class="w-full flex justify-start items-start p-0 left-0 right-0"> 
-            <ul class="flex flex-wrap space-x-14">
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford"></li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/28/de/bc/28debc1fb8adadc2346392696b59cf06.jpg" alt="Honda"> </li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/35/5b/5d/355b5d54a7da4e61b0806d0273337cfc.jpg" alt="Kia"> </li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/bf/1d/5d/bf1d5d3949d184d21e0886368cf9c27f.jpg" alt="Honda"></li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center"> <img src="https://i.pinimg.com/736x/1c/df/e6/1cdfe69ed9925a45aab3a6179425113c.jpg" alt="Audi"></li>
-=======
     <div class="col-span-4 row-start-2 relative mt-10">
         <h2 class="flex text-4xl font-bold text-white justify-start ml-10 mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
         <div class="w-full overflow-x-auto px-6"> 
@@ -118,32 +95,20 @@
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center flex-shrink-0"> 
                     <img src="https://i.pinimg.com/736x/1c/df/e6/1cdfe69ed9925a45aab3a6179425113c.jpg" alt="Audi" class="h-full w-auto mx-auto">
                 </li>
->>>>>>> bb3eb5f6a64f2bf83a49edbdc93e95ac11d514a1
             </ul>
         </div>
     </div>
 
     <!-- Car Listed -->
-<<<<<<< HEAD
-     
     <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative p-2">
-        <h2 class="flex text-4xl font-bold text-white justify-start ml-4 mb-6 -mt-28">Best Match</h2>
+        <h2 class="flex text-4xl font-bold text-white justify-start ml-4 mb-6 -mt-30">Best Match</h2>
             <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg -mt-10">
                 @include('cartest')
             </div>
-=======
-    <div class="col-span-4 row-span-3 col-start-2 row-start-3 relative p-4 mt-10">
-        <div class="px-2 py-1 text-xs rounded-bl-lg">
-            @include('cartest')
->>>>>>> bb3eb5f6a64f2bf83a49edbdc93e95ac11d514a1
-        </div>
-    </div>
     
     
 
 </div>
-
-
 
 
 <style>
