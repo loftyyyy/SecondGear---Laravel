@@ -26,59 +26,7 @@
         </div>
     </div>
 
-<<<<<<< HEAD
     @include('carsearch')
-=======
-    <div class="row-span-4 row-start-2 relative p-4 mb-4">
-        <h2 class="flex text-4xl font-bold text-white justify-start mt-8 ml-10">Car Search</h2> 
-        <div class="flex justify-between mx-10 py-6 flex-wrap"> 
-            <div class="w-full p-5 bg-white border border-gray-200 rounded-lg shadow-sm"> 
-
-                <ul class="mt-4 text-lg text-black">
-                    <li>Stock/Modifies</li>
-                    <li>Brand</li>
-                    <li>Model</li>
-                    <li>From Price</li>
-                    <li>From Year</li>
-                    <li>Region</li>
-                    <li>City</li>
-                    <li>Transmission</li>
-                    <li>Color</li>
-                    <li>Body Type</li>
-                    <li>
-                        <button class="bg-green-400 text-black p-2 rounded hover:bg-green-700 w-full mt-4">Search</button> 
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <h2 class="text-4xl font-bold text-white justify-start mt-8">Car For Sale</h2> 
-        <div class="flex justify-between mx-4 py-6 flex-wrap"> 
-            <div class="w-full p-3 bg-white border border-gray-200 rounded-lb shadow-sm"> 
-                
-                <ul class="mt-4 text-lg text-black">
-                    <li> <a href="">Toyota</a></li>
-                    <li> <a href="">Ford</a></li>
-                    <li> <a href="">Mitsubishi</a></li>
-                    <li> <a href="">Hyundai</a></li>
-                    <li> <a href="">Nissan</a></li>
-                    <li> <a href="">Subaru</a></li>
-                    <li> <a href="">Suzuki</a></li>
-                    <li> <a href="">Mazda</a></li>
-                    <li> <a href=""></a></li>
-                    <hr>
-                    <li>
-                        <button class="flex text-[#2070D2] p-2 rounded  w-full mt-0 justify-end">Show More <i class="fa-solid fa-circle-arrow-right ml-2 mt-1"></i></button>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    
-    
-    
->>>>>>> c8007740a40a29221bda10aedfbe5979bddc1e52
 
     <!-- Brand Box - Right Side -->
     <div class="col-span-10 row-span-2 col-start-3 row-start-2 mt-10 ml-24">
@@ -135,6 +83,7 @@
             opacity: 1;
         }
     }
+    
 </style>
 
 </body>
