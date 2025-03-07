@@ -8,37 +8,10 @@ Route::get('/', function () {
     return view('landing');
 })->name('landing');
 
-<<<<<<< HEAD
-Route::get('cartest', function () {
-    return view('cartest');
-});
+Route::get('carsearch', function(){
+    return view('carsearch');
+})->name('carsearch');
 
-Route::get('aboutus', function(){
-    return view('aboutus');
-});
-
-Route::get('footer', function () {
-    return view('footer');
-});
-
-Route::get('test', function () {
-    return view('test');
-
-});
-
-Route::get('header', function(){
-    return view('header');
-});
-
-Route::get('carselect', function(){
-    return view('carselect');
-});
-
-Route::get('practice', function(){
-    return view('practice');
-});
-=======
->>>>>>> b211cde343aa28f36ab279d99a49ab02dc09a8ab
 
 Route::get('landing', function(){
     if(Auth::check()){

@@ -15,11 +15,7 @@ export default {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
                 encode: ['"Encode Sans Expanded"', 'sans-serif'],
                 future: ["'Future Forces'", "sans-serif"],
-<<<<<<< HEAD
-                exo: ["'Exo 3'", "sans-serif"]
-=======
                 exo: ["Exo 3", "sans-serif"],
->>>>>>> b211cde343aa28f36ab279d99a49ab02dc09a8ab
             },
         },
     },
