@@ -305,13 +305,13 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-1 gap-4 ml-4">
+        <!-- <div class="grid grid-cols-1 gap-4 ml-4">
             <div class="flex justify-center mt-4">
                 <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-full hover:bg-blue-700">
                 Load More
                 </button>
             </div>
-        </div>
+        </div> -->
 
  
 </div>

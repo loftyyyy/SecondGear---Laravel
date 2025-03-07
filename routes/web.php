@@ -4,6 +4,15 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('carselect', function () {
+    return view('carselect');
+})->name('carselect');
+
+Route::get('carsearch', function () {
+    return view('carsearch');
+})->name('carsearch');
+
+
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
