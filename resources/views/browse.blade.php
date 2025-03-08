@@ -60,8 +60,8 @@
         <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
             @include('cartest')
             <div class="grid col-span-2 row-span-6 col-start-2 row-start-3 relative ">
-            <div class="flex justify-center mt-4 text-2xl mr-10">
-                <button id="loadMore" class="bg-blue-500 text-white font-bold text-64px py-2 px-4 rounded w-64 hover:bg-blue-700 h-24">
+            <div class="flex justify-center mt-4 text-xl mr-10">
+                <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-700 h-18">
                 Load More
                 </button>
             </div>
@@ -70,7 +70,7 @@
     </div>
 
     
-    <div class="col-span-10 row-span-8 col-start-3 row-start-10 relative p-2 ml-24 mt-36">
+    <div class="col-span-10 row-span-8 col-start-3 row-start-10 relative p-2 ml-24 mt-20">
     <div class="px-2 py-1 text-xs rounded-bl-lg">
         <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Market Overview</h2>
         <div>
