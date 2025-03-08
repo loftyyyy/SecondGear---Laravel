@@ -61,7 +61,7 @@
             @include('cartest')
             <div class="grid col-span-2 row-span-6 col-start-2 row-start-3 relative ">
             <div class="flex justify-center mt-4 text-xl mr-10">
-                <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-700 h-18">
+                <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-600 hover:text-black h-18">
                 Load More
                 </button>
             </div>
