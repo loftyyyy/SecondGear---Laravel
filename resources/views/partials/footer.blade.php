@@ -14,7 +14,8 @@
     <title>Footer</title>
 </head>
 <body class="font-robota">
-    
+
+
 <div class="w-full bg-[#001C80] text-white flex justify-between items-center p-4 ">
     <div id="menu-left" class="hidden md:flex bg-[#001C80] text-white mx-10">
         <ul class="flex space-x-6 p-4 gap-5">
@@ -42,7 +43,7 @@
 
 
     
-<main class="md:flex bg-[#223D68] text-white p-4 h-full items-center justify-center">
+<main class="md:flex bg-[#223D68] text-white p-4 h-52 items-center justify-center">
     <div class="flex-shrink-0 w-1/3"> <!-- Set a fixed width on the div -->
         <img src="photos/footer.png" alt="footer image" class="w-full"> <!-- Make the image take the full width of the div -->
     </div>
@@ -56,11 +57,11 @@
     </div>
 </main>
 
-<div class="md:flex flex-col bg-[#223D68] p-4 h-full items-center justify-center text-white">
+<div class="md:flex flex-col bg-[#223D68] p-4 h-40 items-center justify-center text-white">
     <hr class="border-white w-full my-4"> 
     <h3 class="text-center">Copyright © 2025 SecondGear.com. All rights reserved</h3>
 </div>
-
+</div>
 
 
 </body>
