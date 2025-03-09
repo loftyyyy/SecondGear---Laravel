@@ -41,13 +41,13 @@
 
 
 
-    
+<!-- <link rel="icon" type="image/x-icon" href="picbank/2nd Gear Logo.svg">   -->
 <main class="md:flex bg-[#223D68] text-white p-4 h-full items-center justify-center">
     <div class="flex-shrink-0 w-1/3"> <!-- Set a fixed width on the div -->
-        <img src="photos/footer.png" alt="footer image" class="w-full"> <!-- Make the image take the full width of the div -->
+        <img src="picbank/2nd Gear Logo (White).svg" alt="footer image" class="w-full mt-1000px"> <!-70- Make the image take the full width of the div -->
     </div>
     
-    <div class="text-left ml-0 p-0 mt-20"> <!-- Added negative margin-top -->
+    <div class="text-left ml-0 p-0 .mt-20"> <!-- Added negative margin-top -->
         <h3 class="text-4xl font-bold mb-4">SECOND GEAR INC.</h3> <!-- Reduced margin-bottom -->
         <p class="text-base mb-4"><i class="fa-solid fa-location-dot"></i>  Purok 5, Manuel Guianga, Tugbok <br>
         Davao City, Philippines</p>

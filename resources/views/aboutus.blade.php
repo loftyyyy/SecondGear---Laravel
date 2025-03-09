@@ -16,9 +16,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
 </head>
 <body class="font-sans dark:bg-black dark:text-white/50">
-<div id="intro" class="w-full relative pb-3 mx-auto bg-white-500 text-center z-10">
-            <img id="Team Hilux" src="picbank\Team Hilux.jpg" alt="Team Hilux" class="relative mx-auto animate-[slideIn_0.5s_ease-out] z-10">
-        </div>
+
+<div class="text-center">
+    <h6 class="text-xl mt-90 " >Welcome  to</h6>
+    <h1 class="text-5xl font-bold text-blue-800 " >Second Gear<h1>
+
+    <div class="w-96 h-64 overflow-hidden">
+        <img src="picbank/Team Hilux.jpg" alt="Team Hilux Picture" class="w-full h-full">
+    </div>
+<!-- <div id="BG_pic" class="w-full relative pb-3 mx-auto bg-white-500 text-center z-10"> -->
+            <!-- <img id="Team Hilux" src="picbank\Team Hilux.jpg" alt="Team Hilux" class="relative mx-auto animate-[slideIn_0.5s_ease-out] z-10"> -->
+</div>
 </body>
 </html>
 

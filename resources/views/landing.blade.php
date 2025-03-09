@@ -11,9 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  
+    <link rel="icon" type="image/png" href="/picbank/2nd Gear Logo.svg" sizes="16x16">
+    
 </head>
 
 <body class="font-sans dark:bg-black dark:text-white/50">
+    
 
     <header class="p-1 bg-black fixed z-50 left-0 right-0 top-0 bg-opacity-90 backdrop-blur-sm shadow-sm">
         <div class="flex items-center justify-between container mx-auto">

@@ -12,6 +12,10 @@ Route::get('carsearch', function () {
     return view('carsearch');
 })->name('carsearch');
 
+Route::get('aboutus', function(){
+    return view('aboutus');
+})->name('aboutus');
+
 
 Route::get('/', function () {
     return view('landing');
