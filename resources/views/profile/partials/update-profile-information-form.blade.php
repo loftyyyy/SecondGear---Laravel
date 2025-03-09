@@ -13,16 +13,39 @@
         @csrf
     </form>
 
-    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6">
+    <form method="post" action="{{ route('profile.update') }}" class="mt-6 space-y-6" enctype="multipart/form-data">
         @csrf
         @method('patch')
+        
+        <!-- Profile Picture -->
+        <!-- <div>
+            <x-input-label for="profile_picture" :value="__('Profile Picture')" />
+            
+            <div class="mt-2 flex items-center">
+                @if (Auth::user()->profile_picture)
+                    <div class="mr-4">
+                        <img class="h-20 w-20 rounded-full object-cover" 
+                             src="{{ asset('storage/' . Auth::user()->profile_picture) }}" 
+                             alt="{{ Auth::user()->name }}'s profile picture">
+                    </div>
+                @endif
+                <x-text-input id="profile_picture" 
+                              name="profile_picture" 
+                              type="file" 
+                              class="mt-1 block w-full" 
+                              :value="old('profile_picture')" />
+            </div>
+            <x-input-error class="mt-2" :messages="$errors->get('profile_picture')" />
+        </div> -->
 
+        <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" name="name" type="text" class="mt-1 block w-full" :value="old('name', $user->name)" required autofocus autocomplete="name" />
             <x-input-error class="mt-2" :messages="$errors->get('name')" />
         </div>
 
+        <!-- Email -->
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" name="email" type="email" class="mt-1 block w-full" :value="old('email', $user->email)" required autocomplete="username" />
@@ -56,8 +79,8 @@
                     x-show="show"
                     x-transition
                     x-init="setTimeout(() => show = false, 2000)"
-                    class="text-sm text-gray-600 dark:text-gray-400"
-                >{{ __('Saved.') }}</p>
+                    class="text-sm text-green-600 dark:text-green-600"
+                >{{ __('Saved Successfully!') }}</p>
             @endif
         </div>
     </form>
