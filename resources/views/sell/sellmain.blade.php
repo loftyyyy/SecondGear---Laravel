@@ -17,56 +17,57 @@
 <body class="font-sans dark:bg-black dark:text-white/50 overflow-x-hidden"> 
     @include('partials.header')
 
-    <div class="flex justify-start text-white text-3xl font-bold p-4 m-4">
+    <div class="flex justify-start text-white text-3xl font-bold p-8">
         <header>Create a Listing to Sell your Car</header>
     </div>
 
-    <div class="text-white m-8 rounded-lg p-8">
+    <div class="text-white m-8 rounded-lg px-36">
         <h2 class="text-4xl font-bold ml-4">Vehicle Information</h2>
         <h4 class="mb-4 ml-4">Provide accurate details about your car</h4>
 
         @include('sell.gen_info')
     </div>
 
-    <div class="flex flex-col items-center border border-white p-6 w-full m-4 rounded-lg">
-        <h1 class="text-2xl font-semibold mb-6">SAFETY FEATURES</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full text-xl text-white">
+    <div class="text-white m-8 rounded-lg px-36">
+    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
+        <h1 class="text-3xl font-bold mb-6">SAFETY FEATURES</h1>
+        <div class="grid grid-cols-3 gap-4 w-10/12 text-xl text-white">
             <div class="flex items-center">
-                <input type="checkbox" id="airbags" class="mr-2">
+                <input type="checkbox" id="airbags" class="mr-4">
                 <label for="airbags" class="text-white-700">Driver and Passenger Airbags</label>
             </div>
             <div class="flex items-center">
-                <input type="checkbox" id="brake_assist" class="mr-2">
-                <label for="brake_assist" class="text-gray-700">Brake Assist</label>
+                <input type="checkbox" id="brake_assist" class="mr-4">
+                <label for="brake_assist" class="text-white-700">Brake Assist</label>
             </div>
             <div class="flex items-center">
-                <input type="checkbox" id="security_alarm" class="mr-2">
-                <label for="security_alarm" class="text-gray-700">Security Alarm</label>
+                <input type="checkbox" id="security_alarm" class="mr-4">
+                <label for="security_alarm" class="text-white-700">Security Alarm</label>
             </div>
             <div class="flex items-center">
-                <input type="checkbox" id="traction_control" class="mr-2">
-                <label for="traction_control" class="text-gray-700">Traction Control</label>
+                <input type="checkbox" id="traction_control" class="mr-4">
+                <label for="traction_control" class="text-white-700">Traction Control</label>
             </div>
             <div class="flex items-center">
-                <input type="checkbox" id="central_locking" class="mr-2">
-                <label for="central_locking" class="text-gray-700">Central Locking</label>
+                <input type="checkbox" id="central_locking" class="mr-4">
+                <label for="central_locking" class="text-white-700">Central Locking</label>
             </div>
             <div class="flex items-center">
-                <input type="checkbox" id="immobilizer" class="mr-2">
-                <label for="immobilizer" class="text-gray-700">Immobilizer</label>
+                <input type="checkbox" id="immobilizer" class="mr-4">
+                <label for="immobilizer" class="text-white-700">Immobilizer</label>
             </div>
         </div>
     </div>
 
-    <div class="flex flex-col items-center border border-white p-6 w-full m-4 rounded-lg"> 
-        <h1 class="text-2xl font-semibold mb-4">Car Price</h1>
+    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg"> 
+        <h1 class="text-3xl font-bold mb-4">Car Price</h1>
         <label for="price" class="text-gray-700">Price</label>
         <input type="text" name="price" id="price" required class="mt-2 p-2 border border-gray-300 rounded w-full max-w-xs">
     </div>
-
-    <div class="flex flex-col items-center border border-white p-6 w-full m-4 rounded-lg">
+ 
+    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
     <div class="bg-black p-6 rounded-lg shadow-md w-full max-w-md">
-        <h2 class="text-xl font-semibold mb-2">Photos</h2>
+        <h2 class="text-3xl font-bold mb-2">Photos</h2>
         <p class="text-gray-600 mb-4">Add photos of your car (minimum of 4 photos recommended)</p>
         <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
             <div class="flex flex-col items-center justify-center h-full">
@@ -81,13 +82,31 @@
             <p>4 more photos recommended</p>
         </div>
     </div>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </div>
 
-        <div class="flex flex-col items-center border border-white p-6 w-full m-4 rounded-lg">
-    <h1 class="text-2xl font-semibold mb-4">Contact Information</h1>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+<div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
+                <h1 class="text-3xl font-bold mb-4">Upload OR/CR</h1>
+                <div class="bg-black p-6 rounded-lg shadow-md w-full max-w-md">
+                    <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                        <div class="flex flex-col items-center justify-center h-full">
+                            <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
+                            <p class="text-gray-600 mb-1">Click to upload or drag and drop</p>
+                            <p class="text-gray-400 text-sm">PNG, JPG or PDF (MAX. 5MB)</p>
+                        </div>
+                    </div>
+                    <div class="mt-4 text-gray-500 flex items-center">
+                        <i class="fas fa-info-circle mr-2"></i>
+                        <p>Upload your OR/CR document</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-white m-8 rounded-lg px-36">
+        <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
+    <h1 class="text-3xl font-bold mb-4">Contact Information</h1>
+
+    <div class="p-4 grid grid-cols-2 gap-10 w-full max-w-5xl mx-auto font-medium text-white">
         <div>
             <label for="name" class="text-gray-700">Seller Name</label>
             <input type="text" name="name" id="name" required class="mt-2 p-2 border border-gray-300 rounded w-full">
@@ -118,6 +137,7 @@
             <input type="text" name="address" id="address" required class="mt-2 p-2 border border-gray-300 rounded w-full">
         </div>
     </div>
+</div>
 </div>
 
 <div class="flex justify-center mt-6">
