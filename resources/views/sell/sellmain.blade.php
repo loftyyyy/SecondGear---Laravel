@@ -59,11 +59,17 @@
         </div>
     </div>
 
-    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg"> 
-        <h1 class="text-3xl font-bold mb-4">Car Price</h1>
-        <label for="price" class="text-gray-700">Price</label>
-        <input type="text" name="price" id="price" required class="mt-2 p-2 border border-gray-300 rounded w-full max-w-xs">
+    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg  shadow-md">
+    <h1 class="text-3xl font-bold mb-4 flex items-center">
+    <i class="fa-solid fa-peso-sign m-2"></i>Car Price
+    </h1>
+    <div class="relative w-full max-w-xs">
+        <input type="text" name="price" id="price" required class="mt-2 p-2 border border-gray-300 rounded w-full bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 pl-10" placeholder="Enter price">
+        <span class="absolute left-3 top-2.5 text-gray-400">
+            <i class="fas fa-money-bill-wave mt-3 w-10 h-10"></i>
+        </span>
     </div>
+</div>
  
     <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
     <div class="bg-black p-6 rounded-lg shadow-md w-full max-w-md">
@@ -108,33 +114,33 @@
 
     <div class="p-4 grid grid-cols-2 gap-10 w-full max-w-5xl mx-auto font-medium text-white">
         <div>
-            <label for="name" class="text-gray-700">Seller Name</label>
-            <input type="text" name="name" id="name" required class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <label for="name" class="text-white-700">Seller Name</label>
+            <input type="text" name="name" id="name" required class="mt-2 p-2 border border-gray-300 text-black rounded w-full">
         </div>
 
         <div>
-            <label for="email" class="text-gray-700">Email</label>
-            <input type="email" name="email" id="email" required class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <label for="email" class="text-white-700">Email</label>
+            <input type="email" name="email" id="email" required class="mt-2 p-2 border border-gray-300 text-black rounded w-full">
         </div>
 
         <div>
-            <label for="city" class="text-gray-700">City</label>
-            <input type="text" name="city" id="city" required class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <label for="city" class="text-white-700">City</label>
+            <input type="text" name="city" id="city" required class="mt-2 p-2 border border-gray-300 text-black rounded w-full">
         </div>
 
         <div>
-            <label for="phone" class="text-gray-700">Phone Number</label>
-            <input type="text" name="phone" id="phone" required class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <label for="phone" class="text-white-700">Phone Number</label>
+            <input type="text" name="phone" id="phone" required class="mt-2 p-2 border border-gray-300 text-black rounded w-full">
         </div>
 
         <div>
-            <label for="facebook" class="text-gray-700">Facebook Account</label>
-            <input type="text" name="facebook" id="facebook" required class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <label for="facebook" class="text-white-700">Facebook Account</label>
+            <input type="text" name="facebook" id="facebook" required class="mt-2 p-2 border border-gray-300 text-black rounded w-full">
         </div>
 
         <div>
-            <label for="address" class="text-gray-700">Address</label>
-            <input type="text" name="address" id="address" required class="mt-2 p-2 border border-gray-300 rounded w-full">
+            <label for="address" class="text-white-700">Address</label>
+            <input type="text" name="address" id="address" required class="mt-2 p-2 border border-gray-300 text-black rounded w-full">
         </div>
     </div>
 </div>
