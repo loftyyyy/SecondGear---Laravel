@@ -59,10 +59,57 @@
     <h2 class="flex text-4xl font-bold text-white justify-start ml-4 mb-6 -mt-18">Best Match</h2>
         <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
             @include('cartest')
+            <div class="grid col-span-2 row-span-6 col-start-2 row-start-3 relative ">
+            <div class="flex justify-center mt-4 text-xl mr-10">
+                <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-600 hover:text-black h-18">
+                Load More
+                </button>
+            </div>
+        </div>
         </div>
     </div>
 
+    
+    <div class="col-span-10 row-span-8 col-start-3 row-start-10 relative p-2 ml-24 mt-20">
+    <div class="px-2 py-1 text-xs rounded-bl-lg">
+        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Market Overview</h2>
+        <div>
+            <p class="bg-white text-black p-5 text-base shadow-sm">
+            Car for sale Philippines in the past year, although affected by covid, are still quite active. Despite many difficulties in 2022, the Philippine market still consumes a large number of cars. The ranking of best-selling cars includes familiar faces from companies such as Honda, Hyundai, Ford, etc. In which, Toyota is still the car company that is most favored by customers with the Toyota Vios model.
+
+            For body types, 837 Suv, 010 Sedan, 327 Hatchback, 427 Mpv, and 267 Van are the choice of most drivers. 
+            Many people choose the lowest price segment is the 2020 Sentra (petrol manual model), which costs ₱70,000. While the highest one is the 2017 A3 Sedan (automatic petrol model), which costs ₱90 Million.
+            </p>
+        </div>
+    </div>
+
+    <div class="px-2 py-1 text-xs rounded-bl-lg mt-4">
+        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Most Popular Cars in the Philippines</h2>
+        <div>
+            <p class="bg-white text-black p-5 text-base shadow-sm">
+            Toyota, Mitsubishi, Nissan, Ford and Suzuki are the most popular car brands in the Philippines. There are 1023
+            Toyota cars, 430 Ford cars, 345 Mitsubishi cars, 187 Nissan cars, 94 Suzuki cars present on Philkotse. This
+            number of vehicles includes both new and used cars for sale in Philippines.
+            </p>
+        </div>
+    </div>
+
+    <div class="px-2 py-1 text-xs rounded-bl-lg mt-4">
+        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Reputable Dealer in the Philippines</h2>
+        <div>
+            <p class="bg-white text-black p-5 text-base shadow-sm">
+            Toyota, Mitsubishi, Nissan, Ford and Suzuki are the most popular car brands in the Philippines. There are 1023
+            Toyota cars, 430 Ford cars, 345 Mitsubishi cars, 187 Nissan cars, 94 Suzuki cars present on Philkotse. This
+            number of vehicles includes both new and used cars for sale in Philippines.
+            </p>
+        </div>
+    </div>
+
+   
+
 </div>
+
+
 
 <style>
     ::-webkit-scrollbar {
@@ -85,6 +132,7 @@
     }
     
 </style>
+
 
 </body>
 </html>

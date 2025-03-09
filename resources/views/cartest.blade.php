@@ -33,7 +33,7 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
                             <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
@@ -71,10 +71,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -108,10 +108,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -145,10 +145,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -182,10 +182,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -219,10 +219,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -256,10 +256,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <<button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -293,10 +293,10 @@
                             <span class="text-2xl font-bold text-[#000080]">$27,999</span>
                         </div>
                         <div class="flex space-x-4 w-full max-w-md">
-                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-200 transition duration-200 flex-1">
+                            <button class="border-2 border-[#000080] rounded-md p-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1">
                                 <span class="text-sm">Make an Offer</span>
                             </button>
-                            <button class="bg-[#000080] text-white p-2 rounded-md flex-1">
+                            <button class="bg-[#000080] text-white hover:bg-blue-300 hover:text-black hover:border-black  border-2 p-2 rounded-md flex-1">
                                 <span class="text-sm">Call Seller</span>
                             </button>
                         </div>
@@ -305,9 +305,9 @@
             </div>
         </div>
 
-        <!-- <div class="grid grid-cols-1 gap-4 ml-4">
-            <div class="flex justify-center mt-4">
-                <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-full hover:bg-blue-700">
+        <!-- <div class="grid col-span-2 row-span-6 col-start-2 row-start-3 relative ">
+            <div class="flex justify-center mt-4 text-2xl mr-10">
+                <button id="loadMore" class="bg-blue-500 text-white font-bold text-64px py-2 px-4 rounded w-64 hover:bg-blue-700 h-24">
                 Load More
                 </button>
             </div>

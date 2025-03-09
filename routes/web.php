@@ -8,6 +8,10 @@ Route::get('carselect', function () {
     return view('carselect');
 })->name('carselect');
 
+Route::get('sell/sellmain', function () {
+    return view('sell.sellmain'); 
+})->name('sell/sellmain');
+
 Route::get('carsearch', function () {
     return view('carsearch');
 })->name('carsearch');
