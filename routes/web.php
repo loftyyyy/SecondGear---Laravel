@@ -4,9 +4,30 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('carselect', function () {
+    return view('carselect');
+})->name('carselect');
+
+Route::get('sell/sellmain', function () {
+    return view('sell.sellmain'); 
+})->name('sell/sellmain');
+
+Route::get('carsearch', function () {
+    return view('carsearch');
+})->name('carsearch');
+
+Route::get('aboutus', function(){
+    return view('aboutus');
+})->name('aboutus');
+
+
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
+
+Route::get('carsearch', function(){
+    return view('carsearch');
+})->name('carsearch');
 
 
 Route::get('landing', function(){
@@ -14,7 +35,6 @@ Route::get('landing', function(){
         return redirect()->route('browse');
     }
     return view('landing');
-
 });
 
 
