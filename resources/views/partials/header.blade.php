@@ -52,7 +52,7 @@
             <ul class="flex font-exo w-full p-4">
                 <li class="mr-8 {{request()->is('home') ? 'underline font-bold' : ''}}"><a href="/browse">Home</a></li>
                 <li class="mr-8 {{request()->is('browse') ? 'underline font-bold' : ''}}"><a href="/sell">Browse Cars</a></li>
-                <li class="mr-8 {{request()->is('about') ? 'underline font-bold' : ''}}"><a href="/login">About us</a></li>
+                <li class="mr-8 {{request()->is('about') ? 'underline font-bold' : ''}}"><a href="aboutus">About us</a></li>
                 <li class="mr-8 {{request()->is('contact') ? 'underline font-bold' : ''}} "><a href="/register">Contact us</a></li>
             </ul>
         </div>
