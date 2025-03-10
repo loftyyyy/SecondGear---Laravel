@@ -25,7 +25,7 @@
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
                 </svg>
 
-                <h2 class="text-[#F2F2F2]  text-3xl rounded-md font-future">Second Gear</h2>
+                <h2 class="text-[#F2F2F2]  text-3xl rounded-md -futurefont">Second Gear</h2>
             </div>
 
 

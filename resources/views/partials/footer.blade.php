@@ -34,9 +34,9 @@
     
     <!-- TODO: To be fixed, overlapping when changing different screen size -->
     <div id="socials" class="flex space-x-6 gap-6 mx-10">
-        <ul><a href="https://www.simplilearn.com/tutorials/css-tutorial/how-to-align-center-work-css"></a><i class="fab fa-facebook"></i></ul>
-        <ul><a href=""></a><i class="fab fa-instagram"></i></ul>
-        <ul><a href=""></a><i class="fab fa-twitter"></i></ul>
+        <ul><a href="https://www.simplilearn.com/tutorials/css-tutorial/how-to-align-center-work-css"><i class="fab fa-facebook"></i></a></ul>
+        <ul><a href=""><i class="fab fa-instagram"></i></a></ul>
+        <ul><a href=""><i class="fab fa-twitter"></i></a></ul>
     </div>
 </div>
 
@@ -45,10 +45,10 @@
 <!-- <link rel="icon" type="image/x-icon" href="picbank/2nd Gear Logo.svg">   -->
 <main class="md:flex bg-[#223D68] text-white p-4 h-full items-center justify-center">
     <div class="flex-shrink-0 w-1/3"> <!-- Set a fixed width on the div -->
-        <img src="picbank/2nd Gear Logo (White).svg" alt="footer image" class="w-full mt-1000px"> <!-70- Make the image take the full width of the div -->
+        <img src="picbank/2nd Gear Logo (White).svg" alt="footer image" class="w-[300px] h-[300px] ml-[150px]"> 
     </div>
     
-    <div class="text-left ml-0 p-0 .mt-20"> <!-- Added negative margin-top -->
+    <div class="text-left mr-0 p-0 .mt-20"> <!-- Added negative margin-top -->
         <h3 class="text-4xl font-bold mb-4">SECOND GEAR INC.</h3> <!-- Reduced margin-bottom -->
         <p class="text-base mb-4"><i class="fa-solid fa-location-dot"></i>  Purok 5, Manuel Guianga, Tugbok <br>
         Davao City, Philippines</p>

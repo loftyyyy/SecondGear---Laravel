@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body class="font-sans dark:bg-black dark:text-white/50 overflow-x-hidden">   
@@ -192,7 +193,7 @@
     </div>
 
     <!-- Reputable Dealer Section -->
-    <div class="col-span-10 col-start-3 mt-4 ml-24">
+    <div class="col-span-10 col-start-3 mt-4 ml-24 mb-4">
         <div class="bg-[#2193F0] text-white text-2xl font-bold p-4">
             Reputable Dealer in the Philippines
         </div>
