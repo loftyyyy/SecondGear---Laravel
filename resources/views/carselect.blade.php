@@ -51,7 +51,7 @@
             <div class="bg-white h-[40px] flex justify-center items-center w-96 ml-8">
                 <li class="m-2 text-orange-400 text-[20px] font-bold rounded-lg">Price Drop Alert</li>
             </div>
-            <div class="text-black bg-white rounded-lg p-4 m-8 w-96  text-[20px] font-bold">
+            <div class="text-black bg-white rounded-lg p-4 m-8 w-96  text-[20px] font-bold h-[480px]">
                 <li class="my-4" > <i class="fa-solid fa-car mx-2"></i> Porsche</li>
                 <hr>
                 <li class="my-4"> <i class="fa-solid fa-calendar mx-2"></i> 2016</li>
@@ -63,30 +63,33 @@
                 <li class="my-4"> <i class="fa-solid fa-gears mx-2"></i> Automatic</li>
                 <hr>
                 <li class="my-4"> <i class="fa-solid fa-gauge-high mx-2"></i> 6,700km</li>
+                <hr>
+                <li class="my-4"> <i class="fa-solid fa-car mx-2"></i> Coupe</li>
+                <hr>
             </div>
         </ul>
     </div>
 
     
     <div class="col-span-10 row-span-10 col-start-3 row-start-3 relative p-2 ml-24 mt-48">
-    <div class="px-2 py-1 text-xs rounded-bl-lg">
-        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Market Overview</h2>
-        <div>
-            <p class="bg-white text-black p-5 text-base shadow-sm">
-            Car for sale Philippines in the past year, although affected by covid, are still quite active. Despite many difficulties in 2022, the Philippine market still consumes a large number of cars. The ranking of best-selling cars includes familiar faces from companies such as Honda, Hyundai, Ford, etc. In which, Toyota is still the car company that is most favored by customers with the Toyota Vios model.
+        <div class="px-2 py-1 text-xs rounded-bl-lg">
+            <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Market Overview</h2>
+            <div>
+                <p class="bg-white text-black p-5 text-base shadow-sm">
+                Car for sale Philippines in the past year, although affected by covid, are still quite active. Despite many difficulties in 2022, the Philippine market still consumes a large number of cars. The ranking of best-selling cars includes familiar faces from companies such as Honda, Hyundai, Ford, etc. In which, Toyota is still the car company that is most favored by customers with the Toyota Vios model.
 
-            For body types, 837 Suv, 010 Sedan, 327 Hatchback, 427 Mpv, and 267 Van are the choice of most drivers. 
-            Many people choose the lowest price segment is the 2020 Sentra (petrol manual model), which costs ₱70,000. While the highest one is the 2017 A3 Sedan (automatic petrol model), which costs ₱90 Million.
-            </p>
+                For body types, 837 Suv, 010 Sedan, 327 Hatchback, 427 Mpv, and 267 Van are the choice of most drivers. 
+                Many people choose the lowest price segment is the 2020 Sentra (petrol manual model), which costs ₱70,000. While the highest one is the 2017 A3 Sedan (automatic petrol model), which costs ₱90 Million.
+                </p>
+            </div>
         </div>
-    </div>
 
-    <div class="px-2 py-1 text-xs rounded-bl-lg mt-4 w-full h-56">
-        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Seller Information</h2>
-            <div class="bg-white    ">
-                <div class="flex p-4 gap-4 justify-start ml-6">
-                    <img class="relative w-14 h-14 rounded-full border-blue-800 border" src="https://i.pinimg.com/736x/01/b1/86/01b1865f2610479884fb6327ca449a08.jpg" alt="User  Profile">
-                <div>
+        <div class="px-2 py-1 text-xs rounded-bl-lg mt-4 w-full h-56">
+            <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Seller Information</h2>
+                <div class="bg-white    ">
+                    <div class="flex p-4 gap-4 justify-start ml-6">
+                        <img class="relative w-14 h-14 rounded-full border-blue-800 border" src="https://i.pinimg.com/736x/01/b1/86/01b1865f2610479884fb6327ca449a08.jpg" alt="User  Profile">
+                    <div>
                     <div class="flex items-center gap-2">
                         <h3 class="text-2xl text-[#2070D2] font-bold">Jonathan Sindo</h3>
                         <h4 class="text-xl text-gray-500">| Davao City</h4>
@@ -95,30 +98,65 @@
                             <h5 class="flex w-32 rounded-3xl border border-blue-300 justify-center font-semibold">Certified Seller</h5>
                             <h5 class="flex w-32 rounded-3xl border border-blue-300 justify-center font-semibold">Verified Number</h5>
                         </div>
+                    </div>
                 </div>
-            </div>
                     <div class="text-gray-500 text-lg p-4 ml-10 font-semibold">
                         <h6 class="my-2"><i class="fa-solid fa-envelope mr-4"></i>jonathansindo@gmail.com</h6>
                         <h6 class="my-2"><i class="fa-solid fa-location-pin mr-4"></i>Location sa balay nila</h6>
                         <h6 class="my-2"><i class="fa-solid fa-clock mr-4"></i>Last Log in: 2mins ago</h6>
                     </div>
 
-            <div class="text-black text-lg">
-            <button class="bg-[#2070D2] text-white p-2 rounded-sm w-52 ml-10">
-            <i class="fa-solid fa-file mr-4"></i>Ask for Qoute
-            </button>
-            <button class="bg-[#2070D2] text-white p-2 rounded-sm w-52 ml-10">
-            <i class="fa-solid fa-phone mr-4"></i>Call Seller Now</button>
-            <button class="bg-[#2070D2] text-white p-2 rounded-sm w-52 ml-10">
-            <i class="fa-brands fa-facebook-messenger mr-4"></i>Chat with seller
-        </button>
-        </div>
-            
-        </div>
-        
+                <div class="text-black text-lg p-4">
+                    <button class="bg-[#2070D2] text-white p-2 rounded-sm w-52 ml-10">
+                        <i class="fa-solid fa-file mr-4"></i>Ask for Qoute
+                    </button>
+
+                    <button class="bg-[#2070D2] text-white p-2 rounded-sm w-52 ml-10">
+                        <i class="fa-solid fa-phone mr-4"></i>Call Seller Now
+                    </button>
+
+                    <button class="bg-[#2070D2] text-white p-2 rounded-sm w-52 ml-10">
+                    <i class="fa-brands fa-facebook-messenger mr-4"></i>Chat with seller
+                    </button>
+
+                </div>
+            </div>
+
+            <div class=" py-1 text-xs rounded-bl-lg mt-4 w-full h-56">
+            <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Description</h2>
+            <div>
+                <pre class="bg-white text-black  text-base shadow-sm">
+                New Unit 
+
+                
+                Porsche 911  EX Automatic Gas
+                156K ALL IN DP
+
+                1st Owned
+                Casa Maintained
+                Fresh in and out
+                42k Mileage
+                Plate Ending 8
+                Apple Carplay / Android
+                Toucscreen Display
+                Steering Wheel Controls
+                Reverse Camera
+                All Power
+                All Original
+                All Stock
+                Verified clean papers
+                Mechanic Inspected
+                Spare key
+                Complete set of Tools, Jack & Spare Tire
+                MV
+                </pre>
+
+
+            </div>
         </div>
 
-       
+            
+        </div>
 
         
     </div>

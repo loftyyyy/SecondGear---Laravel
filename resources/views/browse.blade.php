@@ -19,8 +19,9 @@
 
 <body class="font-sans dark:bg-black dark:text-white/50 overflow-x-hidden">   
 
-<div class="grid grid-cols-12 gap-0 max-w-full">
+<div class="grid grid-cols-12 gap-4 max-w-full">
 
+    <!-- Header Section -->
     <div class="col-span-12 relative z-50 p-0 mb-0">
         <div class="top-0 right-0 py-0">
             @include('partials.header')
@@ -30,87 +31,77 @@
     @include('carsearch')
 
     <!-- Brand Box - Right Side -->
-    <div class="col-span-10 row-span-2 col-start-3 row-start-2 mt-10 ml-24">
-        <h2 class="flex text-4xl font-bold text-white justify-start ml-10 mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
-        <div class="w-full overflow-x-auto px-6"> 
-            <ul class="flex flex-wrap gap-14 pb-4 ml-2">
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center flex-shrink-0"> 
-                    <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford" class="h-full w-auto mx-auto">
+    <div class="col-span-10 col-start-3 mt-10 ml-24">
+        <h2 class="text-4xl font-bold text-white mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
+        <div class="w-full overflow-x-auto">
+            <ul class="grid grid-cols-5 gap-4">
+                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
+                    <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford" class="h-40 w-auto mx-auto">
                 </li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center flex-shrink-0"> 
-                    <img src="https://i.pinimg.com/736x/28/de/bc/28debc1fb8adadc2346392696b59cf06.jpg" alt="Honda" class="h-full w-auto mx-auto"> 
+                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
+                    <img src="https://i.pinimg.com/736x/28/de/bc/28debc1fb8adadc2346392696b59cf06.jpg" alt="Honda" class="h-40 w-auto mx-auto"> 
                 </li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center flex-shrink-0"> 
-                    <img src="https://i.pinimg.com/736x/35/5b/5d/355b5d54a7da4e61b0806d0273337cfc.jpg" alt="Kia" class="h-full w-auto mx-auto"> 
+                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
+                    <img src="https://i.pinimg.com/736x/35/5b/5d/355b5d54a7da4e61b0806d0273337cfc.jpg" alt="Kia" class="h-40 w-auto mx-auto"> 
                 </li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center flex-shrink-0"> 
-                    <img src="https://i.pinimg.com/736x/bf/1d/5d/bf1d5d3949d184d21e0886368cf9c27f.jpg" alt="Honda" class="h-full w-auto mx-auto">
+                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
+                    <img src="https://i.pinimg.com/736x/bf/1d/5d/bf1d5d3949d184d21e0886368cf9c27f.jpg" alt="Honda" class="h-40 w-auto mx-auto">
                 </li>
-                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white w-60 h-52 text-center flex-shrink-0"> 
-                    <img src="https://i.pinimg.com/736x/1c/df/e6/1cdfe69ed9925a45aab3a6179425113c.jpg" alt="Audi" class="h-full w-auto mx-auto">
+                <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
+                    <img src="https://i.pinimg.com/736x/1c/df/e6/1cdfe69ed9925a45aab3a6179425113c.jpg" alt="Audi" class="h-40 w-auto mx-auto">
                 </li>
-               
             </ul>
         </div>
     </div>
 
-    <!-- Car Listed -->
-    
-    <div class="col-span-10 row-span-6 col-start-3 row-start-3 relative -mt-72 p-2 ml-24">
-    <h2 class="flex text-4xl font-bold text-white justify-start ml-4 mb-6 -mt-18">Best Match</h2>
-        <div class="absolute top-0 left-0 right-0 px-2 py-1 text-xs rounded-bl-lg">
+    <!-- Car Listings Section -->
+    <div class="col-span-10 col-start-3 mt-10 ml-24">
+        <h2 class="text-4xl font-bold text-white mb-6">Best Match</h2>
+        <div>
             @include('cartest')
-            <div class="grid col-span-2 row-span-6 col-start-2 row-start-3 relative ">
-            <div class="flex justify-center mt-4 text-xl mr-10">
-                <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-600 hover:text-black h-18">
+        </div>
+        <div class="flex justify-center mt-4">
+            <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-600 hover:text-black">
                 Load More
-                </button>
-            </div>
-        </div>
+            </button>
         </div>
     </div>
 
-    
-    <div class="col-span-10 row-span-8 col-start-3 row-start-10 relative p-2 ml-24 mt-20">
-    <div class="px-2 py-1 text-xs rounded-bl-lg">
-        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Market Overview</h2>
-        <div>
-            <p class="bg-white text-black p-5 text-base shadow-sm">
-            Car for sale Philippines in the past year, although affected by covid, are still quite active. Despite many difficulties in 2022, the Philippine market still consumes a large number of cars. The ranking of best-selling cars includes familiar faces from companies such as Honda, Hyundai, Ford, etc. In which, Toyota is still the car company that is most favored by customers with the Toyota Vios model.
-
-            For body types, 837 Suv, 010 Sedan, 327 Hatchback, 427 Mpv, and 267 Van are the choice of most drivers. 
-            Many people choose the lowest price segment is the 2020 Sentra (petrol manual model), which costs ₱70,000. While the highest one is the 2017 A3 Sedan (automatic petrol model), which costs ₱90 Million.
-            </p>
+    <!-- Market Overview Section -->
+    <div class="col-span-10 col-start-3 mt-10 ml-24">
+        <div class="bg-[#2193F0] text-white text-2xl font-bold p-4">
+            Market Overview
         </div>
+        <p class="bg-white text-black p-5 text-base shadow-sm">
+            Car for sale Philippines in the past year, although affected by covid, are still quite active...
+        </p>
     </div>
 
-    <div class="px-2 py-1 text-xs rounded-bl-lg mt-4">
-        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Most Popular Cars in the Philippines</h2>
-        <div>
-            <p class="bg-white text-black p-5 text-base shadow-sm">
-            Toyota, Mitsubishi, Nissan, Ford and Suzuki are the most popular car brands in the Philippines. There are 1023
-            Toyota cars, 430 Ford cars, 345 Mitsubishi cars, 187 Nissan cars, 94 Suzuki cars present on Philkotse. This
-            number of vehicles includes both new and used cars for sale in Philippines.
-            </p>
+    <!-- Popular Cars Section -->
+    <div class="col-span-10 col-start-3 mt-4 ml-24">
+        <div class="bg-[#2193F0] text-white text-2xl font-bold p-4">
+            Most Popular Cars in the Philippines
         </div>
+        <p class="bg-white text-black p-5 text-base shadow-sm">
+            Toyota, Mitsubishi, Nissan, Ford and Suzuki are the most popular car brands in the Philippines...
+        </p>
     </div>
 
-    <div class="px-2 py-1 text-xs rounded-bl-lg mt-4">
-        <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Reputable Dealer in the Philippines</h2>
-        <div>
-            <p class="bg-white text-black p-5 text-base shadow-sm">
-            Toyota, Mitsubishi, Nissan, Ford and Suzuki are the most popular car brands in the Philippines. There are 1023
-            Toyota cars, 430 Ford cars, 345 Mitsubishi cars, 187 Nissan cars, 94 Suzuki cars present on Philkotse. This
-            number of vehicles includes both new and used cars for sale in Philippines.
-            </p>
+    <!-- Reputable Dealer Section -->
+    <div class="col-span-10 col-start-3 mt-4 ml-24 mb-4">
+        <div class="bg-[#2193F0] text-white text-2xl font-bold p-4">
+            Reputable Dealer in the Philippines
         </div>
+        <p class="bg-white text-black p-5 text-base shadow-sm">
+            Toyota, Mitsubishi, Nissan, Ford and Suzuki are the most popular car brands in the Philippines...
+        </p>
     </div>
-
-   
 
 </div>
 
 
+
+@include('partials.footer')
 
 <style>
     ::-webkit-scrollbar {

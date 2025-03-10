@@ -18,5 +18,35 @@
     </head>
 <body>
     
+<div class="text-white m-8 rounded-lg px-36">
+    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
+        <h1 class="text-3xl font-bold mb-6">SAFETY FEATURES</h1>
+        <div class="grid grid-cols-3 gap-4 w-10/12 text-xl text-white">
+            <div class="flex items-center">
+                <input type="checkbox" id="airbags" class="mr-4">
+                <label for="airbags" class="text-white-700">Driver and Passenger Airbags</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="brake_assist" class="mr-4">
+                <label for="brake_assist" class="text-white-700">Brake Assist</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="security_alarm" class="mr-4">
+                <label for="security_alarm" class="text-white-700">Security Alarm</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="traction_control" class="mr-4">
+                <label for="traction_control" class="text-white-700">Traction Control</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="central_locking" class="mr-4">
+                <label for="central_locking" class="text-white-700">Central Locking</label>
+            </div>
+            <div class="flex items-center">
+                <input type="checkbox" id="immobilizer" class="mr-4">
+                <label for="immobilizer" class="text-white-700">Immobilizer</label>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
