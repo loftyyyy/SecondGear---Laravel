@@ -60,11 +60,11 @@
     <div class="col-span-2 row-span-2 col-start-9 row-start-2 relative p-2 mb-4 w-full mt-20 ml-20">
         <ul class=" text-lg text-white">
             <li class="font-bold text-[40px] ml-10">New Arrival</li>
-            <div class="text-black bg-white  p-4 m-8 w-96  text-[20px] font-bold h-[200px]">
-                
+            <div class="text-black bg-white m-8 w-96  text-[20px] font-bold h-[200px]">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mitsubishi_Eclipse_--_09-08-2009.jpg/1200px-Mitsubishi_Eclipse_--_09-08-2009.jpg" alt="" class="w-full h-auto">   
             </div>
-            <div class="text-black bg-white  p-4 m-8 w-96  text-[20px] font-bold h-[200px]">
-                
+            <div class="text-black bg-white m-8 w-96  text-[20px] font-bold h-[200px]">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mitsubishi_Eclipse_--_09-08-2009.jpg/1200px-Mitsubishi_Eclipse_--_09-08-2009.jpg" alt="" class="w-full h-auto">   
                 
             </div>
         </ul>
