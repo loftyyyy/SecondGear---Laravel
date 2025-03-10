@@ -39,6 +39,8 @@
 
     </div>
 
+    <!-- TODO: Implement Browse and Search -->
+
     <script>
         document.getElementById('profile_picture').addEventListener('change', function(event) {
             const file = event.target.files[0];

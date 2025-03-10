@@ -41,18 +41,22 @@ Route::get('landing', function(){
 Route::post('/userLogin', [AuthController::class, 'login'])->name('users.login');
 Route::post('/userRegister', [AuthController::class, 'register'])->name('users.register');
 
-Route::get('browse', function(){
-    return view('browse');
+// Route::get('browse', function(){
+//     return view('browse');
 
-})->name("browse");
+// })->name("browse");
+
+
+//TODO: Create a section in profile page that shows the user's cars 
+
 
 // Fix middleware redirection
-// Route::middleware('auth')->group(function () {
-//     Route::get('browse', function(){
-//         return view('browse');
+Route::middleware('auth')->group(function () {
+    Route::get('browse', function(){
+        return view('browse');
  
-//     })->name("browse");
-// });
+    })->name("browse");
+});
 
 Route::post('/', [AuthController::class, 'logout'])->name('users.logout');
 

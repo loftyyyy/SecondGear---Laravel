@@ -16,7 +16,7 @@
 <body class="font-robota">
 
 
-<div class="w-full bg-[#001C80] text-white flex justify-between items-center p-4 ">
+<div id="footer" class="w-full bg-[#001C80] text-white flex justify-between items-center p-4 ">
     <div id="menu-left" class="hidden md:flex bg-[#001C80] text-white mx-10">
         <ul class="flex space-x-6 p-4 gap-5">
             <li><a href="aboutus">About Us</a></li>
