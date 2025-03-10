@@ -22,67 +22,45 @@
     </div>
 
     <div class="text-white m-8 rounded-lg px-36">
-        <h2 class="text-4xl font-bold ml-4">Vehicle Information</h2>
-        <h4 class="mb-4 ml-4">Provide accurate details about your car</h4>
+        <h2 class="text-4xl font-bold ml-6">Vehicle Information</h2>
+        <h4 class="mb-4 ml-6">Provide accurate details about your car</h4>
 
         @include('sell.gen_info')
+        
     </div>
+    
+        @include('sell.safe_feature')
 
-    <div class="text-white m-8 rounded-lg px-36">
-    <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
-        <h1 class="text-3xl font-bold mb-6">SAFETY FEATURES</h1>
-        <div class="grid grid-cols-3 gap-4 w-10/12 text-xl text-white">
-            <div class="flex items-center">
-                <input type="checkbox" id="airbags" class="mr-4">
-                <label for="airbags" class="text-white-700">Driver and Passenger Airbags</label>
-            </div>
-            <div class="flex items-center">
-                <input type="checkbox" id="brake_assist" class="mr-4">
-                <label for="brake_assist" class="text-white-700">Brake Assist</label>
-            </div>
-            <div class="flex items-center">
-                <input type="checkbox" id="security_alarm" class="mr-4">
-                <label for="security_alarm" class="text-white-700">Security Alarm</label>
-            </div>
-            <div class="flex items-center">
-                <input type="checkbox" id="traction_control" class="mr-4">
-                <label for="traction_control" class="text-white-700">Traction Control</label>
-            </div>
-            <div class="flex items-center">
-                <input type="checkbox" id="central_locking" class="mr-4">
-                <label for="central_locking" class="text-white-700">Central Locking</label>
-            </div>
-            <div class="flex items-center">
-                <input type="checkbox" id="immobilizer" class="mr-4">
-                <label for="immobilizer" class="text-white-700">Immobilizer</label>
-            </div>
-        </div>
-    </div>
+       
+
 
     <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg  shadow-md">
-    <h1 class="text-3xl font-bold mb-4 flex items-center">
-    <i class="fa-solid fa-peso-sign m-2"></i>Car Price
-    </h1>
-    <div class="relative w-full max-w-xs">
-        <input type="text" name="price" id="price" required class="mt-2 p-2 border border-gray-300 rounded w-full bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 pl-10" placeholder="Enter price">
-        <span class="absolute left-3 top-2.5 text-gray-400">
-            <i class="fas fa-money-bill-wave mt-3 w-10 h-10"></i>
-        </span>
-    </div>
-</div>
+        <h1 class="text-3xl font-bold mb-4 flex items-center">
+            <i class="fa-solid fa-peso-sign m-2"></i>Car Price
+        </h1>
+
+        <div class="relative w-full max-w-xs">
+            <input type="text" name="price" id="price" required class="mt-2 p-2 border border-gray-300 rounded w-full bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 pl-10" placeholder="Enter price">
+            <span class="absolute left-3 top-2.5 text-gray-400">
+                <i class="fas fa-money-bill-wave mt-3 w-10 h-10"></i>
+            </span>
+            </div>
+        </div>
  
+
+   
     <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
-    <div class="bg-black p-6 rounded-lg shadow-md w-full max-w-md">
-        <h2 class="text-3xl font-bold mb-2">Photos</h2>
-        <p class="text-gray-600 mb-4">Add photos of your car (minimum of 4 photos recommended)</p>
-        <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
-            <div class="flex flex-col items-center justify-center h-full">
+            <h2 class="text-3xl font-bold">Photos</h2>
+            <div class="bg-black p-6 rounded-lg shadow-md w-full max-w-md">
+            <p class="text-gray-600 mb-4">Add photos of your car (minimum of 4 photos recommended)</p>
+            <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
+                <div class="flex flex-col items-center justify-center h-full">
                 <i class="fas fa-cloud-upload-alt text-3xl text-gray-400 mb-2"></i>
                 <p class="text-gray-600 mb-1">Click to upload or drag and drop</p>
                 <p class="text-gray-400 text-sm">PNG, JPG or GIF (MAX. 5MB)</p>
                 <p class="text-gray-400 text-sm mt-2">0/8 photos uploaded</p>
+                </div>
             </div>
-        </div>
         <div class="mt-4 text-gray-500 flex items-center">
             <i class="fas fa-info-circle mr-2"></i>
             <p>4 more photos recommended</p>
@@ -92,7 +70,7 @@
 
 
 <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
-                <h1 class="text-3xl font-bold mb-4">Upload OR/CR</h1>
+                <h1 class="text-3xl font-bold">Upload OR/CR</h1>
                 <div class="bg-black p-6 rounded-lg shadow-md w-full max-w-md">
                     <div class="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center">
                         <div class="flex flex-col items-center justify-center h-full">
@@ -108,6 +86,8 @@
                 </div>
             </div>
         </div>
+
+
         <div class="text-white m-8 rounded-lg px-36">
         <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
     <h1 class="text-3xl font-bold mb-4">Contact Information</h1>

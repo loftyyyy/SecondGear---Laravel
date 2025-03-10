@@ -47,7 +47,7 @@
 </div>
 
 <div class="relative z-[50]">
-    <nav class="flex items-center justify-between bg-[#001C80]"> 
+    <nav class="flex flex-col md:flex-row items-center justify-between bg-[#001C80]"> 
         <div id="menu-left" class="text-xl hidden md:flex text-white w-full">
             <ul class="flex font-exo w-full p-4">
                 <li class="mr-8 {{request()->is('home') ? 'underline font-bold' : ''}}"><a href="/browse">Home</a></li>
@@ -58,7 +58,7 @@
         </div>
 
 
-        <div id="menu-right" class="flex space-x-2 gap-4 mx-10"> 
+        <div id="menu-right" class="flex md:flex-row space-x-2 gap-4 mx-10 md:mx-10"> 
             <button class="bg-green-500 text-white rounded-md hover:bg-blue-600 text-1xl w-32">Sell my Car</button> 
             <div class="flex items-center"> 
 
