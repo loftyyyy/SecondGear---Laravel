@@ -71,7 +71,7 @@
             </div>
 
             <div id="menu-right" class="flex space-x-2 gap-4 mx-10"> 
-                <a href="{{ url('sell/sellmain') }}" class="bg-green-500 text-white {{ request()->is('sell/sellmain') ? 'hidden' : '' }} rounded-md hover:bg-blue-600 text-1xl w-32 flex items-center justify-center py-2 px-4">
+                <a href="{{ route('user.store') }}" class="bg-green-500 text-white {{ request()->is('sell/sellmain') ? 'hidden' : '' }} rounded-md hover:bg-blue-600 text-1xl w-32 flex items-center justify-center py-2 px-4">
                     Sell my Car
                 </a>
 
