@@ -272,6 +272,20 @@
         </form>
     </main>
 
+<<<<<<< HEAD
+        <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
+            <h1 class="text-3xl font-bold mb-4">Description</h1>
+                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your car's description here..."></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="flex justify-center mt-6">
+            <button type="submit"
+                class="bg-blue-500 font-bold py-2 px-4 rounded hover:bg-blue-700">
+                Submit Listing
+            </button>
+        </div>
+=======
     <script>
         // Preview images when selected
         document.getElementById('car-images').addEventListener('change', function(event) {
@@ -320,5 +334,6 @@
             }
         });
     </script>
+>>>>>>> f30375f61fd401d44fe1f992763e8741a0dfdee7
 </body>
 </html>
