@@ -5,9 +5,9 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CarController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('carselect', function () {
-    return view('carselect');
-})->name('carselect');
+// Route::get('carselect', function () {
+//     return view('carselect');
+// })->name('carselect');
 
 
 Route::get('carsearch', function () {
@@ -22,14 +22,13 @@ Route::get('home', function(){
     return view('home');
 })->name('home');
 
-
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
 
-Route::get('carsearch', function(){
-    return view('carsearch');
-})->name('carsearch');
+Route::get('cartest', function(){
+    return view('cartest');
+})->name('cartest');
 
 
 Route::get('landing', function(){
@@ -81,7 +80,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/sell/sellmain', [CarController::class, 'store'])->name('user.sell');
     // Route::get('/sell/sellmain', [CarController::class, 'create'])->name('cars.create');
     Route::get('/sell/sellmain', [CarController::class, 'create'])->name('user.store');
-    Route::get('/my-cars', [CarController::class, 'myListings'])->name('cars.my-listings');
+    // Route::get('/profile-test', [CarController::class, 'myListings'])->name('cars.my-listings');
     Route::get('/cars/{car}/edit', [CarController::class, 'edit'])->name('cars.edit');
     Route::put('/cars/{car}', [CarController::class, 'update'])->name('cars.update');
     Route::delete('/cars/{car}', [CarController::class, 'destroy'])->name('cars.destroy');
