@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Gear</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="fontawesome/js/brands.js"></script>
     <script defer src="fontawesome/js/solid.js"></script>
     <script defer src="fontawesome/js/fontawesome.js"></script>
@@ -34,7 +34,7 @@
     <div class="col-span-10 col-start-3 mt-10 ml-24">
         <h2 class="text-4xl font-bold text-white mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
         <div class="w-full overflow-x-auto">
-            <ul class="grid grid-cols-5 gap-4">
+            <ul class="grid grid-cols-4 gap-4">
                 <li class="p-4 border border-gray-300 rounded-lg shadow-sm bg-white text-center">
                     <img src="https://i.pinimg.com/736x/5f/d7/54/5fd754ce796229170266b0a5f9ff008c.jpg" alt="Ford" class="h-40 w-auto mx-auto">
                 </li>
@@ -55,22 +55,24 @@
     </div>
 
     <!-- Car Listings Section -->
-    <div class="col-span-10 col-start-3 mt-10 ml-24">
-    @if(session('success'))
-    <div class="bg-green-100 text-green-700 p-3 rounded-lg mb-4">
-        {{ session('success') }}
-    </div>
-@endif
+    <div class="col-span-10 col-start-3 ml-24">
+
+        @if(session('success'))
+        <div class="bg-green-100 text-green-700 p-3 rounded-lg mb-4">
+            {{ session('success') }}
+        </div>
+        @endif
 
         <h2 class="text-4xl font-bold text-white mb-6">Find Your Dream Car</h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ml-4">
+        @foreach ($cars as $car)
             <div class="h-full w-full">
                 <div class="card-container bg-white rounded-lg shadow-md hover:shadow-xl transition-all h-full">
                     <div class="card-content p-4">
                         <div class="card-image mb-3">
                             <img
-                                src="https://images.unsplash.com/photo-1550355291-bbee04a92027?auto=format&fit=crop&q=80&w=400&h=300"
-                                alt="Honda Accord LX"
+                                src="{{ asset('storage/' . $car->images->first()->image_path) }}"
+                                alt="{{ $car->title }}"
                                 class="w-full h-40 object-cover rounded-lg"
                             />
                         </div>
@@ -78,25 +80,33 @@
                         <div class="card-details space-y-2">
                             <!-- Title with brand highlighted -->
                             <div class="flex flex-col">
-                                <span class="text-xs font-medium text-[#000080]">Honda</span>
-                                <h3 class="text-xl font-semibold text-gray-800 truncate">Accord LX</h3>
+                                <span class="text-xs font-medium text-[#000080]">{{ $car->brand }}</span>
+                                <h3 class="text-xl font-semibold text-gray-800 truncate">{{ $car->title }}</h3>
                             </div>
 
                             <!-- Tags section - made more compact -->
                             <div class="flex flex-wrap gap-1 text-xs">
-                                <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-1.5 py-0.5">
-                                    Modified
+                                @if ($car->build)
+                                    <span class="border-2 border-[#000080] bg-[#000080] text-white rounded-md px-1.5 py-0.5">
+                                        {{ $car->build }}
+                                    </span>
+                                @endif
+                                <span class="border-2 border-white-800 rounded-md text-gray-700 px-1.5 py-0.5">
+                                    {{ $car->year }}
                                 </span>
-                                <span class="border-2 border-white-800 rounded-md text-gray-700 px-1.5 py-0.5">2009</span>
-                                <span class="border-2 border-white-800 rounded-md text-gray-700 px-1.5 py-0.5">Manual</span>
-                                <span class="border-2 border-white-800 rounded-md text-gray-700 px-1.5 py-0.5">150 km</span>
+                                <span class="border-2 border-white-800 rounded-md text-gray-700 px-1.5 py-0.5">
+                                    {{ $car->transmission }}
+                                </span>
+                                <span class="border-2 border-white-800 rounded-md text-gray-700 px-1.5 py-0.5">
+                                    {{ $car->mileage }} km
+                                </span>
                             </div>
 
                             <!-- Additional details with icons -->
                             <div class="grid grid-cols-2 gap-1 text-xs">
                                 <span class="flex items-center gap-1 truncate">
-                                    <span class="w-3 h-3 bg-red-500 rounded-full flex-shrink-0"></span>
-                                    <span class=" text-gray-700">Red</span>
+                                    <span class="w-3 h-3" style="background-color: {{ $car->color }}; border-radius: 50%;"></span>
+                                    <span class=" text-gray-700">{{ ucfirst($car->color) }}</span>
                                 </span>
                                 <span class="flex items-center gap-1 truncate">
                                     <svg
@@ -111,7 +121,7 @@
                                             clip-rule="evenodd"
                                         />
                                     </svg>
-                                    <span class=" text-gray-700">Davao City</span>
+                                    <span class=" text-gray-700">{{ $car->city }}</span>
                                 </span>
                                 <span class="flex items-center gap-1 truncate">
                                     <svg
@@ -127,7 +137,7 @@
                                             clip-rule="evenodd"
                                         />
                                     </svg>
-                                    <span class="text-gray-700">18,500 views</span>
+                                    <span class="text-gray-700">{{ $car->views }} views</span>
                                 </span>
                                 <span class="flex items-center gap-1 truncate">
                                     <svg
@@ -138,33 +148,41 @@
                                     >
                                         <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd" />
                                     </svg>
-                                    <span class=" text-gray-700">John Smith</span>
+                                    <span class=" text-gray-700">{{ $car->contact_name }}</span>
                                 </span>
                             </div>
 
                             <!-- Region -->
-                            <h4 class="text-xs text-gray-600">Davao Del Sur</h4>
+                            <h4 class="text-xs text-gray-600">{{ $car->region }}</h4>
 
                             <!-- Price -->
                             <div class="flex justify-between items-center">
-                                <span class="text-lg font-bold text-[#000080]">$27,999</span>
-                                <span class="text-xs text-gray-500">2d ago</span>
+                                <span class="text-lg font-bold text-[#000080]">₱{{ number_format($car->price, 2) }}</span>
+                                <span class="text-xs text-gray-500">{{ $car->created_at->diffForHumans() }}</span>
                             </div>
 
                             <!-- Action buttons -->
                             <div class="flex space-x-2 w-full">
-                                <button class="border-2 border-[#000080] rounded-md py-1 px-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1 text-xs">
-                                    Make an Offer
-                                </button>
-                                <button class="bg-[#000080] text-white py-1 px-2 rounded-md flex-1 text-xs">
+                                <a href="{{ route('cars.show', $car->id) }}" 
+                                    class="border-2 border-[#000080] rounded-md py-1 px-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1 text-xs">
+                                    View Details
+                                </a>
+                                <button 
+                                    class="bg-[#000080] text-white py-1 px-2 rounded-md flex-1 text-xs">
                                     Call Seller
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div> 
-        </div>
+            </div>
+        @endforeach
+</div>
+
+    <div class="mt-4">
+        {{ $cars->links() }}
+    </div>
+
         <div class="flex justify-center mt-4">
             <button id="loadMore" class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-64 hover:bg-blue-600 hover:text-black">
                 Load More

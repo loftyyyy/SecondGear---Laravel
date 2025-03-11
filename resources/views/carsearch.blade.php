@@ -22,17 +22,15 @@
 
 
 <div class="col-span-2 row-span-2 row-start-2 relative p-4 mb-4 w-96">
-    <h2 class="flex text-4xl font-bold text-white justify-start mt-6">Car Search</h2> 
+    <h2 class="flex text-4xl font-bold text-white justify-center mt-6">Car Search</h2> 
     <div class="flex justify-between mx-10 py-6 flex-wrap"> 
         <div class="w-full p-6 bg-white border border-gray-200 rounded-xl shadow-sm bg-opacity-15"> 
             <ul class="mt-4 text-lg text-black">
                 <li class=" flex justify-between text-white font-bold">
-                    <label><input type="radio" name="stock_modifies" value="stock"> Stock</label>
-                    <label><input type="radio" name="stock_modifies" value="modifies"> Modifies</label>
+                    <label><input type="radio" name="stock" value="stock"> Stock</label>
+                    <label><input type="radio" name="modified" value="modified"> Modified</label>
                 </li>
                 <li>
-                
-               
                     <select id="brand" class="w-full p-2 border border-gray-300 rounded-2xl my-3">
                         <option value="">Brand</option>
                         <option value="brand1">Brand 1</option>
@@ -121,7 +119,7 @@
         </div>
     </div>
 
-    <h2 class="text-4xl font-bold text-white justify-start mt-8 col-span-12">Car For Sale</h2> 
+    <h2 class="text-4xl font-bold text-white justify-center flex mt-8 col-span-12">Car For Sale</h2> 
     <div class="flex justify-between mx-10 py-6 flex-wrap col-span-12"> 
         <div class="w-full p-3 bg-white border border-gray-200 shadow-sm "> 
             <ul class="mt-4 text-lg text-black">
