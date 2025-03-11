@@ -137,7 +137,7 @@
                 <!-- Car Title and Date -->
                 <div class="mb-4">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white">{{$car->model}}</h2>
-                    <h4 class="md:text-[15px] mt-10 text-white font-exo">Posted on {{ $car->created_at->diffForHumans() }}</h4>
+                    <h4 class="md:text-[15px] mt-10 text-white font-exo">Posted {{ $car->created_at->diffForHumans() }}</h4>
                 </div>
                 
                 <!-- Car Images -->
@@ -154,19 +154,14 @@
                     </div>
                 </div>
 
-                <!-- Market Overview -->
+                <!-- Description -->
                 <div class="mb-8">
-                    <h2 class="bg-blue-500 text-white text-2xl font-bold p-4 rounded-t-lg">Market Overview</h2>
-                    <div class="bg-white text-black p-5 text-base shadow-sm rounded-b-lg">
-                        <p>
-                            Car for sale Philippines in the past year, although affected by covid, are still quite active. Despite many difficulties in 2022, the Philippine market still consumes a large number of cars. The ranking of best-selling cars includes familiar faces from companies such as Honda, Hyundai, Ford, etc. In which, Toyota is still the car company that is most favored by customers with the Toyota Vios model.
-                        </p>
-                        <p class="mt-4">
-                            For body types, 837 Suv, 010 Sedan, 327 Hatchback, 427 Mpv, and 267 Van are the choice of most drivers. 
-                            Many people choose the lowest price segment is the 2020 Sentra (petrol manual model), which costs ₱70,000. While the highest one is the 2017 A3 Sedan (automatic petrol model), which costs ₱90 Million.
-                        </p>
+                    <h2 class="bg-blue-500 text-white text-2xl font-bold p-4 rounded-t-lg">Description</h2>
+                    <div class="bg-white text-black text-base shadow-sm p-4 rounded-b-lg">
+                        <p>{{$car->description}}</p>
                     </div>
                 </div>
+
 
                 <!-- Seller Information -->
                 <div class="mb-8">
@@ -210,11 +205,17 @@
                     </div>
                 </div>
 
-                <!-- Description -->
+                <!-- Market Overview -->
                 <div class="mb-8">
-                    <h2 class="bg-blue-500 text-white text-2xl font-bold p-4 rounded-t-lg">Description</h2>
-                    <div class="bg-white text-black text-base shadow-sm p-4 rounded-b-lg">
-                        <p>{{$car->description}}</p>
+                    <h2 class="bg-blue-500 text-white text-2xl font-bold p-4 rounded-t-lg">Market Overview</h2>
+                    <div class="bg-white text-black p-5 text-base shadow-sm rounded-b-lg">
+                        <p>
+                            Car for sale Philippines in the past year, although affected by covid, are still quite active. Despite many difficulties in 2022, the Philippine market still consumes a large number of cars. The ranking of best-selling cars includes familiar faces from companies such as Honda, Hyundai, Ford, etc. In which, Toyota is still the car company that is most favored by customers with the Toyota Vios model.
+                        </p>
+                        <p class="mt-4">
+                            For body types, 837 Suv, 010 Sedan, 327 Hatchback, 427 Mpv, and 267 Van are the choice of most drivers. 
+                            Many people choose the lowest price segment is the 2020 Sentra (petrol manual model), which costs ₱70,000. While the highest one is the 2017 A3 Sedan (automatic petrol model), which costs ₱90 Million.
+                        </p>
                     </div>
                 </div>
             </div>
