@@ -47,24 +47,41 @@
 
 <div class="text-center max-w-auto relative">
 
-    <img src="picbank/dotted_worldmap.jpg" alt="World Map" class="mx-auto opacity-[25%]" >
+    <img src="picbank/dotted_worldmap.jpg" alt="World Map" class="mx-auto opacity-[25%] w-[75%] " >
 
     <div class="absolute top-0 inset-x-0 flex flex-col items-center justify-center text-white p-6">
-        <h2 class="text-4xl font-bold text-blue-800 font-future">Our Mission</h2> 
-        
-        <div class=" top-10 inset-x-0 flex items-center justify-center text-white p-6 w-20 h-20 mx-auto z-10">
+        <div class="font-exo flex items-center space-x-2">
+            <h3 class="text-4xl font-bold text-gray-500 m-0">Our</h3> 
+            <h3 class="text-4xl font-bold text-blue-800 m-0">mission</h3>
+        </div>
+       
+        <div class=" top-5 inset-x-0 flex items-center justify-center text-white w-20 h-20 mx-auto z-10">
             <img src="picbank/below_mission.png" alt="">
          </div>
           
             <div class="leading-tight">
-            <p class="text-lg text-white font-exo ">Second Gear Inc. is a car dealership company that offers a wide range of pre-loved cars in Davao City,</p>
-            <p class="text-lg text-white font-exo ">Second Gear Inc. is a car dealership company that offers a wide range of pre-loved cars in Davao City,</p>
+            <p class="text-lg text-white font-exo ">To provide a trusted and seamless platform for buying and selling pre-loved cars, <br> ensuring verified listings, secure transactions, and a transparent ownership history. <br> Through advanced search filters and user reviews, we empower buyers <br>and sellers with confidence and convenience</p>
+           
             </div>
-    </div>
+    </div> 
+    
+    <div class="profilepics w-full h-full flex flex-col items-center mt-[-100px] ">
+        <div class="flex space-x-4 justify-center">
+            <img src="picbank/placeholder profile.png" alt="" class="h-12 w-18">
+            <img src="picbank/placeholder profile.png" alt="" class="h-12 w-18">
+            <img src="picbank/placeholder profile.png" alt="" class="h-12 w-18">
+        </div> 
 
+        <h4 class="text-2xl font-bold text-gray-500">OUR TEAM</h4>
+    </div>
+       
+       
     
     
+
 </div>
+
+
 
 </body>
 </html>

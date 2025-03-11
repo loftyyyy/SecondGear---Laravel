@@ -62,7 +62,7 @@
                         <a href="/browse">Browse Cars</a>
                     </li>
                     <li class="mr-8 {{request()->is('about') ? 'underline font-bold' : ''}}">
-                        <a href="/login">About us</a>
+                        <a href="aboutus">About us</a>
                     </li>
                     <li class="mr-8 {{request()->is('contact') ? 'underline font-bold' : ''}}">
                         <a href="#footer">Contact us</a>
