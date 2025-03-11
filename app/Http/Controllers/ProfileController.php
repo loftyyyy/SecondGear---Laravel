@@ -9,6 +9,11 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\View\View;
+use App\Models\Car;
+use App\Models\CarFeature;
+use App\Models\CarImage;
+use App\Models\User;
+
 
 class ProfileController extends Controller
 {
@@ -25,9 +30,13 @@ class ProfileController extends Controller
     // Custom function to show the user's profile information
     public function user(Request $request): View
     {
-
+        $cars = Car::where('user_id', Auth::id())
+                   ->latest()
+                   ->paginate(10);
+    
         return view('profile.user', [
             'user' => $request->user(),
+            'cars' => $cars,
         ]);
     }
 

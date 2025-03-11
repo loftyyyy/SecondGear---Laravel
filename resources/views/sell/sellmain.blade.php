@@ -30,6 +30,7 @@
 </head>
 
 <body class="font-sans bg-slate-100 dark:bg-gray-900 dark:text-white/80 overflow-x-hidden min-h-screen">
+    <div class="absolute">
     @include('partials.header')
     
     @if(session('success'))
@@ -49,6 +50,9 @@
             <span class="block sm:inline">{{ session('error') }}</span>
         </div>
     @endif
+
+
+    </div>
 
     <!-- TODO: Implement a foreach in browse -->
     <main class="container mx-auto px-4 py-8">
@@ -81,35 +85,49 @@
                     <p class="text-gray-600 dark:text-gray-400 mt-1">Select all safety features your vehicle has</p>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-800 dark:text-gray-200">
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="drive_airbag" type="checkbox" id="drive_airbag" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="drive_airbag" class="ml-3 text-sm font-medium">Driver Airbags</label>
-                    </div>
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="passenger_airbag" type="checkbox" id="passenger_airbag" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="passenger_airbag" class="ml-3 text-sm font-medium">Passenger Airbags</label>
-                    </div>
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="brake_assist" type="checkbox" id="brake_assist" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="brake_assist" class="ml-3 text-sm font-medium">Brake Assist</label>
-                    </div>
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="security_alarm" type="checkbox" id="security_alarm" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="security_alarm" class="ml-3 text-sm font-medium">Security Alarm</label>
-                    </div>
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="traction_control" type="checkbox" id="traction_control" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="traction_control" class="ml-3 text-sm font-medium">Traction Control</label>
-                    </div>
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="central_locking" type="checkbox" id="central_locking" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="central_locking" class="ml-3 text-sm font-medium">Central Locking</label>
-                    </div>
-                    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
-                        <input name="immobilizer" type="checkbox" id="immobilizer" class="w-5 h-5 text-primary rounded focus:ring-primary">
-                        <label for="immobilizer" class="ml-3 text-sm font-medium">Immobilizer</label>
-                    </div>
-                </div>
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="driver_airbag" value="0">
+        <input name="driver_airbag" type="checkbox" id="driver_airbag" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="driver_airbag" class="ml-3 text-sm font-medium">Driver Airbags</label>
+    </div>
+    
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="passenger_airbag" value="0">
+        <input name="passenger_airbag" type="checkbox" id="passenger_airbag" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="passenger_airbag" class="ml-3 text-sm font-medium">Passenger Airbags</label>
+    </div>
+    
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="brake_assist" value="0">
+        <input name="brake_assist" type="checkbox" id="brake_assist" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="brake_assist" class="ml-3 text-sm font-medium">Brake Assist</label>
+    </div>
+    
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="security_alarm" value="0">
+        <input name="security_alarm" type="checkbox" id="security_alarm" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="security_alarm" class="ml-3 text-sm font-medium">Security Alarm</label>
+    </div>
+    
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="traction_control" value="0">
+        <input name="traction_control" type="checkbox" id="traction_control" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="traction_control" class="ml-3 text-sm font-medium">Traction Control</label>
+    </div>
+    
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="central_locking" value="0">
+        <input name="central_locking" type="checkbox" id="central_locking" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="central_locking" class="ml-3 text-sm font-medium">Central Locking</label>
+    </div>
+    
+    <div class="flex items-center p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700">
+        <input type="hidden" name="immobilizer" value="0">
+        <input name="immobilizer" type="checkbox" id="immobilizer" class="w-5 h-5 text-primary rounded focus:ring-primary" value="1">
+        <label for="immobilizer" class="ml-3 text-sm font-medium">Immobilizer</label>
+    </div>
+</div>
+
             </section>
 
             <!-- Car Price Section -->
@@ -271,22 +289,7 @@
             </div>
         </form>
     </main>
-
-<<<<<<< HEAD
-        <div class="flex flex-col items-center border border-white p-10 w-full m-8 rounded-lg">
-            <h1 class="text-3xl font-bold mb-4">Description</h1>
-                <textarea id="message" rows="4" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Write your car's description here..."></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <div class="flex justify-center mt-6">
-            <button type="submit"
-                class="bg-blue-500 font-bold py-2 px-4 rounded hover:bg-blue-700">
-                Submit Listing
-            </button>
-        </div>
-=======
-    <script>
+        <script>
         // Preview images when selected
         document.getElementById('car-images').addEventListener('change', function(event) {
             const preview = document.getElementById('image-preview');
@@ -334,6 +337,5 @@
             }
         });
     </script>
->>>>>>> f30375f61fd401d44fe1f992763e8741a0dfdee7
 </body>
 </html>

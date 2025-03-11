@@ -1,26 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Gear</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script defer src="fontawesome/js/brands.js"></script>
-    <script defer src="fontawesome/js/solid.js"></script>
-    <script defer src="fontawesome/js/fontawesome.js"></script>
-    <script defer src="fontawesome/js/sharp-thin.js"></script>
-    <script defer src="fontawesome/js/duotone-thin.js"></script>
-    <script defer src="fontawesome/js/sharp-duotone-thin.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-
-<body class="font-sans dark:bg-black dark:text-white/50 overflow-x-hidden">   
-
-
-
 <div class="col-span-2 row-span-2 row-start-2 relative p-4 mb-4 w-96">
     <h2 class="flex text-4xl font-bold text-white justify-center mt-6">Car Search</h2> 
     <div class="flex justify-between mx-10 py-6 flex-wrap"> 
@@ -65,17 +42,7 @@
                         <option value="2018">2018</option>
                     </select>
                 </li>
-                <li>
-                   
-                    <select id="region" class="w-full p-2 border border-gray-300 rounded-2xl my-2">
-                        <option value="">Region</option>
-                        <option value="region1">Region 1</option>
-                        <option value="region2">Region 2</option>
-                        <option value="region3">Region 3</option>
-                    </select>
-                </li>
-                <li>
-                    
+                <li>    
                     <select id="city" class="w-full p-2 border border-gray-300 rounded-2xl my-2">
                         <option value="">City</option>
                         <option value="city1">City 1</option>
