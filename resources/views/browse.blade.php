@@ -20,8 +20,7 @@
 
 <div class="grid grid-cols-12 gap-4 max-w-full">
 
-    <!-- Header Section -->
-    <div class="col-span-12 relative z-50 p-0 mb-0">
+    <div class="col-span-12 relative z-50 p-0 mb-20">
         <div class="top-0 right-0 py-0">
             @include('partials.header')
         </div>

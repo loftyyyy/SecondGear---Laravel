@@ -24,14 +24,13 @@ Route::get('home', function(){
     return view('home');
 })->name('home');
 
-
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
 
-Route::get('carsearch', function(){
-    return view('carsearch');
-})->name('carsearch');
+Route::get('cartest', function(){
+    return view('cartest');
+})->name('cartest');
 
 
 Route::get('landing', function(){

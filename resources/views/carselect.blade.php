@@ -21,7 +21,7 @@
 
 <div class="grid grid-cols-12 grid-rows-none gap-0 max-w-full">
 
-    <div class="col-span-12 relative z-50 p-0 mb-0">
+    <div class="col-span-12 relative z-50 p-0 mb-20">
         <div class="top-0 right-0 py-0">
             @include('partials.header')
         </div>
@@ -32,8 +32,8 @@
     
     <div class="col-span-6 row-span-4 col-start-3 row-start-2 mt-8 ml-24"> 
         <h2 class="flex justify-start ml-6 text-white text-[42px] font-bold">Porsche 911 </h2>
-        <h4 class="flex justify-start ml-6 text-white text-[24px] font-semibold">Posted on 09/11/2025</h4>
-        <h4 class="flex justify-start ml-6 text-white text-[24px] font-semibold">Product: </h4>
+        <h4 class="flex justify-start ml-6 text-white text-[24px] font-exo">Posted on 09/11/2025</h4>
+        <h4 class="flex justify-start ml-6 text-white text-[24px] font-exo">Product: </h4>
         <div class="w-full p-5 shadow-sm"> 
             <img src="https://i.pinimg.com/736x/f6/9e/22/f69e2200243aceb5fe5be5776c76c4fe.jpg" alt="Porsche" class="w-[1200px] h-[480px] mb-4">
             <div class="flex">
@@ -125,31 +125,9 @@
             <div class=" py-1 text-xs rounded-bl-lg mt-4 w-full h-56">
             <h2 class="bg-[#2193F0] text-white text-2xl font-bold p-4 ">Description</h2>
             <div>
-                <pre class="bg-white text-black  text-base shadow-sm">
-                New Unit 
-
-                
-                Porsche 911  EX Automatic Gas
-                156K ALL IN DP
-
-                1st Owned
-                Casa Maintained
-                Fresh in and out
-                42k Mileage
-                Plate Ending 8
-                Apple Carplay / Android
-                Toucscreen Display
-                Steering Wheel Controls
-                Reverse Camera
-                All Power
-                All Original
-                All Stock
-                Verified clean papers
-                Mechanic Inspected
-                Spare key
-                Complete set of Tools, Jack & Spare Tire
-                MV
-                </pre>
+                <p class="bg-white text-black  text-base shadow-sm p-4">
+                This section is for the description of the car
+                </p>
 
 
             </div>
