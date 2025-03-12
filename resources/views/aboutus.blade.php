@@ -36,7 +36,13 @@
 </style>
  
 </head>
+<<<<<<< HEAD
+<body class="font-sans dark:bg-black dark:text-white/50">
+
+@include('partials.header')
+=======
 <body class="dark:bg-black dark:text-white/50">
+>>>>>>> f3c258736d382211773f0fe7119e32a77e82340a
     
 
 <div class="text-center max-w-auto relative">

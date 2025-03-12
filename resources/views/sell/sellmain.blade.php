@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/picbank/2nd Gear Logo.svg" sizes="16x16">
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -289,7 +290,13 @@
             </div>
         </form>
     </main>
+<<<<<<< HEAD
+
+
+    <script>
+=======
         <script>
+>>>>>>> f3c258736d382211773f0fe7119e32a77e82340a
         // Preview images when selected
         document.getElementById('car-images').addEventListener('change', function(event) {
             const preview = document.getElementById('image-preview');
@@ -337,5 +344,9 @@
             }
         });
     </script>
+<<<<<<< HEAD
+
+=======
+>>>>>>> f3c258736d382211773f0fe7119e32a77e82340a
 </body>
 </html>

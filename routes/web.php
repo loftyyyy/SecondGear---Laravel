@@ -26,9 +26,28 @@ Route::get('/', function () {
     return view('landing');
 })->name('landing');
 
-Route::get('cartest', function(){
-    return view('cartest');
-})->name('cartest');
+Route::get('/contents/termsOfServices', function(){
+    return view('/contents/termsOfServices');
+})->name('termsOfServices');
+
+Route::get('/contents/privacyPolicy', function(){
+    return view('/contents/privacyPolicy');
+})->name('privacyPolicy');
+
+Route::get('/contents/supportRequest', function(){
+    return view('/contents/supportRequest');
+})->name('privacyPolicy');
+
+Route::get('/contents/carListingTips', function(){
+    return view('/contents/carListingTips');
+})->name('privacyPolicy');
+
+Route::get('/contents/beOurPartner', function(){
+    return view('/contents/beOurPartner');
+})->name('privacyPolicy');
+
+
+
 
 
 Route::get('landing', function(){

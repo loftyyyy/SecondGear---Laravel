@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link rel="icon" type="image/png" href="/picbank/2nd Gear Logo.svg" sizes="16x16">
 </head>
 
 <body class="font-sans dark:bg-black dark:text-white/50 overflow-x-hidden">   
@@ -30,7 +30,7 @@
     @include('carsearch')
 
     <!-- Brand Box - Right Side -->
-    <div class="col-span-10 col-start-3 mt-10 ml-24">
+    <div class="col-span-10 col-start-3 mt-10 ml-20 mr-8">
         <h2 class="text-4xl font-bold text-white mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
         <div class="w-full overflow-x-auto">
             <ul class="grid grid-cols-4 gap-4">
