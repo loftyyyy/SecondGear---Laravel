@@ -20,7 +20,7 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
             <a href="{{route('browse')}}" class="space-x-3 rtl:space-x-reverse">
-                <span class="font-future text-[35px] rounded-md text-white">Second Gear</span>
+                <span class="font-future text-[35px] rounded-md text-white mr-2">Second Gear</span>
             </a>
             <div class="flex md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
                

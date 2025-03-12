@@ -104,6 +104,8 @@
     }
 </style>
 
-@include('partials.footer')
+    <div class="h-[30vh]">
+    @include('partials.footer')
+    </div>
 </body>
 </html>
