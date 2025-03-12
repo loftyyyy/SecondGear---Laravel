@@ -28,21 +28,30 @@
     body {
         -ms-overflow-style: none;
     }
+
+    #TH_pic {
+        height:100vh ;
+
+    }
 </style>
  
 </head>
+<<<<<<< HEAD
 <body class="font-sans dark:bg-black dark:text-white/50">
 
 @include('partials.header')
+=======
+<body class="dark:bg-black dark:text-white/50">
+>>>>>>> f3c258736d382211773f0fe7119e32a77e82340a
     
 
 <div class="text-center max-w-auto relative">
 
-    <img src="picbank/Team Hilux.jpg" alt="Team Hilux Picture" class="w-full h-full object-cover">
+    <img id="TH_pic" src="picbank/Team Hilux.jpg" alt="Team Hilux Picture" class="w-full h-full object-cover">
     
     <div class="absolute top-0 inset-x-0 flex flex-col items-center justify-center text-white p-6">
         <h6 class="text-2xl text-white font-exo " >Welcome  to</h6>
-        <h1 class="text-6xl font-bold text-blue-800 font-future" >Second Gear</h1>
+        <h1 class="text-6xl text-blue-800 font-future text-shadow-4px" >Second Gear</h1>
     </div>
 
 </div>
@@ -51,8 +60,8 @@
 
     <img src="picbank/dotted_worldmap.jpg" alt="World Map" class="mx-auto opacity-[25%] w-[75%] " >
 
-    <div class="absolute top-0 inset-x-0 flex flex-col items-center justify-center text-white p-6">
-        <div class="font-exo flex items-center space-x-2">
+    <div class="absolute top-[10%] inset-x-0 flex flex-col items-center justify-center text-white p-6">
+        <div class="font-exo flex space-x-2">
             <h3 class="text-4xl font-bold text-gray-500 m-0">Our</h3> 
             <h3 class="text-4xl font-bold text-blue-800 m-0">mission</h3>
         </div>
@@ -67,18 +76,78 @@
             </div>
     </div> 
     
-    <div class="profilepics w-full h-full flex flex-col items-center mt-[-100px] ">
+    <div class="profilepic absolute top-[55%] inset-x-0 flex flex-col items-center justify-center text-white p-6 ">
         <div class="flex space-x-4 justify-center">
-            <img src="picbank/placeholder profile.png" alt="" class="h-12 w-18">
-            <img src="picbank/placeholder profile.png" alt="" class="h-12 w-18">
-            <img src="picbank/placeholder profile.png" alt="" class="h-12 w-18">
+            <img src="picbank/profilepicture.png" alt="" class="h-full w-full ">
         </div> 
-
-        <h4 class="text-2xl font-bold text-gray-500">OUR TEAM</h4>
+        <h4 class="text-2xl font-bold text-gray-500 mb-20">OUR TEAM</h4>
     </div>
+</div>
+
+<div class="text-center">
+    <hr>
+    <br>
+    <p>Value for every individual Buyers</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat blanditiis sequi nostrum sed debitis.</p><br>
+    <p>Value for every individual sellers</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta perferendis doloremque maxime modi voluptas?</p>
+
+    <br>
+    <hr>
+</div>
+
+<div class="font-exo flex justify-center space-x-2 mt-10">
+    <h3 class="text-4xl font-bold text-gray-500 ">Who</h3> 
+    <h3 class="text-4xl font-bold text-blue-800 m-0">are our team</h3>
+    <p></p>
+     </div>
+
+     <div class="cards flex flex-wrap justify-center space-x-4 p-10 ">
+
+     <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+    <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"Porsche 911 in mah mind"</p>
+        <div class="flex items-center space-x-4 ">
+            <img src="picbank/Cha Profile.png" alt="" class="w-20 h-20 rounded-full">
        
+     <div>
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white ">Charisse C. Priego</h5>
+        <h6 class="mb-2 text-l tracking-tight text-gray-900 dark:text-white">Frontend Developer</h6>
+        </div>
        
+     </div>
+
+  
+    </a>
+
+    <a href="#" class=" Rho block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+    <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"I want to ride. I want to ride"</p>
+        <div class="flex items-center space-x-4 ">
+            <img src="picbank/Rho Profile.png" alt="" class="w-20 h-20 rounded-full">
+       
+     <div>
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Rho Alphonce E. Jornadal</h5>
+        <h6 class="mb-2 text-l tracking-tight text-gray-900 dark:text-white">Backend Developer</h6>
+        </div>
+       
+     </div>
+
+  
+    </a>
     
+    <a href="#" class=" Rho block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+    <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"Kaya natin to guys"</p>
+        <div class="flex items-center space-x-4 ">
+            <img src="picbank/Jons Profile.png" alt="" class="w-20 h-20 rounded-full">
+       
+     <div>
+        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white ">Jonathan G. Sindo</h5>
+        <h6 class="mb-2 text-l tracking-tight text-gray-900 dark:text-white">Designer</h6>
+        </div>
+       
+     </div>
+
+  
+    </a>
     
 
 </div>
@@ -86,6 +155,7 @@
 
 
 </body>
+
 </html>
 
 @include('partials.footer')

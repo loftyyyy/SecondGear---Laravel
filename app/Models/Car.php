@@ -15,7 +15,7 @@ class Car extends Model
     protected $fillable = [
         'user_id', 'title', 'description', 'price', 
         'brand', 'model', 'year', 'color', 'body_type',
-        'transmission', 'mileage', 'fuel_type', 'engine_capacity',
+        'transmission', 'mileage', 'build', 'fuel_type', 'engine_capacity',
         'license_plate', 'city', 'contact_name', 'contact_email',
         'contact_phone', 'is_sold', 'is_featured', 'is_approved'
     ];

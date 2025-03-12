@@ -1,8 +1,11 @@
-<div class="relative z-[100]">
-    <header class="p-1 bg-black left-0 right-0 top-0 bg-opacity-90 backdrop-blur-sm shadow-sm">
+<div class=" relative z-[100]">
+    <header class="p-1 bg-white dark:bg-gray-900 left-0 right-0 top-0 bg-opacity-90 backdrop-blur-sm shadow-sm">
         <div class="flex items-center justify-between mx-4">
             <div class="flex">
-                <h2 class="font-future text-[35px] rounded-md text-white">Second Gear</h2>
+                <a href="{{route('browse')}}" class="">
+                    <span class="font-future text-[35px] rounded-md text-white">Second Gear</span>
+                </a>
+                <!-- <h2 class="font-future text-[35px] rounded-md text-white">Second Gear</h2> -->
             </div>
             
             <div id="avatarButton" type="button" data-dropdown-toggle="userDropdown" data-dropdown-placement="bottom-start" class="relative w-10 h-10 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600 cursor-pointer">

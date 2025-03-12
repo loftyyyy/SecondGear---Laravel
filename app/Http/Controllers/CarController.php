@@ -217,7 +217,7 @@ class CarController extends Controller
         // Load relationships
         $car->load(['images', 'features', 'user']);
         
-        return view('cars.show', compact('car'));
+        return view('carselect', compact('car'));
     }
 
     /**

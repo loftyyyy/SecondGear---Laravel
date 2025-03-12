@@ -34,7 +34,7 @@
     
     <!-- TODO: To be fixed, overlapping when changing different screen size -->
     <div id="socials" class="flex space-x-6 gap-6 mx-10">
-        <ul><a href="https://www.simplilearn.com/tutorials/css-tutorial/how-to-align-center-work-css"><i class="fab fa-facebook"></i></a></ul>
+        <ul><a href="https://www.facebook.com/JonathanGonzalesSindo/"><i class="fab fa-facebook"></i></a></ul>
         <ul><a href=""><i class="fab fa-instagram"></i></a></ul>
         <ul><a href=""><i class="fab fa-twitter"></i></a></ul>
     </div>

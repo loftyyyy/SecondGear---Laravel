@@ -23,7 +23,7 @@
         <h1 class="text-3xl font-bold mb-6">SAFETY FEATURES</h1>
         <div class="grid grid-cols-3 gap-4 w-10/12 text-xl text-white">
             <div class="flex items-center">
-                <input type="checkbox" id="airbags" class="mr-4">
+                <input type="checkbox" name="airbags" id="airbags" class="mr-4">
                 <label for="airbags" class="text-white-700">Driver and Passenger Airbags</label>
             </div>
             <div class="flex items-center">

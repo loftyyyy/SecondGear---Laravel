@@ -56,14 +56,7 @@
 
             <div>
                 <label for="model" class="block text-white/50 font-medium mb-2">Model</label>
-                <select name="model" id="model" required class="w-full text-black border border-gray-300 rounded-md p-2">
-                    <option value="">Select a model</option>
-                    <option value="Sedan">Sedan</option>
-                    <option value="SUV">SUV</option>
-                    <option value="Truck">Truck</option>
-                    <option value="Other">Other</option>
-                </select>
-                <input type="text" name="model_other" id="model_other" placeholder="If other, please specify" class="mt-2 w-full border border-gray-300 rounded-md p-2 hidden">
+                <input type="text" name="model" id="model" placeholder="e.g 911 GT3 RS" class="w-full border text-black border-gray-300 rounded-md p-2">
             </div>
             
             <div>
@@ -132,7 +125,6 @@
                     <option value="Stock">Stock</option>
                     <option value="Modified">Modified</option>
                 </select>
-                <input type="text" name="build" id="build" placeholder="If other, please specify" class="mt-2 w-full border border-gray-300 rounded-md p-2 hidden">
             </div>
             
             <div>
