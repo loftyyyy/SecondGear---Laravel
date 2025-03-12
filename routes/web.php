@@ -36,15 +36,19 @@ Route::get('/contents/privacyPolicy', function(){
 
 Route::get('/contents/supportRequest', function(){
     return view('/contents/supportRequest');
-})->name('privacyPolicy');
+})->name('supportRequest');
 
 Route::get('/contents/carListingTips', function(){
     return view('/contents/carListingTips');
-})->name('privacyPolicy');
+})->name('carListingTips');
 
 Route::get('/contents/beOurPartner', function(){
     return view('/contents/beOurPartner');
-})->name('privacyPolicy');
+})->name('beOurPartner');
+
+Route::get('/contents/helpDesk', function(){
+    return view('/contents/helpDesk');
+})->name('helpDesk');
 
 
 

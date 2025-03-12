@@ -30,7 +30,7 @@
     @include('carsearch')
 
     <!-- Brand Box - Right Side -->
-    <div class="col-span-10 col-start-3 mt-10 ml-20 mr-8">
+    <div class="col-span-10  col-start-3 mt-10 ml-20 mr-8">
         <h2 class="text-4xl font-bold text-white mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
         <div class="w-full overflow-x-auto">
             <ul class="grid grid-cols-4 gap-4">
@@ -222,7 +222,7 @@
 
 
 
-@include('partials.footer')
+
 
 <style>
     ::-webkit-scrollbar {
