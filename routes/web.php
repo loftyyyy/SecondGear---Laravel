@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CarController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuoteController;
 
 // Route::get('carselect', function () {
 //     return view('carselect');
@@ -114,5 +115,7 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/browse', [CarController::class, 'index'])->name('browse');
 Route::get('/cars/{car}', [CarController::class, 'show'])->name('cars.show');
 
+Route::post('/cars/{car}/quotes', [QuoteController::class, 'submit'])
+    ->name('quotes.submit');
 
 require __DIR__.'/auth.php';

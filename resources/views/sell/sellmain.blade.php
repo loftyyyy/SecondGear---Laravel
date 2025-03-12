@@ -290,13 +290,9 @@
             </div>
         </form>
     </main>
-<<<<<<< HEAD
 
 
     <script>
-=======
-        <script>
->>>>>>> f3c258736d382211773f0fe7119e32a77e82340a
         // Preview images when selected
         document.getElementById('car-images').addEventListener('change', function(event) {
             const preview = document.getElementById('image-preview');
@@ -344,9 +340,5 @@
             }
         });
     </script>
-<<<<<<< HEAD
-
-=======
->>>>>>> f3c258736d382211773f0fe7119e32a77e82340a
 </body>
 </html>
