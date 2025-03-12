@@ -49,8 +49,8 @@
 
     <img id="TH_pic" src="picbank/Team Hilux.jpg" alt="Team Hilux Picture" class="w-full h-full object-cover">
     
-    <div class="absolute top-0 inset-x-0 flex flex-col items-center justify-center text-white p-6">
-        <h6 class="text-2xl text-white font-exo " >Welcome  to</h6>
+    <div class="absolute top-0 inset-x-0 flex flex-col items-center justify-center text-white p-6 mt-20">
+        <h6 class="text-2xl text-white font-exo font-semibold" >Welcome  to</h6>
         <h1 class="text-6xl text-blue-800 font-future text-shadow-4px" >Second Gear</h1>
     </div>
 

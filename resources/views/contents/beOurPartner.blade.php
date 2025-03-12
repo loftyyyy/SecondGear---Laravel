@@ -24,7 +24,7 @@
   <div class="max-w-screen-xl mx-auto">
     <!-- Header -->
     <div class="text-center mb-12">
-      <h2 class="font-['Exo'] text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-white">Be Our Partner</h2>
+      <h1 class="font-future text-4xl md:text-5xl text-gray-900 dark:text-white mb-4">Be Our Partner</h2>
       <p class="font-['Exo'] text-lg md:text-xl text-gray-300 max-w-3xl mx-auto">
         Join forces with Second Gear and accelerate your automotive business. We're looking for dealerships and
         service providers who share our passion for quality vehicles.

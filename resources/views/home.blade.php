@@ -28,7 +28,7 @@
         </div>
     </div>
 
-    <div class="col-span-2 row-span-2 row-start-2 relative p-4 mb-20 w-96 mt-20">
+    <div class="col-span-2 row-span-2 row-start-2 relative mt-14 p-4 mb-40 w-96 ">
         <div class="flex justify-between mx-10 py-6 flex-wrap"> 
             <div class="w-full p-6"> 
             <ul class="mt-44 text-white text-[34px] ">
@@ -47,28 +47,31 @@
     </div>
 
     
-    <div class="col-span-6 row-span-1 col-start-3 row-start-2 mt-44 ml-24 bg-[#000080]"> 
+    <div class="col-span-6 row-span-1 col-start-3 row-start-2 mt-80 ml-24 bg-[#000080] h-[40vh]"> 
         <div class="w-full p-5 shadow-sm"> 
             <img src="/picbank/porsche navyblue 2.png" alt="Porsche" class="w-[1200px] h-[480px] mb-4">
-            <div class="absolute top-20 left-10 text-white text-[75px] mt-18 font-exo">
+            <div class="absolute top-36 -ml-96 text-white text-[70px] -mt-6 font-exo">
             <p>Quality Pre-owned</p>
             <p class="-mt-6">Cars, Trusted Deals</p>
         </div>
         </div>
     </div>
 
-    <!-- Car Listed -->
-        <div class="col-span-2 row-span-2 col-start-9 row-start-2 relative p-2 mb-4 w-full mt-40 ml-20">
-            <ul class=" text-lg text-white">
-                <li class="font-bold text-[40px] ml-10">New Arrival</li>
+
+
+        <div class="col-span-3 row-span-2 col-start-9 row-start-2 relative p-2 mb-4 w-full mt-40 ml-20">
+            <!-- <div class="border bg-blue-200 border-black w-full h-[60vh]"> -->
+            <ul class=" text-lg text-white justify-center ml-2">
+                <li class="text-semibold text-[40px] ml-10 mt-12 font-exo flex justify-center mr-10 -mb-10">New Arrivals</li>
                 <div class="text-black bg-white m-8 w-96  text-[20px] font-bold h-[200px]">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mitsubishi_Eclipse_--_09-08-2009.jpg/1200px-Mitsubishi_Eclipse_--_09-08-2009.jpg" alt="" class="w-full h-auto">   
+                    <img src="/picbank/home1.png" alt="" class="w-full h-auto bg-black">   
                 </div>
                 <div class="text-black bg-white m-8 w-96  text-[20px] font-bold h-[200px]">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Mitsubishi_Eclipse_--_09-08-2009.jpg/1200px-Mitsubishi_Eclipse_--_09-08-2009.jpg" alt="" class="w-full h-auto">   
+                <img src="/picbank/home2.png" alt="" class="w-full h-auto bg-black ">   
                     
                 </div>
             </ul>
+            </div>
         </div>
 
         </div>        

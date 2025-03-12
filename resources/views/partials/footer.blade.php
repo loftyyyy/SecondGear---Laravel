@@ -18,13 +18,12 @@
 
 <div id="footer" class="w-full bg-[#001C80] text-white flex justify-between items-center p-4 ">
     <div id="menu-left" class="hidden md:flex bg-[#001C80] text-white mx-10">
-        <ul class="flex space-x-6 p-4 gap-5">
+        <ul class="flex space-x-6 p-4 gap-10">
             <li><a href="aboutus">About Us</a></li>
             <li><a href="/contents/termsOfServices">Terms and Services</a></li>
-            <li><a href="/contents/privacyPolicy">Privacy Policy</a></li> 
-            <li><a href="">Site map</a></li> 
+            <li><a href="/contents/privacyPolicy">Privacy Policy</a></li>  
             <li><a href="/contents/supportRequest">Support</a></li> 
-            <li><a href="">Help Desk</a></li> 
+            <li><a href="/contents/helpDesk">Help Desk</a></li> 
             <li><a href="/contents/beOurPartner">Be our partner</a></li> 
             <li><a href="/contents/carListingTips">Car listing tips</a></li> 
 
@@ -35,8 +34,8 @@
     <!-- TODO: To be fixed, overlapping when changing different screen size -->
     <div id="socials" class="flex space-x-6 gap-6 mx-10">
         <ul><a href="https://www.facebook.com/JonathanGonzalesSindo/"><i class="fab fa-facebook"></i></a></ul>
-        <ul><a href=""><i class="fab fa-instagram"></i></a></ul>
-        <ul><a href=""><i class="fab fa-twitter"></i></a></ul>
+        <ul><a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a></ul>
+        <ul><a href="https://www.x.com"><i class="fab fa-twitter"></i></a></ul>
     </div>
 </div>
 
