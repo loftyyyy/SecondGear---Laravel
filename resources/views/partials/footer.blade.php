@@ -20,13 +20,13 @@
     <div id="menu-left" class="hidden md:flex bg-[#001C80] text-white mx-10">
         <ul class="flex space-x-6 p-4 gap-5">
             <li><a href="aboutus">About Us</a></li>
-            <li><a href="">Terms and Services</a></li>
-            <li><a href="">Privacy Policy</a></li> 
+            <li><a href="/contents/termsOfServices">Terms and Services</a></li>
+            <li><a href="/contents/privacyPolicy">Privacy Policy</a></li> 
             <li><a href="">Site map</a></li> 
-            <li><a href="">Support</a></li> 
+            <li><a href="/contents/supportRequest">Support</a></li> 
             <li><a href="">Help Desk</a></li> 
-            <li><a href="">Be our partner</a></li> 
-            <li><a href="">Car listing tips</a></li> 
+            <li><a href="/contents/beOurPartner">Be our partner</a></li> 
+            <li><a href="/contents/carListingTips">Car listing tips</a></li> 
 
         </ul>
     </div>
@@ -45,7 +45,7 @@
 <!-- <link rel="icon" type="image/x-icon" href="picbank/2nd Gear Logo.svg">   -->
 <main class="md:flex bg-[#223D68] text-white p-4 h-full items-center justify-center">
     <div class="flex-shrink-0 w-1/3"> <!-- Set a fixed width on the div -->
-        <img src="picbank/2nd Gear Logo (White).svg" alt="footer image" class="w-[300px] h-[300px] ml-[150px]"> 
+        <img src="/picbank/2nd Gear Logo (White).svg" alt="footer image" class="w-[300px] h-[300px] ml-[150px]"> 
     </div>
     
     <div class="text-left mr-0 p-0 .mt-20"> <!-- Added negative margin-top -->

@@ -32,6 +32,8 @@
  
 </head>
 <body class="font-sans dark:bg-black dark:text-white/50">
+
+@include('partials.header')
     
 
 <div class="text-center max-w-auto relative">
