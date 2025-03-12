@@ -78,25 +78,49 @@
     </div>
 </div>
 
-<div class="text-center">
-    <hr>
-    <br>
-    <p>Value for every individual Buyers</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat blanditiis sequi nostrum sed debitis.</p><br>
-    <p>Value for every individual sellers</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis soluta perferendis doloremque maxime modi voluptas?</p>
+<div class="items-center p-10">
 
-    <br>
     <hr>
-</div>
+    
+    <div class="flex flex-col items-center p-10">
 
-<div class="font-exo flex justify-center space-x-2 mt-10">
+        <div class="flex items-center justify-center space-x-4 ml-40">
+            <div class="text-center">
+                <div class="font-exo flex justify-center space-x-2 mt-10" >
+                    <p class="text-3xl font-bold text-left mb-2">Value for every individual</p> 
+                    <p class="text-3xl font-bold text-left text-blue-800 ">Buyers</p> 
+                </div>
+                <p class="text-left text-white text-lg "><strong class="text-2xl">Second Gear</strong> is a website designed to help <br> you find your next car in a more <br>convenient and safe manner. Our goal is to provide <br> an online platform where individuals can easily search <br>for pre-loved cars for sale, all through a user-friendly <br>interface.</p>
+            </div>
+        <img src="picbank/abus1.png" alt="abus1" class="w-1/3 h-1/3">
+        </div>
+    
+        <div class="flex items-center justify-center space-x-4 mr-40">
+        <img src="picbank/abus2.png" alt="abus2" class="w-1/3 h-1/3">
+            <div class="halamang text-center">
+                <div class="font-exo flex justify-center space-x-2 mt-10" >
+                    <p class="text-3xl font-bold text-left mb-2">Value for every individual</p> 
+                    <p class="text-3xl font-bold text-left text-blue-800 ">Sellers</p> 
+                </div>
+                <p class="text-left text-white text-lg "> <strong class="text-2xl">Second Gear</strong> also caters to individuals looking to sell their <br>cars online. Our platform provides access to a broad <br> audience of potential customers. Registered used car  <br>sellers can manage their listings through a user-friendly <br>interface and enjoy additional exclusive perks. <br> In contrast, Second Gear allows unregistered used car <br>sellers to post listings on its website as well.</p>
+            </div>
+        
+        </div>
+
+    </div>
+
+<div>
+
+
+    <hr>
+    
+ <div class="font-exo flex justify-center space-x-2 mt-10">
     <h3 class="text-4xl font-bold text-gray-500 ">Who</h3> 
     <h3 class="text-4xl font-bold text-blue-800 m-0">are our team</h3>
     <p></p>
      </div>
 
-     <div class="cards flex flex-wrap justify-center space-x-4 p-10 ">
+     <div class="cards flex flex-wrap justify-center space-x-4 p-10  ">
 
      <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
     <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"Porsche 911 in mah mind"</p>
@@ -113,7 +137,7 @@
   
     </a>
 
-    <a href="#" class=" Rho block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
     <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"I want to ride. I want to ride"</p>
         <div class="flex items-center space-x-4 ">
             <img src="picbank/Rho Profile.png" alt="" class="w-20 h-20 rounded-full">
@@ -128,8 +152,8 @@
   
     </a>
     
-    <a href="#" class=" Rho block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
-    <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"Kaya natin to guys"</p>
+    <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+    <p class="font-exo text-xl text-gray-700 dark:text-gray-400 mb-10 ">"Driven by passion, fueled by speed"</p>
         <div class="flex items-center space-x-4 ">
             <img src="picbank/Jons Profile.png" alt="" class="w-20 h-20 rounded-full">
        
