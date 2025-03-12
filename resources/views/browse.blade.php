@@ -166,8 +166,7 @@
                                     class="border-2 border-[#000080] rounded-md py-1 px-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1 text-xs">
                                     View Details
                                 </a>
-                                <button 
-                                    class="bg-[#000080] text-white py-1 px-2 rounded-md flex-1 text-xs">
+                                <button  data-modal-target="call-seller" data-modal-toggle="call-seller" class="bg-[#000080] text-white py-1 px-2 rounded-md flex-1 text-xs">
                                     Call Seller
                                 </button>
                             </div>
@@ -247,9 +246,27 @@
     
 </style>
 
-    <div class="h-[30vh]">
-    @include('partials.footer')
-    </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('loadMore');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Get current page from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            let currentPage = parseInt(urlParams.get('page')) || 1;
+            
+            // Increment page
+            urlParams.set('page', currentPage + 1);
+            
+            // Redirect to next page with all current filters
+            window.location.href = `${window.location.pathname}?${urlParams.toString()}`;
+        });
+    }
+});
+</script>
 
+@if($cars->isNotEmpty())
+    @include('modals.call-seller')
+@endif
 </body>
 </html>

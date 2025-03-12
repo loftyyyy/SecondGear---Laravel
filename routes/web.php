@@ -114,4 +114,5 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/browse', [CarController::class, 'index'])->name('browse');
 Route::get('/cars/{car}', [CarController::class, 'show'])->name('cars.show');
 
+
 require __DIR__.'/auth.php';

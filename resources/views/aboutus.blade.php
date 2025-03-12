@@ -36,7 +36,7 @@
 </style>
  
 </head>
-<body class="font-sans dark:bg-black dark:text-white/50 overflow-x-hidden"> 
+<body class="font-sans dark:bg-black dark:text-white/50">
 
 @include('partials.header')
     
