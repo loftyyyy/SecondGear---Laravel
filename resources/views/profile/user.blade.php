@@ -21,7 +21,7 @@
 <body class="bg-gray-100 dark:bg-black">
     @include('partials.profile-header')
     
-    <div class="relative overflow-hidden">
+    <div class="relative overflow-hidden mt-20">
         <!-- SVG Background -->
         <svg xmlns="http://www.w3.org/2000/svg" class="absolute inset-0 w-full h-auto z-0" fill="none" viewBox="0 0 877 968">
             <g clip-path="url(#a)">
@@ -64,17 +64,30 @@
                 </div>
                 
                 <!-- Additional Profile Section -->
-                <div class="mt-4 p-4 sm:p-8 bg-white dark:bg-gray-800 shadow sm:rounded-lg">
-                    <div class="max-w-xl">
-                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-10" >My Car Listings</h2>
-                        @foreach ($cars as $car)
-                            <div>
-                                <h3><a class="text-green-900 text-3xl font-bold" href="{{ route('cars.show', $car->id) }}">{{$car->title}}</a></h3>
-                            </div>
-                        @endforeach
+                <div class="mt-6 p-6 sm:p-10 bg-white dark:bg-gray-800 shadow-lg rounded-lg">
+                        <div class="max-w-xl">
+                            <h2 class="text-3xl font-semibold text-gray-900 dark:text-gray-100 flex items-center gap-3 mb-8">
+                                <i class="fa-solid fa-car text-white text-4xl"></i> My Car Listings
+                            </h2>
+                        <div class="space-y-4">
+                            @foreach ($cars as $car)
+                                <div class="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300 border">
+                                    <h3>
+                                        <a href="{{ route('cars.show', $car->id) }}" 
+                                        class="text-xl sm:text-2xl font-bold text-gray-900 dark:text-gray-100 hover:text-blue-500 dark:hover:text-blue-400 transition duration-300">
+                                        {{$car->title}}
+                                        </a>
+                                    </h3>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm mt-1">
+                                    <i class="fa-solid fa-calendar-days mr-2"></i>Listed on {{ \Carbon\Carbon::parse($car->created_at)->format('F j, Y') }}
+                                    </p>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
-            </div>
+
+                </div>
             
             <!-- Right Column - User Information -->
             <div class="col-span-2 row-span-2">

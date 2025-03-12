@@ -4,6 +4,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\CarController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\QuoteController;
 
 // Route::get('carselect', function () {
 //     return view('carselect');
@@ -36,15 +37,19 @@ Route::get('/contents/privacyPolicy', function(){
 
 Route::get('/contents/supportRequest', function(){
     return view('/contents/supportRequest');
-})->name('privacyPolicy');
+})->name('supportRequest');
 
 Route::get('/contents/carListingTips', function(){
     return view('/contents/carListingTips');
-})->name('privacyPolicy');
+})->name('carListingTips');
 
 Route::get('/contents/beOurPartner', function(){
     return view('/contents/beOurPartner');
-})->name('privacyPolicy');
+})->name('beOurPartner');
+
+Route::get('/contents/helpDesk', function(){
+    return view('/contents/helpDesk');
+})->name('helpDesk');
 
 
 
@@ -109,5 +114,8 @@ Route::middleware(['auth'])->group(function () {
 // Public routes that don't require authentication
 Route::get('/browse', [CarController::class, 'index'])->name('browse');
 Route::get('/cars/{car}', [CarController::class, 'show'])->name('cars.show');
+
+Route::post('/cars/{car}/quotes', [QuoteController::class, 'submit'])
+    ->name('quotes.submit');
 
 require __DIR__.'/auth.php';

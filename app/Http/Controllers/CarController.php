@@ -16,39 +16,109 @@ class CarController extends Controller
      */
     public function index(Request $request)
     {
-        $query = Car::where('is_approved', true)
-                    ->where('is_sold', false);
+        $query = Car::where('is_approved', true)->where('is_sold', false);
+
+        if ($request->filled('search')) {
+            $searchTerm = '%' . $request->search . '%';
+    
+            $query->where(function ($q) use ($searchTerm) {
+                $q->where('brand', 'LIKE', $searchTerm)
+                  ->orWhere('model', 'LIKE', $searchTerm)
+                  ->orWhere('body_type', 'LIKE', $searchTerm)
+                  ->orWhere('city', 'LIKE', $searchTerm)
+                  ->orWhere('transmission', 'LIKE', $searchTerm)
+                  ->orWhere('color', 'LIKE', $searchTerm)
+                  ->orWhere('build', 'LIKE', $searchTerm)
+                  ->orWhere('year', 'LIKE', $searchTerm)
+                  ->orWhere('price', 'LIKE', $searchTerm);
+            });
+        }
+    
 
         // Handle filtering
-        if ($request->has('brand')) {
+        if ($request->filled('brand')) {
             $query->where('brand', $request->brand);
         }
         
-        if ($request->has('body_type')) {
+        if ($request->filled('model')) {
+            $query->where('model', $request->model);
+        }
+        
+        if ($request->filled('body_type')) {
             $query->where('body_type', $request->body_type);
         }
         
-        if ($request->has('min_price')) {
+        if ($request->filled('from_year')) {
+            $query->where('year', '>=', $request->from_year);
+        }
+        
+        if ($request->filled('to_year')) {
+            $query->where('year', '<=', $request->to_year);
+        }
+        
+        if ($request->filled('city')) {
+            $query->where('city', $request->city);
+        }
+        
+        if ($request->filled('transmission')) {
+            $query->where('transmission', $request->transmission);
+        }
+        
+        if ($request->filled('color')) {
+            $query->where('color', $request->color);
+        }
+        
+        if ($request->filled('min_price')) {
             $query->where('price', '>=', $request->min_price);
         }
         
-        if ($request->has('max_price')) {
+        if ($request->filled('max_price')) {
             $query->where('price', '<=', $request->max_price);
         }
         
-        if ($request->has('min_year')) {
-            $query->where('year', '>=', $request->min_year);
+        if ($request->filled('build')) {
+            $query->where('build', $request->build);
         }
-        
-        if ($request->has('max_year')) {
-            $query->where('year', '<=', $request->max_year);
-        }
-
+    
         $cars = $query->latest()->paginate(12);
         
-        return view('browse', compact('cars'));
+        // Get unique values for dropdowns
+        $brands = Car::distinct()->pluck('brand')->sort();
+        $models = Car::distinct()->pluck('model')->sort();
+        $years = Car::distinct()->pluck('year')->sort()->reverse();
+        $cities = Car::distinct()->pluck('city')->sort();
+        $transmissions = Car::distinct()->pluck('transmission')->sort();
+        $colors = Car::distinct()->pluck('color')->sort();
+        $bodyTypes = Car::distinct()->pluck('body_type')->sort();
+        
+        return view('browse', compact('cars', 'brands', 'models', 'years', 'cities', 'transmissions', 'colors', 'bodyTypes'));
     }
 
+        /**
+     * Get models for a specific brand (used by the search form)
+     */
+    public function getModelsByBrand(Request $request)
+    {
+        if ($request->has('brand')) {
+            $models = Car::where('brand', $request->brand)
+                        ->distinct()
+                        ->pluck('model')
+                        ->sort()
+                        ->values();
+            return response()->json($models);
+        }
+        
+        return response()->json([]);
+    }
+
+    /**
+     * Display a listing of all brands (for the "Show More" functionality)
+     */
+    public function allBrands()
+    {
+        $brands = Car::distinct()->pluck('brand')->sort();
+        return view('brands.index', compact('brands'));
+    }
     /**
      * Show the form for creating a new car listing.
      */

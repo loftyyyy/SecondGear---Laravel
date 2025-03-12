@@ -30,7 +30,7 @@
     @include('carsearch')
 
     <!-- Brand Box - Right Side -->
-    <div class="col-span-10 col-start-3 mt-10 ml-20 mr-8">
+    <div class="col-span-10  col-start-3 mt-10 ml-20 mr-8">
         <h2 class="text-4xl font-bold text-white mb-6">PRE-LOVED CARS IN DAVAO CITY, DAVAO DEL SUR</h2> 
         <div class="w-full overflow-x-auto">
             <ul class="grid grid-cols-4 gap-4">
@@ -166,8 +166,7 @@
                                     class="border-2 border-[#000080] rounded-md py-1 px-2 text-[#000080] hover:bg-blue-800 hover:text-white transition duration-200 flex-1 text-xs">
                                     View Details
                                 </a>
-                                <button 
-                                    class="bg-[#000080] text-white py-1 px-2 rounded-md flex-1 text-xs">
+                                <button  data-modal-target="call-seller" data-modal-toggle="call-seller" class="bg-[#000080] text-white py-1 px-2 rounded-md flex-1 text-xs">
                                     Call Seller
                                 </button>
                             </div>
@@ -223,7 +222,7 @@
 
 
 
-@include('partials.footer')
+
 
 <style>
     ::-webkit-scrollbar {
@@ -247,6 +246,27 @@
     
 </style>
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('loadMore');
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', function() {
+            // Get current page from the URL
+            const urlParams = new URLSearchParams(window.location.search);
+            let currentPage = parseInt(urlParams.get('page')) || 1;
+            
+            // Increment page
+            urlParams.set('page', currentPage + 1);
+            
+            // Redirect to next page with all current filters
+            window.location.href = `${window.location.pathname}?${urlParams.toString()}`;
+        });
+    }
+});
+</script>
 
+@if($cars->isNotEmpty())
+    @include('modals.call-seller')
+@endif
 </body>
 </html>
