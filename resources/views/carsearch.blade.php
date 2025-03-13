@@ -1,4 +1,3 @@
-<div class="col-span-2 row-span-2 row-start-2 relative p-4 mb-4 w-96">
     <h2 class="flex text-4xl font-bold text-white justify-center mt-6">Car Search</h2> 
     <div class="flex justify-between mx-10 py-6 flex-wrap"> 
         <div class="w-full p-6 bg-white border border-gray-200 rounded-xl shadow-sm bg-opacity-15"> 
@@ -124,7 +123,6 @@
             </ul>
         </div>
     </div>
-</div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {

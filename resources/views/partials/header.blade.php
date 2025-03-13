@@ -100,9 +100,12 @@
                             <a href="{{ route('show.profile')}}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Profile</a>
                         </li>
                     </ul>
-                    <div class="py-1">
-                        <a href="{{ route('users.logout') }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Sign out</a>
-                    </div>
+                    <form method="POST" action="{{ route('users.logout') }}" class="py-1">
+                        @csrf
+                        <button type="submit" class="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                        Sign out
+                        </button>
+                    </form>
                 </div>
           
         </div>

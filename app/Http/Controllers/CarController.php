@@ -357,7 +357,7 @@ class CarController extends Controller
         
         $car->delete();
         
-        return redirect()->route('cars.index')
+        return redirect()->route('show.profile')
             ->with('success', 'Car listing deleted successfully!');
     }
 

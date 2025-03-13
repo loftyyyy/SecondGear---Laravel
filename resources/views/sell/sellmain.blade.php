@@ -293,52 +293,190 @@
 
 
     <script>
-        // Preview images when selected
-        document.getElementById('car-images').addEventListener('change', function(event) {
-            const preview = document.getElementById('image-preview');
-            preview.innerHTML = '';
-            
-            for (const file of event.target.files) {
-                if (file.type.match('image.*')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const div = document.createElement('div');
-                        div.className = 'relative group';
-                        div.innerHTML = `
-                            <img src="${e.target.result}" class="h-32 w-full object-cover rounded-lg border border-gray-200 dark:border-gray-700">
-                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 rounded-lg flex items-center justify-center transition-opacity duration-200">
-                                <span class="text-white text-xs">${file.name}</span>
-                            </div>
-                        `;
-                        preview.appendChild(div);
+        document.addEventListener('DOMContentLoaded', function() {
+            // Preview images when selected - with ordered processing
+            document.getElementById('car-images').addEventListener('change', function(event) {
+                const preview = document.getElementById('image-preview');
+                preview.innerHTML = '';
+                const files = Array.from(event.target.files);
+                
+                // Create an array to track completed loads
+                const previews = new Array(files.length);
+                let loadedCount = 0;
+                
+                files.forEach((file, index) => {
+                    if (file.type.match('image.*')) {
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            // Store the preview div at the correct index
+                            previews[index] = createPreviewElement(e.target.result, file.name);
+                            loadedCount++;
+                            
+                            // When all files have been processed, add them to the preview in order
+                            if (loadedCount === files.length) {
+                                previews.forEach(div => {
+                                    if (div) preview.appendChild(div);
+                                });
+                                
+                                // Initialize drag sorting after images are loaded
+                                setTimeout(() => {
+                                    enableDragSort('image-preview');
+                                }, 500);
+                            }
+                        }
+                        
+                        reader.readAsDataURL(file);
                     }
-                    reader.readAsDataURL(file);
-                }
-            }
-        });
+                });
+            });
 
-        document.getElementById('document-images').addEventListener('change', function(event) {
-            const preview = document.getElementById('document-preview');
-            preview.innerHTML = '';
-            
-            for (const file of event.target.files) {
-                if (file.type.match('image.*')) {
-                    const reader = new FileReader();
-                    reader.onload = function(e) {
-                        const div = document.createElement('div');
-                        div.className = 'relative group';
-                        div.innerHTML = `
-                            <img src="${e.target.result}" class="h-32 w-full object-cover rounded-lg border border-gray-200 dark:border-gray-700">
-                            <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 rounded-lg flex items-center justify-center transition-opacity duration-200">
-                                <span class="text-white text-xs">${file.name}</span>
-                            </div>
-                        `;
-                        preview.appendChild(div);
+            document.getElementById('document-images').addEventListener('change', function(event) {
+                const preview = document.getElementById('document-preview');
+                preview.innerHTML = '';
+                const files = Array.from(event.target.files);
+                
+                // Create an array to track completed loads
+                const previews = new Array(files.length);
+                let loadedCount = 0;
+                
+                files.forEach((file, index) => {
+                    if (file.type.match('image.*')) {
+                        const reader = new FileReader();
+                        
+                        reader.onload = function(e) {
+                            // Store the preview div at the correct index
+                            previews[index] = createPreviewElement(e.target.result, file.name);
+                            loadedCount++;
+                            
+                            // When all files have been processed, add them to the preview in order
+                            if (loadedCount === files.length) {
+                                previews.forEach(div => {
+                                    if (div) preview.appendChild(div);
+                                });
+                                
+                                // Initialize drag sorting after images are loaded
+                                setTimeout(() => {
+                                    enableDragSort('document-preview');
+                                }, 500);
+                            }
+                        }
+                        
+                        reader.readAsDataURL(file);
                     }
-                    reader.readAsDataURL(file);
+                });
+            });
+
+            // Helper function to create preview elements with remove button
+            function createPreviewElement(src, fileName) {
+                const div = document.createElement('div');
+                div.className = 'relative group';
+                div.innerHTML = `
+                    <img src="${src}" class="h-32 w-full object-cover rounded-lg border border-gray-200 dark:border-gray-700">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 rounded-lg flex flex-col items-center justify-center transition-opacity duration-200">
+                        <span class="text-white text-xs mb-2">${fileName}</span>
+                        <button type="button" class="bg-red-600 text-white text-xs rounded px-2 py-1 remove-image">
+                            Remove
+                        </button>
+                    </div>
+                `;
+                
+                // Add event listener for the remove button
+                const removeBtn = div.querySelector('.remove-image');
+                if (removeBtn) {
+                    removeBtn.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        div.remove();
+                    });
                 }
+                
+                return div;
+            }
+
+            // Drag-and-drop reordering functionality
+            function enableDragSort(listClass) {
+                const sortableList = document.getElementById(listClass);
+                if (!sortableList) return;
+                
+                Array.from(sortableList.children).forEach(item => {
+                    enableDragItem(item);
+                });
+            }
+
+            function enableDragItem(item) {
+                item.setAttribute('draggable', true);
+                item.addEventListener('dragstart', handleDragStart);
+                item.addEventListener('dragover', handleDragOver);
+                item.addEventListener('drop', handleDrop);
+                item.addEventListener('dragend', handleDragEnd);
+            }
+
+            let draggedItem = null;
+
+            function handleDragStart(e) {
+                draggedItem = this;
+                e.dataTransfer.effectAllowed = 'move';
+                e.dataTransfer.setData('text/html', this.innerHTML);
+                this.classList.add('drag-sort-active');
+            }
+
+            function handleDragOver(e) {
+                e.preventDefault();
+                e.dataTransfer.dropEffect = 'move';
+                return false;
+            }
+
+            function handleDrop(e) {
+                e.stopPropagation();
+                
+                if (draggedItem !== this) {
+                    const list = this.parentNode;
+                    const children = Array.from(list.children);
+                    const draggedIndex = children.indexOf(draggedItem);
+                    const targetIndex = children.indexOf(this);
+                    
+                    if (draggedIndex < targetIndex) {
+                        list.insertBefore(draggedItem, this.nextSibling);
+                    } else {
+                        list.insertBefore(draggedItem, this);
+                    }
+                    
+                    // Log the new order (optional)
+                    logNewOrder(list);
+                }
+                
+                return false;
+            }
+
+            function handleDragEnd() {
+                this.classList.remove('drag-sort-active');
+                draggedItem = null;
+            }
+
+            function logNewOrder(list) {
+                const newOrder = Array.from(list.children).map((child, index) => {
+                    const nameSpan = child.querySelector('span');
+                    return nameSpan ? nameSpan.textContent : '';
+                });
+                
+                console.log('New image order:', newOrder);
+                // You could store this in a hidden form field if needed
             }
         });
     </script>
+
+    <style>
+        .drag-sort-active {
+            background-color: rgba(59, 130, 246, 0.2);
+            border: 2px dashed #3b82f6;
+            opacity: 0.7;
+        }
+        
+        /* Add a style to show the item is being dragged */
+        [draggable="true"] {
+            cursor: move;
+        }
+    </style>
 </body>
 </html>

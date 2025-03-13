@@ -109,10 +109,10 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/cars/{car}', [CarController::class, 'update'])->name('cars.update');
     Route::delete('/cars/{car}', [CarController::class, 'destroy'])->name('cars.destroy');
     Route::post('/cars/{car}/mark-sold', [CarController::class, 'markAsSold'])->name('cars.mark-sold');
+    Route::get('/browse', [CarController::class, 'index'])->name('browse');
 });
 
 // Public routes that don't require authentication
-Route::get('/browse', [CarController::class, 'index'])->name('browse');
 Route::get('/cars/{car}', [CarController::class, 'show'])->name('cars.show');
 
 Route::post('/cars/{car}/quotes', [QuoteController::class, 'submit'])
