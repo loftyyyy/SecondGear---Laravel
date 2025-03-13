@@ -15,10 +15,6 @@ Route::get('carsearch', function () {
     return view('carsearch');
 })->name('carsearch');
 
-Route::get('aboutus', function(){
-    return view('aboutus');
-})->name('aboutus');
-
 Route::get('home', function(){
     return view('home');
 })->name('home');
@@ -26,6 +22,10 @@ Route::get('home', function(){
 Route::get('/', function () {
     return view('landing');
 })->name('landing');
+
+Route::get('/contents/aboutus', function(){
+    return view('/contents/aboutus');
+})->name('aboutus');
 
 Route::get('/contents/termsOfServices', function(){
     return view('/contents/termsOfServices');
