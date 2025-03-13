@@ -51,7 +51,7 @@
                     <option value="Suzuki">Suzuki</option>
                     <option value="Other">Other</option>
                 </select>
-                <input type="text" name="brand_other" id="brand_other" placeholder="If other, please specify" class="mt-2 w-full border border-gray-300 rounded-md p-2 hidden">
+                <input type="text" name="brand_other" id="brand_other" placeholder="If other, please specify" class="mt-2 w-full border text-black border-gray-300 rounded-md p-2 hidden">
             </div>
 
             <div>
@@ -80,7 +80,7 @@
                     <option value="Brown">Brown</option>
                     <option value="Other">Other</option>
                 </select>
-                <input type="text" name="color_other" id="color_other" placeholder="If other, please specify" class="mt-2 w-full border border-gray-300 rounded-md p-2 hidden">
+                <input type="text" name="color_other" id="color_other" placeholder="If other, please specify" class="mt-2 w-full border text-black border-gray-300 rounded-md p-2 hidden">
             </div>
             
             <div>
@@ -97,7 +97,7 @@
                     <option value="Wagon">Wagon</option>
                     <option value="Other">Other</option>
                 </select>
-                <input type="text" name="body_type_other" id="body_type_other" placeholder="If other, please specify" class="mt-2 w-full border border-gray-300 rounded-md p-2 hidden">
+                <input type="text" name="body_type_other" id="body_type_other" placeholder="If other, please specify" class="mt-2 w-full border text-black border-gray-300 rounded-md p-2 hidden">
             </div>
             
             <div>
@@ -110,7 +110,7 @@
                     <option value="Semi-automatic">Semi-automatic</option>
                     <option value="Other">Other</option>
                 </select>
-                <input type="text" name="transmission_other" id="transmission_other" placeholder="If other, please specify" class="mt-2 w-full border border-gray-300 rounded-md p-2 hidden">
+                <input type="text" name="transmission_other" id="transmission_other" placeholder="If other, please specify" class="mt-2 w-full border text-black border-gray-300 rounded-md p-2 hidden">
             </div>
             
             <div>
