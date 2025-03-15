@@ -38,6 +38,7 @@
     <h1 class="text-3xl font-bold mb-6">Car Details</h1>
         <div class="p-4 grid grid-cols-3 gap-10 w-10/12">
             <div>
+                
                 <label for="brand" class="block text-white/50 font-medium mb-2">Brand</label>
                 <select name="brand" id="brand" required class="w-full border text-black border-gray-300 rounded-md p-2">
                     <option value="">Select a brand</option>
