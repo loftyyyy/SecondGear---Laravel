@@ -12,6 +12,7 @@
                     </svg>
                     <span class="sr-only">Close modal</span>
                 
+                    
                 </button>
             </div>
             <!-- Modal body -->
